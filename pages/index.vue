@@ -1,8 +1,16 @@
 <template>
-  <div class="container">
-    <h1>Hello Tanawit!</h1>
-  </div>
+  <SectionHome />
 </template>
+
+<script>
+import SectionHome from '@/components/sections/Home'
+
+export default {
+  components: {
+    SectionHome
+  }
+}
+</script>
 
 <style>
 .container {
