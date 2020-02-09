@@ -15,6 +15,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 16px;
+  margin: 0;
 
   @include respond(small) {
     font-size: 50%; //1rem = 8px, 8/16 = 50%

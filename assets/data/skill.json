@@ -1,0 +1,82 @@
+{
+  "section": "skill",
+  "data": [{
+    "name": "Frontend Development",
+    "items": [{
+      "name": "JavaScript",
+      "iconPath": "images/skills/javascript.jpg"
+    }, {
+      "name": "React",
+      "iconPath": "images/skills/react.png"
+    }, {
+      "name": "Vue",
+      "iconPath": "images/skills/vue.png"
+    }, {
+      "name": "HTML",
+      "iconPath": "images/skills/html.png"
+    }, {
+      "name": "CSS",
+      "iconPath": "images/skills/css.png"
+    }, {
+      "name": "SASS",
+      "iconPath": "images/skills/sass.png"
+    }]
+  }, {
+    "name": "Backend Development",
+    "items": [{
+      "name": "Go",
+      "iconPath": "images/skills/go.png"
+    }, {
+      "name": "Python",
+      "iconPath": "images/skills/python.png"
+    }, {
+      "name": "GraphQL",
+      "iconPath": "images/skills/graphql.png"
+    }, {
+      "name": "MySQL",
+      "iconPath": "images/skills/mysql.png"
+    }, {
+      "name": "MongoDB",
+      "iconPath": "images/skills/mongodb.png"
+    }, {
+      "name": "Redis",
+      "iconPath": "images/skills/redis.png"
+    }]
+  }, {
+    "name": "Cloud Services",
+    "items": [{
+      "name": "EC2",
+      "iconPath": "images/skills/ec2.png"
+    }, {
+      "name": "S3",
+      "iconPath": "images/skills/s3.png"
+    }, {
+      "name": "Route 53",
+      "iconPath": "images/skills/route53.png"
+    }, {
+      "name": "GKE",
+      "iconPath": "images/skills/gke.png"
+    }, {
+      "name": "Google Cloud Run",
+      "iconPath": "images/skills/gcr.png"
+    }, {
+      "name": "Firebase",
+      "iconPath": "images/skills/firebase.png"
+    }]
+  }, {
+    "name": "DevOps",
+    "items": [{
+      "name": "Docker",
+      "iconPath": "images/skills/docker.png"
+    }, {
+      "name": "Jenkins",
+      "iconPath": "images/skills/jenkins.png"
+    }, {
+      "name": "Kubernetes",
+      "iconPath": "images/skills/kubernetes.png"
+    }, {
+      "name": "Robot Framework",
+      "iconPath": "images/skills/robotframework.png"
+    }]
+  }]
+}

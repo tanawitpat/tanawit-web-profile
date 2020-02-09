@@ -39,7 +39,7 @@
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
     &--message {
-      margin-bottom: 0.6rem;
+      margin-bottom: 1rem;
     }
     &--description {
       font-size: 2rem;
