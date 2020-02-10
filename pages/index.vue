@@ -3,6 +3,8 @@
     <SectionHome />
     <SectionAboutMe />
     <SectionSkill />
+    <SectionExperience />
+    <SectionEducation />
   </div>
 </template>
 
@@ -10,12 +12,16 @@
 import SectionHome from '@/components/Home'
 import SectionAboutMe from '@/components/AboutMe'
 import SectionSkill from '@/components/Skill'
+import SectionExperience from '@/components/Experience'
+import SectionEducation from '@/components/Education'
 
 export default {
   components: {
     SectionHome,
     SectionAboutMe,
-    SectionSkill
+    SectionSkill,
+    SectionExperience,
+    SectionEducation
   }
 }
 </script>

@@ -1,0 +1,16 @@
+{
+  "section": "education",
+  "data": [{
+    "schoolName": "Chulalongkorn University",
+    "degree": "Bachelor of Science in Statistics",
+    "honor": "Second-Class Honors",
+    "duration": "2014-2018",
+    "schoolLogoPath": "images/logo/chula.png",
+    "schoolLink": "https://www.chula.ac.th/en",
+    "descriptions": [
+      "Head of Statistics Department Exhibition in Banshi Chula Expo 2017.",
+      "Research Assistant at Center of Statistical Consulting and Research, CU.",
+      "Teaching Assistant in Data Science Practicum class."
+    ]
+  }]
+}
