@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import SectionHome from '@/components/sections/Home'
-import SectionAboutMe from '@/components/sections/AboutMe'
-import SectionSkill from '@/components/sections/Skill'
+import SectionHome from '@/components/Home'
+import SectionAboutMe from '@/components/AboutMe'
+import SectionSkill from '@/components/Skill'
 
 export default {
   components: {
