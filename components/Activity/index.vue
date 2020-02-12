@@ -1,26 +1,28 @@
 <template>
   <section class="section-activity">
-    <h1 class="heading-primary u-margin-bottom-big section-activity__heading">
-      Activities
-    </h1>
-    <div class="section-activity__card">
-      <ActivityCard
-        v-for="activity in activityData"
-        :key="activity.name"
-        :title="activity.name"
-        :previewImagePath="activity.previewImagePath"
-        :description="activity.description"
-        :actions="activity.actions"
-      />
-    </div>
-    <div class="section-activity__footer">
-      <button
-        onclick="window.location='https://github.com/tanawitpat'"
-        type="button"
-        class="btn"
-      >
-        Explore more
-      </button>
+    <div class="section-activity__container">
+      <h1 class="heading-primary u-margin-bottom-big section-activity__heading">
+        Activities
+      </h1>
+      <div class="section-activity__card">
+        <ActivityCard
+          v-for="activity in activityData"
+          :key="activity.name"
+          :title="activity.name"
+          :previewImagePath="activity.previewImagePath"
+          :description="activity.description"
+          :actions="activity.actions"
+        />
+      </div>
+      <div class="section-activity__footer">
+        <button
+          onclick="window.location='https://github.com/tanawitpat'"
+          type="button"
+          class="btn"
+        >
+          Explore more
+        </button>
+      </div>
     </div>
   </section>
 </template>
@@ -58,6 +60,11 @@ export default {
 
   @include respond(small) {
     padding: 10rem 3rem;
+  }
+
+  &__container {
+    max-width: 120rem;
+    margin: auto;
   }
 
   &__heading {
