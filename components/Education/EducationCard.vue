@@ -50,7 +50,7 @@ export default {
       required: true
     },
     descriptions: {
-      type: String,
+      type: Array,
       required: true
     }
   }

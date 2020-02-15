@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: 'ExperienceCard',
+  name: 'ActivityCard',
   props: {
     title: {
       type: String,
@@ -51,7 +51,7 @@ export default {
       required: true
     },
     actions: {
-      type: Object,
+      type: Array,
       required: true
     }
   }
