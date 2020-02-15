@@ -7,30 +7,6 @@
       class="activity-card__img"
     />
     <p class="activity-card__description">{{ description }}</p>
-    <div class="activity-card__footer">
-      <template v-if="actions.length == 1">
-        <div
-          :onclick="`window.location='` + actions[0].link + `';`"
-          class="activity-card__footer__single-button u-center-text"
-        >
-          {{ actions[0].label }}
-        </div>
-      </template>
-      <template v-else-if="actions.length == 2">
-        <div
-          :onclick="`window.location='` + actions[0].link + `';`"
-          class="activity-card__footer__double-button activity-card__footer__double-button--1 u-center-text"
-        >
-          {{ actions[0].label }}
-        </div>
-        <div
-          :onclick="`window.location='` + actions[1].link + `';`"
-          class="activity-card__footer__double-button activity-card__footer__double-button--2 u-center-text"
-        >
-          {{ actions[1].label }}
-        </div>
-      </template>
-    </div>
   </div>
 </template>
 
@@ -48,10 +24,6 @@ export default {
     },
     description: {
       type: String,
-      required: true
-    },
-    actions: {
-      type: Array,
       required: true
     }
   }
@@ -114,55 +86,6 @@ export default {
       background-color: rgba(#fff, 0.7);
       grid-row: 4 / 5;
       padding: 2rem;
-    }
-  }
-
-  &__footer {
-    grid-row: 4 / 5;
-
-    &__single-button {
-      padding: 1rem 0;
-      transition: all 0.2s;
-      color: $color-blue-dark;
-      background-color: rgba(#fff, 0.8);
-      font-weight: bold;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      cursor: pointer;
-      grid-column: 1 / 3;
-
-      &:hover,
-      &:active {
-        color: #fff;
-        background-color: rgba(#fff, 0.05);
-      }
-    }
-
-    &__double-button {
-      padding: 1rem 0;
-      transition: all 0.2s;
-      color: $color-blue-dark;
-      background-color: rgba(#fff, 0.8);
-      font-weight: bold;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      cursor: pointer;
-
-      &:hover,
-      &:active {
-        color: #fff;
-        background-color: rgba(#fff, 0.05);
-      }
-
-      &--1 {
-        grid-column: 1 / 2;
-        margin-right: 0.05rem;
-      }
-
-      &--2 {
-        grid-column: 2 / 3;
-        margin-left: 0.05rem;
-      }
     }
   }
 }
