@@ -40,8 +40,8 @@ export default {
 .section-education {
   background-image: linear-gradient(
       to right bottom,
-      rgba(#fff, 0.8),
-      rgba(#fff, 0.8)
+      rgba($color-white, 0.8),
+      rgba($color-white, 0.8)
     ),
     url('~assets/images/education-bg.jpg');
   background-position: center 35%;

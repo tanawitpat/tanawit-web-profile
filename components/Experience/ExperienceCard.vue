@@ -1,9 +1,9 @@
 <template>
   <div class="experience-card">
     <h3 class="experience-card__position">{{ title }}</h3>
-    <a :href="companyLink" class="experience-card__company-name">
-      {{ companyName }}
-    </a>
+    <a :href="companyLink" class="experience-card__company-name">{{
+      companyName
+    }}</a>
     <p class="experience-card__duration">{{ duration }}</p>
     <a :href="companyLink">
       <img
@@ -51,7 +51,7 @@ export default {
 <style scoped lang="scss">
 .experience-card {
   position: relative;
-  background-color: rgba(#fff, 0.7);
+  background-color: rgba($color-white, 0.7);
   border-radius: 20px;
   padding: 3rem 5rem;
   transition: all 0.2s;

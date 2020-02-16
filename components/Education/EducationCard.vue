@@ -60,7 +60,7 @@ export default {
 <style scoped lang="scss">
 .education-card {
   position: relative;
-  background-color: rgba(#fff, 0.7);
+  background-color: rgba($color-white, 0.7);
   border-radius: 20px;
   padding: 3rem 5rem;
   transition: all 0.2s;

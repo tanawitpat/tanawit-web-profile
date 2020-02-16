@@ -32,32 +32,40 @@ export default {
 
 <style scoped lang="scss">
 .activity-card {
-  color: #fff;
+  color: $color-white;
   border-radius: 20px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
 
+  &:hover,
+  &:active {
+    background-color: rgba($color-white, 0.05);
+    color: $color-white;
+    transform: scale(1.05);
+  }
+  transition: transform 0.2s;
+
   &__name {
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     grid-column: 1 / 3;
     z-index: 3;
     padding: 1rem 0;
-    background-color: rgba(#fff, 0.8);
+    background-color: $color-white;
     color: $color-blue-dark;
     font-weight: bold;
   }
 
   &__img {
     width: 100%;
-    grid-row: 2 / 4;
+    grid-row: 1 / 2;
     grid-column: 1 / 3;
     z-index: 1;
 
     &:hover ~ p {
       color: black;
-      background-color: rgba(#fff, 0.8);
+      background-color: rgba($color-white, 0.8);
 
       display: flex;
       align-items: center;
@@ -66,7 +74,7 @@ export default {
   }
 
   &__description {
-    grid-row: 2 / 4;
+    grid-row: 1 / 2;
     grid-column: 1 / 3;
     z-index: 2;
     padding: 3rem;
@@ -74,7 +82,7 @@ export default {
 
     &:hover {
       color: black;
-      background-color: rgba(#fff, 0.8);
+      background-color: rgba($color-white, 0.8);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -83,7 +91,7 @@ export default {
     @include respond(mobile) {
       display: block;
       color: $color-blue-dark;
-      background-color: rgba(#fff, 0.7);
+      background-color: rgba($color-white, 0.7);
       grid-row: 4 / 5;
       padding: 2rem;
     }

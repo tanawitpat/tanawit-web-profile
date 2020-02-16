@@ -51,11 +51,11 @@ export default {
   }
 
   &__heading {
-    color: #fff;
+    color: $color-white;
   }
 
   &__cards {
-    color: #fff;
+    color: $color-white;
     max-width: 120rem;
     margin: 0 auto;
 

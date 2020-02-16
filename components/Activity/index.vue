@@ -14,15 +14,6 @@
           :actions="activity.actions"
         />
       </div>
-      <div class="section-activity__footer">
-        <button
-          onclick="window.location='https://github.com/tanawitpat'"
-          type="button"
-          class="btn"
-        >
-          Explore more
-        </button>
-      </div>
     </div>
   </section>
 </template>
@@ -46,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 15rem;
+  padding: 10rem 15rem 7.5rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-blue-dark, 0.9),
@@ -68,7 +59,7 @@ export default {
   }
 
   &__heading {
-    color: #fff;
+    color: $color-white;
   }
 
   &__card {
@@ -77,29 +68,6 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 5rem;
-  }
-
-  &__footer {
-    text-align: center;
-
-    button.btn {
-      border: none;
-      color: $color-blue-dark;
-      background-color: rgba(#fff, 0.8);
-      font-size: 1.6rem;
-      font-weight: 600;
-      padding: 1.5rem 2.5rem;
-      text-transform: uppercase;
-      transition: transform 0.2s, background-color 0.2s, color 0.2s;
-      cursor: pointer;
-
-      &:hover,
-      &:active {
-        background-color: rgba(#fff, 0.05);
-        color: #fff;
-        transform: scale(1.1);
-      }
-    }
   }
 }
 </style>

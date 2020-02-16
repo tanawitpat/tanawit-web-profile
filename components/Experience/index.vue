@@ -42,7 +42,7 @@ export default {
   background-image: linear-gradient(
       to right bottom,
       rgba($color-grey-light-1, 0.9),
-      rgba(#fff, 0.9)
+      rgba($color-white, 0.9)
     ),
     url('~assets/images/experience-bg.jpg');
   background-position: center 35%;

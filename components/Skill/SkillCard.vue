@@ -35,7 +35,7 @@ export default {
     height: auto;
     border-radius: 15%;
     margin-bottom: 1rem;
-    background-color: #fff;
+    background-color: $color-white;
   }
 
   p {

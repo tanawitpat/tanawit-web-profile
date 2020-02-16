@@ -26,7 +26,7 @@ export default {
       required: true
     },
     skills: {
-      type: Object,
+      type: Array,
       required: true
     }
   }
@@ -35,7 +35,7 @@ export default {
 
 <style scoped lang="scss">
 .cards {
-  color: #fff;
+  color: $color-white;
   max-width: 120rem;
   margin: 0 auto;
 
