@@ -1,12 +1,15 @@
 <template>
   <div class="activity-card">
-    <h3 class="activity-card__name u-center-text">{{ title }}</h3>
     <img
       :src="require(`~/assets/${previewImagePath}`)"
       :alt="title"
       class="activity-card__img"
     />
     <p class="activity-card__description">{{ description }}</p>
+    <div class="activity-card__footer">
+      <h3>{{ title }}</h3>
+      <p>{{ issuer }}</p>
+    </div>
   </div>
 </template>
 
@@ -15,6 +18,10 @@ export default {
   name: 'ActivityCard',
   props: {
     title: {
+      type: String,
+      required: true
+    },
+    issuer: {
       type: String,
       required: true
     },
@@ -47,14 +54,28 @@ export default {
   }
   transition: transform 0.2s;
 
-  &__name {
+  &__footer {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
     z-index: 3;
-    padding: 1rem 0;
+    padding: 0 1.5rem;
     background-color: $color-white;
     color: $color-blue-dark;
     font-weight: bold;
+    height: 110px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $color-primary;
+    }
+    p {
+      font-size: 1.6rem;
+    }
   }
 
   &__img {

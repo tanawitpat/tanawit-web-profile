@@ -9,6 +9,7 @@
           v-for="activity in activityData"
           :key="activity.name"
           :title="activity.name"
+          :issuer="activity.issuer"
           :previewImagePath="activity.previewImagePath"
           :description="activity.description"
           :actions="activity.actions"
@@ -37,7 +38,7 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 15rem 7.5rem;
+  padding: 10rem 0 7.5rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-blue-dark, 0.9),
