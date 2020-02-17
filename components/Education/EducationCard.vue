@@ -67,7 +67,7 @@ export default {
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0.5rem 1rem 1.5rem rgba(black, 0.1);
+    box-shadow: 0.5rem 1rem 1.5rem rgba($color-black, 0.1);
   }
 
   @include respond(medium) {

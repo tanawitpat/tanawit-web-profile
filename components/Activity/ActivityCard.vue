@@ -1,5 +1,6 @@
 <template>
   <div class="activity-card">
+    <div class="activity-card__time">{{ year }}</div>
     <img
       :src="require(`~/assets/${previewImagePath}`)"
       :alt="title"
@@ -32,6 +33,10 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    year: {
+      type: String,
+      required: true
     }
   }
 }
@@ -41,6 +46,7 @@ export default {
 .activity-card {
   color: $color-white;
   border-radius: 20px;
+  position: relative;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,6 +59,22 @@ export default {
     transform: scale(1.05);
   }
   transition: transform 0.2s;
+
+  &__time {
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    background-color: rgba($color-primary, 0.95);
+    z-index: 4;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 50px;
+
+    position: absolute;
+    bottom: 85px;
+  }
 
   &__footer {
     grid-row: 2 / 3;
@@ -85,7 +107,7 @@ export default {
     z-index: 1;
 
     &:hover ~ p {
-      color: black;
+      color: $color-black;
       background-color: rgba($color-white, 0.8);
 
       display: flex;
@@ -102,7 +124,7 @@ export default {
     display: none;
 
     &:hover {
-      color: black;
+      color: $color-black;
       background-color: rgba($color-white, 0.8);
       display: flex;
       align-items: center;

@@ -4,26 +4,31 @@
     "name": "Chairman A-Class Award",
     "issuer": "Kasikorn Business Technology Group",
     "previewImagePath": "images/activities/kbtg-a-class.png",
-    "description": "Top performance employee. The first in Machine Learning team and the youngest in KBTG to receive this award."
+    "description": "Top performance employee. The first in Machine Learning team and the youngest in KBTG to receive this award.",
+    "year": "2019"
   }, {
     "name": "Winner",
     "issuer": "KBTG Machine Learning Bootcamp 2017",
     "previewImagePath": "images/activities/kbtg-maps-bootcamp.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida dictum fusce ut.Velit euismod in pellentesque massa."
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida dictum fusce ut.Velit euismod in pellentesque massa.",
+    "year": "2017"
   }, {
     "name": "2nd Runner Up",
     "issuer": "The Second NIDA Business Analytics and Data Science Contest",
     "previewImagePath": "images/activities/default-activity-image.png",
-    "description": "Analyzed consumer survey data and identified consumer segments for different insurance schemes."
+    "description": "Analyzed consumer survey data and identified consumer segments for different insurance schemes.",
+    "year": "2017"
   }, {
     "name": "Special Prize",
     "issuer": "MUICT DataHack 2017",
     "previewImagePath": "images/activities/muict-datahack.png",
-    "description": "Proposed methodology to classify news categories from its body."
+    "description": "Proposed methodology to classify news categories from its body.",
+    "year": "2017"
   }, {
     "name": "Winner",
     "issuer": "Click2Win at Krungsri Securities League Competition 2016",
     "previewImagePath": "images/activities/kss-tfex.png",
-    "description": "Earned highest return in TFEX market (+20.51 %NAV Change) and earned 2nd highest return in SET market (+14.08 %NAV Change)."
+    "description": "Earned highest return in TFEX market (+20.51 %NAV Change) and earned 2nd highest return in SET market (+14.08 %NAV Change).",
+    "year": "2016"
   }]
 }

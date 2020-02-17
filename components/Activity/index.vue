@@ -12,7 +12,7 @@
           :issuer="activity.issuer"
           :previewImagePath="activity.previewImagePath"
           :description="activity.description"
-          :actions="activity.actions"
+          :year="activity.year"
         />
       </div>
     </div>
@@ -38,17 +38,13 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 0 7.5rem;
+  padding: 10rem 5rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-blue-dark, 0.9),
       rgba($color-blue-dark, 0.9)
     ),
     url(~assets/images/activity-bg.jpg);
-
-  @include respond(medium) {
-    padding: 10rem 5rem;
-  }
 
   @include respond(small) {
     padding: 10rem 3rem;
@@ -64,8 +60,6 @@ export default {
   }
 
   &__card {
-    margin-bottom: 6rem;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 5rem;

@@ -83,7 +83,7 @@
   &__terminal {
     margin: 0 5rem 0 auto;
     color: white;
-    background-color: black;
+    background-color: $color-black;
     padding: 2rem;
     max-width: 50rem;
     margin-left: auto;
