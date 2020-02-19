@@ -30,7 +30,8 @@ export default {
     },
     previewImagePath: {
       type: String,
-      required: true
+      required: false,
+      default: 'images/activities/default-activity-image.png'
     },
     description: {
       type: String,

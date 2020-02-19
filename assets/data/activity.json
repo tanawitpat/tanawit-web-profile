@@ -15,7 +15,6 @@
   }, {
     "name": "2nd Runner Up",
     "issuer": "The Second NIDA Business Analytics and Data Science Contest",
-    "previewImagePath": "images/activities/default-activity-image.png",
     "description": "Analyzed consumer survey data and identified consumer segments for different insurance schemes.",
     "year": "2017"
   }, {
@@ -27,7 +26,6 @@
   }, {
     "name": "Winner",
     "issuer": "Click2Win at Krungsri Securities League Competition 2016",
-    "previewImagePath": "images/activities/kss-tfex.png",
     "description": "Earned highest return in TFEX market (+20.51 %NAV Change) and earned 2nd highest return in SET market (+14.08 %NAV Change).",
     "year": "2016"
   }]
