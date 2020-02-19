@@ -1,13 +1,15 @@
 <template>
   <div class="activity-card">
-    <div class="activity-card__time">{{ year }}</div>
     <img
       :src="require(`~/assets/${previewImagePath}`)"
       :alt="title"
       class="activity-card__img"
     />
-    <p class="activity-card__description">{{ description }}</p>
+    <p class="activity-card__description">
+      {{ description }}
+    </p>
     <div class="activity-card__footer">
+      <div class="activity-card__time">{{ year }}</div>
       <h3>{{ title }}</h3>
       <p>{{ issuer }}</p>
     </div>
@@ -45,6 +47,7 @@ export default {
 <style scoped lang="scss">
 .activity-card {
   color: $color-white;
+  background-color: $color-white;
   border-radius: 20px;
   position: relative;
 
@@ -73,7 +76,12 @@ export default {
     height: 50px;
 
     position: absolute;
-    bottom: 85px;
+    top: -25px;
+    left: 0;
+
+    @include respond(mobile) {
+      bottom: 210px;
+    }
   }
 
   &__footer {
@@ -89,6 +97,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 
     h3 {
       font-size: 2rem;
@@ -97,6 +106,12 @@ export default {
     }
     p {
       font-size: 1.6rem;
+    }
+
+    @include respond(mobile) {
+      grid-row: 3 / 4;
+      height: auto;
+      padding-top: 10px;
     }
   }
 
@@ -122,6 +137,7 @@ export default {
     z-index: 2;
     padding: 3rem;
     display: none;
+    font-size: 1.6rem;
 
     &:hover {
       color: $color-black;
@@ -134,9 +150,10 @@ export default {
     @include respond(mobile) {
       display: block;
       color: $color-blue-dark;
-      background-color: rgba($color-white, 0.7);
+      background-color: $color-white;
       grid-row: 4 / 5;
       padding: 2rem;
+      padding-top: 1rem;
     }
   }
 }
