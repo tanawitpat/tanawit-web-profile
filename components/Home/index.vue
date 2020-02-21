@@ -9,13 +9,7 @@
 
 <style scoped lang="scss">
 .section-home {
-  background-image: linear-gradient(
-      105deg,
-      rgba($color-blue-dark, 0.9) 0%,
-      rgba($color-blue-dark, 0.9) 50%,
-      transparent 50%
-    ),
-    url('~assets/images/cover.png');
+  background-image: url('~assets/images/cover.png');
   background-position: right top;
   background-size: cover;
   height: 95vh;

@@ -52,12 +52,21 @@
 
 <style scoped lang="scss">
 .section-aboutme {
-  background-color: $color-grey-light-2;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-dark-1, 1),
+    rgba($color-primary, 1)
+  );
   background-position: right top;
   background-size: cover;
   padding: 10rem;
-  color: $color-grey-dark-1;
+  color: $color-white;
   font-size: 1.8rem;
+  margin-top: -10rem;
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 
   @include respond(small) {
     font-size: 2rem;
@@ -65,7 +74,7 @@
   }
 
   &__heading {
-    color: $color-primary;
+    color: $color-white;
   }
 
   &__content {
@@ -124,7 +133,7 @@
     margin-bottom: 0.8rem;
 
     &--title {
-      color: $color-secondary;
+      color: $color-white;
     }
   }
 

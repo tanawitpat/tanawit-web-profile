@@ -38,13 +38,17 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 20rem;
+  margin-top: -10rem;
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-blue-dark, 0.9),
-      rgba($color-blue-dark, 0.9)
-    ),
-    url(~assets/images/activity-bg.jpg);
+    to right bottom,
+    rgba($color-grey-dark-1, 1),
+    rgba($color-primary, 1)
+  );
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 
   @include respond(small) {
     padding: 10rem 3rem;

@@ -37,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 .section-experience {
-  padding: 10rem;
+  padding: 10rem 10rem 25rem;
   position: relative;
   background-image: linear-gradient(
       to right bottom,
@@ -47,9 +47,13 @@ export default {
     url('~assets/images/experience-bg.jpg');
   background-position: center 35%;
   background-size: cover;
-
   display: grid;
   grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
 
   @include respond(medium) {
     padding: 10rem 5rem;
@@ -62,6 +66,9 @@ export default {
   &__heading {
     color: $color-primary;
     grid-column: 1 / -1;
+    :hover {
+      transform: skewY(7deg);
+    }
   }
 
   &__card {
