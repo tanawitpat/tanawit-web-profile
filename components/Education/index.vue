@@ -49,7 +49,7 @@ export default {
 
   padding: 10rem;
   position: relative;
-  margin-top: -10rem;
+  margin-top: -15rem;
 
   display: grid;
   grid-template-columns: 1fr minmax(30%, 80rem) 1fr;

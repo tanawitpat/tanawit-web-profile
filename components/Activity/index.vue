@@ -38,10 +38,10 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 5rem 20rem;
+  padding: 10rem 5rem 25rem;
   margin-top: -10rem;
   background-image: linear-gradient(
-    to right bottom,
+    to left bottom,
     rgba($color-grey-dark-1, 1),
     rgba($color-primary, 1)
   );

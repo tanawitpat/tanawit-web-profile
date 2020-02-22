@@ -50,6 +50,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
   transform: skewY(-7deg);
+  margin-top: -15rem;
 
   & > * {
     transform: skewY(7deg);
