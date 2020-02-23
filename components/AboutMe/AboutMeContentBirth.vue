@@ -1,9 +1,9 @@
 <template>
   <div class="aboutme-content-birth center-vertical">
     <AboutMeContentDictionary
-      word="90S"
+      word="1996"
       part-of-speech="N."
-      meaning="A decade that Tanawit was born. Simcity 4 was his favorite PC game when he
+      meaning="A year which Tanawit was born. Simcity 4 was his favorite PC game when he
       was a child."
     />
   </div>
