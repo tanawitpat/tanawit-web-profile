@@ -5,18 +5,23 @@
     </h1>
     <div class="section-aboutme__content">
       <div class="section-aboutme__content__image">
-        <AboutMeContentName v-if="selectedAboutMeContent === 'name'" />
-        <AboutMeContentLocation
-          v-else-if="selectedAboutMeContent === 'location'"
-        />
-        <AboutMeContentHobby v-else-if="selectedAboutMeContent === 'hobby'" />
-        <AboutMeContentBirth v-else-if="selectedAboutMeContent === 'birth'" />
-        <AboutMeContentLanguage
-          v-else-if="selectedAboutMeContent === 'language'"
-        />
-        <AboutMeContentDefault v-else />
+        <transition name="fade">
+          <AboutMeContentName v-if="selectedAboutMeContent === 'name'" />
+          <AboutMeContentLocation
+            v-else-if="selectedAboutMeContent === 'location'"
+          />
+          <AboutMeContentHobby v-else-if="selectedAboutMeContent === 'hobby'" />
+          <AboutMeContentBirth v-else-if="selectedAboutMeContent === 'birth'" />
+          <AboutMeContentLanguage
+            v-else-if="selectedAboutMeContent === 'language'"
+          />
+          <AboutMeContentDefault v-else />
+        </transition>
       </div>
-      <div class="section-aboutme__content__navigator">
+      <div
+        @mouseleave="setSelectedAboutMeContent('')"
+        class="section-aboutme__content__navigator"
+      >
         <AboutMeCard
           v-for="aboutme in aboutMeData"
           :key="aboutme.id"
@@ -59,6 +64,14 @@ export default {
     selectedAboutMeContent() {
       return this.$store.state.aboutme.selectedAboutMeContent
     }
+  },
+  methods: {
+    setSelectedAboutMeContent(newSelectedAboutMeContent) {
+      this.$store.commit(
+        'aboutme/setSelectedAboutMeContent',
+        newSelectedAboutMeContent
+      )
+    }
   }
 }
 </script>
@@ -90,8 +103,14 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    .fade-enter-active {
+      transition: opacity 1.5s;
+    }
+    .fade-enter {
+      opacity: 0;
+    }
+
     &__image {
-      width: 100%;
       height: 100%;
     }
     &__navigator {

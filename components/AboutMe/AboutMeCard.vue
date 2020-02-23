@@ -1,9 +1,5 @@
 <template>
-  <div
-    @mouseover="setSelectedAboutMeContent(id)"
-    @mouseleave="setSelectedAboutMeContent('')"
-    class="aboutme-card"
-  >
+  <div @mouseover="setSelectedAboutMeContent(id)" class="aboutme-card">
     <h3 class="aboutme-card__title">{{ title }}</h3>
     <p class="aboutme-card__content">{{ content }}</p>
   </div>
