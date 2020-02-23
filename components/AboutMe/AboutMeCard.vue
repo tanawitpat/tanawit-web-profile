@@ -1,5 +1,9 @@
 <template>
-  <div class="aboutme-card">
+  <div
+    @mouseover="setSelectedAboutMeContent(id)"
+    @mouseleave="setSelectedAboutMeContent('')"
+    class="aboutme-card"
+  >
     <h3 class="aboutme-card__title">{{ title }}</h3>
     <p class="aboutme-card__content">{{ content }}</p>
   </div>
@@ -16,6 +20,23 @@ export default {
     content: {
       type: String,
       required: true
+    },
+    id: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    selectedAboutMeContent() {
+      return this.$store.state.aboutme.selectedAboutMeContent
+    }
+  },
+  methods: {
+    setSelectedAboutMeContent(newSelectedAboutMeContent) {
+      this.$store.commit(
+        'aboutme/setSelectedAboutMeContent',
+        newSelectedAboutMeContent
+      )
     }
   }
 }

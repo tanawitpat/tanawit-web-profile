@@ -5,14 +5,24 @@
     </h1>
     <div class="section-aboutme__content">
       <div class="section-aboutme__content__image">
-        <AboutMeContentDefault />
+        <AboutMeContentName v-if="selectedAboutMeContent === 'name'" />
+        <AboutMeContentLocation
+          v-else-if="selectedAboutMeContent === 'location'"
+        />
+        <AboutMeContentHobby v-else-if="selectedAboutMeContent === 'hobby'" />
+        <AboutMeContentBirth v-else-if="selectedAboutMeContent === 'birth'" />
+        <AboutMeContentLanguage
+          v-else-if="selectedAboutMeContent === 'language'"
+        />
+        <AboutMeContentDefault v-else />
       </div>
       <div class="section-aboutme__content__navigator">
         <AboutMeCard
           v-for="aboutme in aboutMeData"
-          :key="aboutme.title"
+          :key="aboutme.id"
           :title="aboutme.title"
           :content="aboutme.content"
+          :id="aboutme.id"
         />
       </div>
     </div>
@@ -22,17 +32,32 @@
 <script>
 import AboutMeCard from '@/components/AboutMe/AboutMeCard'
 import AboutMeContentDefault from '@/components/AboutMe/AboutMeContentDefault'
+import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
+import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
+import AboutMeContentHobby from '@/components/AboutMe/AboutMeContentHobby'
+import AboutMeContentLanguage from '@/components/AboutMe/AboutMeContentLanguage'
+import AboutMeContentBirth from '@/components/AboutMe/AboutMeContentBirth'
 import aboutMeData from '@/assets/data/aboutme.json'
 
 export default {
   name: 'SectionAboutMe',
   components: {
     AboutMeCard,
-    AboutMeContentDefault
+    AboutMeContentDefault,
+    AboutMeContentName,
+    AboutMeContentLocation,
+    AboutMeContentHobby,
+    AboutMeContentBirth,
+    AboutMeContentLanguage
   },
   data() {
     return {
       aboutMeData: aboutMeData.data
+    }
+  },
+  computed: {
+    selectedAboutMeContent() {
+      return this.$store.state.aboutme.selectedAboutMeContent
     }
   }
 }
@@ -67,11 +92,12 @@ export default {
 
     &__image {
       width: 100%;
+      height: 100%;
     }
     &__navigator {
       > * {
         &:not(:last-child) {
-          margin-bottom: 2rem;
+          padding-bottom: 2rem;
         }
       }
     }

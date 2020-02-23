@@ -1,10 +1,9 @@
 <template>
-  <div class="aboutme-content-name">
+  <div class="aboutme-content-language center-vertical">
     <AboutMeContentDictionary
-      word="Tanawit"
+      word="English & Thai"
       part-of-speech="N."
-      meaning="A software developer who graduated with statistics major. Passionated in
-      building a software used by tons of users."
+      meaning="Languages that Tanawit can understand. (He also understands JavaScript and Go.)"
     />
   </div>
 </template>
@@ -13,7 +12,7 @@
 import AboutMeContentDictionary from '@/components/AboutMe/AboutMeContentDictionary'
 
 export default {
-  name: 'AboutMeContentName',
+  name: 'AboutMeContentLanguage',
   components: {
     AboutMeContentDictionary
   }
@@ -21,12 +20,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.aboutme-content-name {
+.aboutme-content-language {
   padding: 0 8rem;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   text-align: left;
   h1 {
     font-size: 3.2rem;

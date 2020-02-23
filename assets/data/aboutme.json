@@ -2,18 +2,23 @@
   "section": "aboutme",
   "data": [{
     "title": "Name",
-    "content": "Tanawit Pattanaveerangkoon (Oui)"
+    "content": "Tanawit Pattanaveerangkoon (Oui)",
+    "id": "name"
   }, {
     "title": "Location",
-    "content": "Bangkok, Thailand"
+    "content": "Bangkok, Thailand",
+    "id": "location"
   }, {
     "title": "Hobbies",
-    "content": "Swimming & Cycling"
+    "content": "Swimming & Cycling",
+    "id": "hobby"
   }, {
-    "title": "Job",
-    "content": "Software Developer"
+    "title": "Year of birth",
+    "content": "90s",
+    "id": "birth"
   }, {
     "title": "Languages",
-    "content": "Thai & English"
+    "content": "Thai & English",
+    "id": "language"
   }]
 }

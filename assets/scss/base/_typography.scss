@@ -1,13 +1,19 @@
 .heading-primary {
-    font-family: $font-secondary;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    font-weight: 800;
-    letter-spacing: 6px;
-    text-align: center;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-align: center;
 
-    &:hover {
-        transform: scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba(black, 0.2);
-    }
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(black, 0.2);
+  }
+}
+
+.center-vertical {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
