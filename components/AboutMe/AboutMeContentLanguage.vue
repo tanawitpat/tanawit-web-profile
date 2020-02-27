@@ -2,7 +2,6 @@
   <div class="aboutme-content-language center-vertical">
     <AboutMeContentDictionary
       word="English & Thai"
-      part-of-speech="N."
       meaning="Languages that Tanawit can understand. (He also understands JavaScript and Go.)"
     />
   </div>
@@ -27,10 +26,6 @@ export default {
   h1 {
     font-size: 3.2rem;
     text-transform: uppercase;
-    span {
-      margin-left: 1rem;
-      font-size: 2rem;
-    }
   }
 }
 </style>

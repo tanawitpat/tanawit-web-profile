@@ -2,7 +2,6 @@
   <div class="aboutme-content-birth center-vertical">
     <AboutMeContentDictionary
       word="1996"
-      part-of-speech="N."
       meaning="A year which Tanawit was born. Simcity 4 was his favorite PC game when he
       was a child."
     />
@@ -28,10 +27,6 @@ export default {
   h1 {
     font-size: 3.2rem;
     text-transform: uppercase;
-    span {
-      margin-left: 1rem;
-      font-size: 2rem;
-    }
   }
 }
 </style>

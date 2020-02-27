@@ -1,7 +1,7 @@
 <template>
   <div class="aboutme-content-dictionary">
     <h1>
-      {{ word }}<span>({{ partOfSpeech }})</span>
+      {{ word }}
     </h1>
     <p>
       {{ meaning }}
@@ -14,10 +14,6 @@ export default {
   name: 'AboutMeContentDictionary',
   props: {
     word: {
-      type: String,
-      required: true
-    },
-    partOfSpeech: {
       type: String,
       required: true
     },
@@ -34,10 +30,6 @@ export default {
   h1 {
     font-size: 3.2rem;
     text-transform: uppercase;
-    span {
-      margin-left: 1rem;
-      font-size: 2rem;
-    }
   }
 }
 </style>

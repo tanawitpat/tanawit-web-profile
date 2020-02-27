@@ -15,7 +15,6 @@
     <AboutMeContentDictionary
       class="aboutme-content-name__dictionary"
       word="Tanawit"
-      part-of-speech="N."
       meaning="A software developer who graduated with statistics major. Passionated in
       building a software used by tons of users."
     />
@@ -43,11 +42,6 @@ export default {
   h1 {
     font-size: 3.2rem;
     text-transform: uppercase;
-
-    span {
-      margin-left: 1rem;
-      font-size: 2rem;
-    }
   }
 
   &__image {

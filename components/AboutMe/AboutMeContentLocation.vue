@@ -2,7 +2,6 @@
   <div class="aboutme-content-location center-vertical">
     <AboutMeContentDictionary
       word="Bangkok"
-      part-of-speech="N."
       meaning="A capital city of Thailand and the city where Tanawit grew up and has been
       living."
     />
@@ -28,10 +27,6 @@ export default {
   h1 {
     font-size: 3.2rem;
     text-transform: uppercase;
-    span {
-      margin-left: 1rem;
-      font-size: 2rem;
-    }
   }
 }
 </style>
