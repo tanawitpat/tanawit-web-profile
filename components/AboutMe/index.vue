@@ -15,13 +15,10 @@
           <AboutMeContentLanguage
             v-else-if="selectedAboutMeContent === 'language'"
           />
-          <AboutMeContentDefault v-else />
+          <AboutMeContentName v-else />
         </transition>
       </div>
-      <div
-        @mouseleave="setSelectedAboutMeContent('')"
-        class="section-aboutme__content__navigator"
-      >
+      <div class="section-aboutme__content__navigator">
         <AboutMeCard
           v-for="aboutme in aboutMeData"
           :key="aboutme.id"
@@ -36,7 +33,7 @@
 
 <script>
 import AboutMeCard from '@/components/AboutMe/AboutMeCard'
-import AboutMeContentDefault from '@/components/AboutMe/AboutMeContentDefault'
+// import AboutMeContentDefault from '@/components/AboutMe/AboutMeContentDefault'
 import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
 import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
 import AboutMeContentHobby from '@/components/AboutMe/AboutMeContentHobby'
@@ -48,7 +45,7 @@ export default {
   name: 'SectionAboutMe',
   components: {
     AboutMeCard,
-    AboutMeContentDefault,
+    // AboutMeContentDefault,
     AboutMeContentName,
     AboutMeContentLocation,
     AboutMeContentHobby,
@@ -100,6 +97,8 @@ export default {
 
   &__content {
     text-align: center;
+    max-width: 120rem;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -113,6 +112,7 @@ export default {
     &__image {
       height: 100%;
     }
+
     &__navigator {
       > * {
         &:not(:last-child) {

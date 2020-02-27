@@ -10,31 +10,31 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint==small {
+  @if $breakpoint == tab-small {
     @media only screen and (max-width: 28.125em) {
       @content;
     } //450px
   }
 
-  @if $breakpoint==medium {
+  @if $breakpoint == tab-medium {
     @media only screen and (max-width: 43.75em) {
       @content;
     } //700px
   }
 
-  @if $breakpoint==large {
+  @if $breakpoint == tab-large {
     @media only screen and (max-width: 56.25em) {
       @content;
     } //900px
   }
 
-  @if $breakpoint==largest {
+  @if $breakpoint == largest {
     @media only screen and (max-width: 75em) {
       @content;
     }
   }
 
-  @if $breakpoint==mobile {
+  @if $breakpoint == mobile {
     @media only screen and (hover: none) {
       @content;
     }

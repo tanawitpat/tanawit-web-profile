@@ -1,15 +1,7 @@
 <template>
   <div class="aboutme-content-default">
-    <img
-      :src="require(`~/assets/images/aboutme/tanawit1.png`)"
-      alt="Tanawit's Photo"
-      class="aboutme-content-default--1"
-    />
-    <img
-      :src="require(`~/assets/images/aboutme/tanawit2.png`)"
-      alt="Tanawit's Photo"
-      class="aboutme-content-default--2"
-    />
+    <div class="aboutme-content-default__spinner" />
+    <p>Hover the right panel to know me more :)</p>
   </div>
 </template>
 
@@ -21,20 +13,48 @@ export default {
 
 <style scoped lang="scss">
 .aboutme-content-default {
-  position: relative;
-  > img {
-    position: absolute;
-    width: 280px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__spinner {
+    width: 250px;
+    height: 250px;
+    margin: 1rem auto;
+    background-color: $color-white;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 2s infinite ease-in-out;
+    animation: sk-scaleout 2s infinite ease-in-out;
   }
-  &--1 {
-    position: absolute;
-    top: 3rem;
-    left: 5rem;
+
+  @-webkit-keyframes sk-scaleout {
+    0% {
+      -webkit-transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+    }
   }
-  &--2 {
-    position: absolute;
-    top: 6rem;
-    right: 3rem;
+
+  @keyframes sk-scaleout {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  p {
+    width: 100%;
   }
 }
 </style>
