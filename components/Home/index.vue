@@ -9,7 +9,7 @@
 
 <style scoped lang="scss">
 .section-home {
-  background-image: url('~assets/images/cover.png');
+  background-image: url('/images/cover.png');
   background-position: right top;
   background-size: cover;
   height: 95vh;
@@ -21,7 +21,7 @@
   justify-content: center;
 
   @include respond(large) {
-    background-image: url('~assets/images/cover.png');
+    background-image: url('/images/cover.png');
     background-position: 90% top;
     grid-template-columns: 1fr;
   }

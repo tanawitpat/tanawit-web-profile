@@ -1,10 +1,6 @@
 <template>
   <div class="activity-card">
-    <img
-      :src="require(`~/assets/${previewImagePath}`)"
-      :alt="title"
-      class="activity-card__img"
-    />
+    <img :src="previewImagePath" :alt="title" class="activity-card__img" />
     <p class="activity-card__description">
       {{ description }}
     </p>

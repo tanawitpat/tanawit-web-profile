@@ -7,7 +7,7 @@
     <p class="experience-card__duration">{{ duration }}</p>
     <a :href="companyLink">
       <img
-        :src="require(`@/assets/${companyLogoPath}`)"
+        :src="companyLogoPath"
         :alt="companyName + ' logo'"
         class="experience-card__company-logo"
       />

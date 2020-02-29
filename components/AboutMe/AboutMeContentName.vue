@@ -2,12 +2,12 @@
   <div class="aboutme-content-name">
     <div class="aboutme-content-name__image">
       <img
-        :src="require(`~/assets/images/aboutme/tanawit1.png`)"
+        src="images/aboutme/tanawit1.png"
         alt="Tanawit's Photo"
         class="aboutme-content-name__image--1"
       />
       <img
-        :src="require(`~/assets/images/aboutme/tanawit2.png`)"
+        src="images/aboutme/tanawit2.png"
         alt="Tanawit's Photo"
         class="aboutme-content-name__image--2"
       />

@@ -43,7 +43,7 @@ export default {
       rgba($color-white, 0.8),
       rgba($color-white, 0.8)
     ),
-    url('~assets/images/education-bg.jpg');
+    url('/images/education-bg.jpg');
   background-position: center 35%;
   background-size: cover;
 

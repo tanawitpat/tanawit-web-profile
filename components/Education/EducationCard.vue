@@ -8,7 +8,7 @@
     <p class="education-card__duration">{{ duration }}</p>
     <a :href="schoolLink">
       <img
-        :src="require(`@/assets/${schoolLogoPath}`)"
+        :src="schoolLogoPath"
         :alt="schoolName + ' logo'"
         class="education-card__school-logo"
       />
