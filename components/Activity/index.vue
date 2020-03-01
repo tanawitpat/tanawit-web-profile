@@ -46,8 +46,13 @@ export default {
     transform: skewY(7deg);
   }
 
-  @include respond(small) {
-    padding: 10rem 3rem;
+  @include respond(tab-small) {
+    padding: 10rem 3rem 15rem;
+    margin-top: -2rem;
+  }
+
+  @include respond(tab-medium) {
+    margin-top: -2rem;
   }
 
   &__container {
@@ -63,6 +68,10 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 5rem;
+
+    @include respond(tab-small) {
+      grid-gap: 3rem;
+    }
   }
 }
 </style>

@@ -9,7 +9,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 16px;
 
-  @include respond(small) {
+  @include respond(tab-small) {
     font-size: 50%; //1rem = 8px, 8/16 = 50%
   }
 }

@@ -56,12 +56,13 @@ export default {
     transform: skewY(7deg);
   }
 
-  @include respond(medium) {
+  @include respond(tab-medium) {
     padding: 10rem 5rem;
   }
 
-  @include respond(small) {
+  @include respond(tab-small) {
     padding: 10rem 3rem;
+    margin-top: -5rem;
   }
 
   &__heading {

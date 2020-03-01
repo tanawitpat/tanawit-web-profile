@@ -67,17 +67,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
     margin: auto;
-  }
 
-  &__general {
-    > * {
-      margin-bottom: 1rem;
-    }
-  }
-
-  &__nerd {
-    > * {
-      margin-bottom: 1rem;
+    @include respond(tab-medium) {
+      grid-template-columns: 1fr;
     }
   }
 }

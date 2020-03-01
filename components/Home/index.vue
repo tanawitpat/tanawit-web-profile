@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
 
-  @include respond(large) {
+  @include respond(tab-large) {
     background-image: url('/images/cover.png');
     background-position: 90% top;
     grid-template-columns: 1fr;

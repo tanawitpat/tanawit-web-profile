@@ -55,6 +55,7 @@ export default {
   border-radius: 20px;
   padding: 3rem 5rem;
   transition: all 0.2s;
+  font-size: 1.6rem;
 
   &:hover {
     transform: scale(1.02);
@@ -65,7 +66,7 @@ export default {
     margin-bottom: 3rem;
   }
 
-  @include respond(medium) {
+  @include respond(tab-medium) {
     padding: 2rem 3rem;
     border-radius: 15px;
   }
@@ -89,7 +90,7 @@ export default {
     top: 4rem;
     right: 4rem;
 
-    @include respond(medium) {
+    @include respond(tab-medium) {
       display: none;
     }
   }

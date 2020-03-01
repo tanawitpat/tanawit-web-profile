@@ -80,9 +80,9 @@ export default {
   color: $color-white;
   font-size: 1.8rem;
 
-  @include respond(small) {
+  @include respond(tab-small) {
     font-size: 2rem;
-    padding: 3rem;
+    padding: 10rem 3rem 15rem;
   }
 
   &__heading {
@@ -96,6 +96,10 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    @include respond(tab-medium) {
+      grid-template-columns: 1fr;
+    }
+
     .fade-enter-active {
       transition: opacity 1.5s;
     }
@@ -105,6 +109,10 @@ export default {
 
     &__image {
       height: 100%;
+
+      @include respond(tab-medium) {
+        display: none;
+      }
     }
 
     &__navigator {

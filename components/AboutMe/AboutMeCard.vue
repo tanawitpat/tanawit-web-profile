@@ -69,5 +69,12 @@ export default {
       background-clip: text;
     }
   }
+
+  @include respond(tab-medium) {
+    &.active {
+      transform: none;
+      color: $color-white;
+    }
+  }
 }
 </style>

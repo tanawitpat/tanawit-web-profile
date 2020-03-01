@@ -91,10 +91,11 @@ export default {
     font-weight: bold;
     height: 110px;
     text-align: right;
+
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
 
     h3 {
       font-size: 2rem;

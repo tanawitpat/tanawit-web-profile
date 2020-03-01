@@ -54,12 +54,13 @@ export default {
   display: grid;
   grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
 
-  @include respond(medium) {
+  @include respond(tab-medium) {
     padding: 10rem 5rem;
   }
 
-  @include respond(small) {
-    padding: 10rem 3rem;
+  @include respond(tab-small) {
+    padding: 7rem 3rem;
+    margin-top: -5rem;
   }
 
   &__heading {
