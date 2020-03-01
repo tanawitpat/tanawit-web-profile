@@ -1,5 +1,5 @@
 export const state = () => ({
-  selectedAboutMeContent: ''
+  selectedAboutMeContent: 'name'
 })
 
 export const mutations = {

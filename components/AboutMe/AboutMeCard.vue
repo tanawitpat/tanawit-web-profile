@@ -1,5 +1,9 @@
 <template>
-  <div @mouseover="setSelectedAboutMeContent(id)" class="aboutme-card">
+  <div
+    @mouseover="setSelectedAboutMeContent(id)"
+    :class="{ active: isActive }"
+    class="aboutme-card"
+  >
     <h3 class="aboutme-card__title">{{ title }}</h3>
     <p class="aboutme-card__content">{{ content }}</p>
   </div>
@@ -25,6 +29,9 @@ export default {
   computed: {
     selectedAboutMeContent() {
       return this.$store.state.aboutme.selectedAboutMeContent
+    },
+    isActive() {
+      return this.selectedAboutMeContent === this.id
     }
   },
   methods: {
@@ -48,7 +55,7 @@ export default {
     font-size: 2rem;
   }
 
-  &:hover {
+  &.active {
     transform: scale(1.1);
     color: transparent;
     transition: all 0.2s;
