@@ -61,6 +61,10 @@
     text-decoration: none;
   }
 
+  &__general--developer {
+    margin-bottom: 1rem;
+  }
+
   &__layout {
     max-width: 120rem;
     display: grid;
