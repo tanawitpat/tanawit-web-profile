@@ -17,8 +17,7 @@ html {
 body {
   margin: 0;
   font-size: 16px;
-  line-height: 1.8;
-  word-spacing: 1px;
+  line-height: 1.7;
   font-family: $font-primary;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

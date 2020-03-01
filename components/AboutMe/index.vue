@@ -33,7 +33,6 @@
 
 <script>
 import AboutMeCard from '@/components/AboutMe/AboutMeCard'
-// import AboutMeContentDefault from '@/components/AboutMe/AboutMeContentDefault'
 import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
 import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
 import AboutMeContentHobby from '@/components/AboutMe/AboutMeContentHobby'
@@ -45,7 +44,6 @@ export default {
   name: 'SectionAboutMe',
   components: {
     AboutMeCard,
-    // AboutMeContentDefault,
     AboutMeContentName,
     AboutMeContentLocation,
     AboutMeContentHobby,
@@ -75,11 +73,7 @@ export default {
 
 <style scoped lang="scss">
 .section-aboutme {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($color-grey-dark-1, 1),
-    rgba($color-primary, 1)
-  );
+  background-color: $color-blue-dark;
   background-position: right top;
   background-size: cover;
   padding: 10rem 10rem 25rem;

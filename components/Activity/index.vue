@@ -40,11 +40,7 @@ export default {
 .section-activity {
   padding: 10rem 5rem 25rem;
   margin-top: -10rem;
-  background-image: linear-gradient(
-    to left bottom,
-    rgba($color-grey-dark-1, 1),
-    rgba($color-primary, 1)
-  );
+  background-color: $color-blue-dark;
   transform: skewY(-7deg);
   & > * {
     transform: skewY(7deg);
