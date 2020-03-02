@@ -14,6 +14,7 @@
         :schoolLogoPath="item.schoolLogoPath"
         :schoolLink="item.schoolLink"
         :descriptions="item.descriptions"
+        data-aos="fade-up"
       />
     </div>
   </section>

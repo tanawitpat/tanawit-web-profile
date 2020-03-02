@@ -6,13 +6,15 @@
       </h1>
       <div class="section-activity__card">
         <ActivityCard
-          v-for="activity in activityData"
+          v-for="(activity, index) in activityData"
           :key="activity.name"
           :title="activity.name"
           :issuer="activity.issuer"
           :previewImagePath="activity.previewImagePath"
           :description="activity.description"
           :year="activity.year"
+          :data-aos-delay="50 + index * 50"
+          data-aos="fade-up"
         />
       </div>
     </div>

@@ -13,6 +13,7 @@
         :companyLink="item.companyLink"
         :description="item.description"
         :companyLogoPath="item.companyLogoPath"
+        data-aos="fade-up"
       />
     </div>
   </section>
