@@ -4,17 +4,20 @@
       Experience
     </h1>
     <div class="section-experience__card">
-      <ExperienceCard
+      <div
         v-for="item in experienceData"
         :key="item.duration"
-        :title="item.title"
-        :companyName="item.companyName"
-        :duration="item.duration"
-        :companyLink="item.companyLink"
-        :description="item.description"
-        :companyLogoPath="item.companyLogoPath"
         data-aos="fade-up"
-      />
+      >
+        <ExperienceCard
+          :title="item.title"
+          :companyName="item.companyName"
+          :duration="item.duration"
+          :companyLink="item.companyLink"
+          :description="item.description"
+          :companyLogoPath="item.companyLogoPath"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -76,6 +79,12 @@ export default {
 
   &__card {
     grid-column: 2 / 3;
+
+    > * {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
   }
 }
 </style>
