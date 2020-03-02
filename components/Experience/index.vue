@@ -51,10 +51,11 @@ export default {
     url('/images/experience-bg.jpg');
   background-position: center 35%;
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
   transform: skewY(-7deg);
   margin-top: -15rem;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
 
   & > * {
     transform: skewY(7deg);

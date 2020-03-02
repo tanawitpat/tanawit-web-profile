@@ -62,19 +62,19 @@ export default {
 
   &__time {
     color: $color-white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding: 0 2rem;
     background-color: rgba($color-primary, 0.95);
     z-index: 4;
     font-size: 1.6rem;
     font-weight: bold;
     height: 50px;
-
     position: absolute;
     top: -25px;
     left: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     @include respond(mobile) {
       bottom: 210px;
@@ -140,6 +140,7 @@ export default {
     &:hover {
       color: $color-black;
       background-color: rgba($color-white, 0.8);
+
       display: flex;
       align-items: center;
       justify-content: center;

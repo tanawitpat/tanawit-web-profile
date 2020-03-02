@@ -93,6 +93,7 @@ export default {
     text-align: center;
     max-width: 120rem;
     margin: auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -116,6 +117,7 @@ export default {
     }
 
     &__navigator {
+      cursor: default;
       > * {
         &:not(:last-child) {
           padding-bottom: 2rem;

@@ -50,7 +50,6 @@ export default {
     url('/images/education-bg.jpg');
   background-position: center 35%;
   background-size: cover;
-
   padding: 10rem;
   position: relative;
   margin-top: -15rem;

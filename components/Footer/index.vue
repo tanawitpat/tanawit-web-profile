@@ -65,12 +65,17 @@
     margin-bottom: 1rem;
   }
 
+  &__nerd--tech-stack {
+    margin-bottom: 1rem;
+  }
+
   &__layout {
     max-width: 120rem;
+    margin: auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
-    margin: auto;
 
     @include respond(tab-medium) {
       grid-template-columns: 1fr;
