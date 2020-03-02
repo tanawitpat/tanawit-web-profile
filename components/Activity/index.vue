@@ -5,17 +5,20 @@
         Activities
       </h1>
       <div class="section-activity__card">
-        <ActivityCard
-          v-for="(activity, index) in activityData"
+        <div
           :key="activity.name"
-          :title="activity.name"
-          :issuer="activity.issuer"
-          :previewImagePath="activity.previewImagePath"
-          :description="activity.description"
-          :year="activity.year"
+          v-for="(activity, index) in activityData"
           :data-aos-delay="50 + index * 50"
           data-aos="fade-up"
-        />
+        >
+          <ActivityCard
+            :title="activity.name"
+            :issuer="activity.issuer"
+            :previewImagePath="activity.previewImagePath"
+            :description="activity.description"
+            :year="activity.year"
+          />
+        </div>
       </div>
     </div>
   </section>

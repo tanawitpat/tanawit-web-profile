@@ -4,18 +4,21 @@
       Education
     </h1>
     <div class="section-education__card">
-      <EducationCard
-        v-for="item in educationData"
+      <div
         :key="item.schoolName"
-        :schoolName="item.schoolName"
-        :degree="item.degree"
-        :honor="item.honor"
-        :duration="item.duration"
-        :schoolLogoPath="item.schoolLogoPath"
-        :schoolLink="item.schoolLink"
-        :descriptions="item.descriptions"
+        v-for="item in educationData"
         data-aos="fade-up"
-      />
+      >
+        <EducationCard
+          :schoolName="item.schoolName"
+          :degree="item.degree"
+          :honor="item.honor"
+          :duration="item.duration"
+          :schoolLogoPath="item.schoolLogoPath"
+          :schoolLink="item.schoolLink"
+          :descriptions="item.descriptions"
+        />
+      </div>
     </div>
   </section>
 </template>
