@@ -79,6 +79,11 @@ export default {
   color: $color-white;
   font-size: 1.8rem;
 
+  @include respond(tab-large) {
+    font-size: 2rem;
+    padding: 10rem 5rem 25rem;
+  }
+
   @include respond(tab-small) {
     font-size: 2rem;
     padding: 10rem 3rem 15rem;

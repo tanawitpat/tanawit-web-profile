@@ -51,21 +51,31 @@ export default {
     padding-bottom: 20rem;
 
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 
     img {
       width: 100%;
     }
 
     &--1 {
-      grid-column: 3 / 11;
-      grid-row: 1 / 13;
+      grid-column: 2 / 6;
+      grid-row: 1 / 5;
     }
 
     &--2 {
-      grid-column: 10 / 18;
-      grid-row: 3 / 15;
+      grid-column: 5 / 9;
+      grid-row: 2 / 6;
+    }
+
+    @include respond(largest) {
+      &--1 {
+        grid-column: 1 / 6;
+      }
+
+      &--2 {
+        grid-column: 5 / 10;
+      }
     }
   }
 
