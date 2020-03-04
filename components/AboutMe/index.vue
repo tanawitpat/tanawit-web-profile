@@ -15,7 +15,6 @@
           <AboutMeContentLanguage
             v-else-if="selectedAboutMeContent === 'language'"
           />
-          <AboutMeContentName v-else />
         </transition>
       </div>
       <div class="section-aboutme__content__navigator">
@@ -118,6 +117,11 @@ export default {
 
     &__navigator {
       cursor: default;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: max-content;
+
       > * {
         &:not(:last-child) {
           padding-bottom: 2rem;
