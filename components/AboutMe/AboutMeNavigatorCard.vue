@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'AboutMeCard',
+  name: 'AboutMeNavigatorCard',
   props: {
     title: {
       type: String,

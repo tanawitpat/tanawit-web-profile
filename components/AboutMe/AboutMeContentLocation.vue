@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-location center-vertical">
-    <AboutMeContentDictionary
+    <AboutMeLayoutMeaning
       word="Bangkok"
       meaning="A capital city of Thailand and the city where Tanawit grew up and has been
       living."
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import AboutMeContentDictionary from '@/components/AboutMe/AboutMeContentDictionary'
+import AboutMeLayoutMeaning from '@/components/AboutMe/AboutMeLayoutMeaning'
 
 export default {
   name: 'AboutMeContentLocation',
   components: {
-    AboutMeContentDictionary
+    AboutMeLayoutMeaning
   }
 }
 </script>
