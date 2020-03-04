@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-hobby center-vertical">
-    <AboutMeContentDictionary
+    <AboutMeLayoutMeaning
       word="Swimming & Cycling"
       meaning="Activities that Tanawit does in his free time."
     />
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import AboutMeContentDictionary from '@/components/AboutMe/AboutMeContentDictionary'
+import AboutMeLayoutMeaning from '@/components/AboutMe/AboutMeLayoutMeaning'
 
 export default {
   name: 'AboutMeContentHobby',
   components: {
-    AboutMeContentDictionary
+    AboutMeLayoutMeaning
   }
 }
 </script>

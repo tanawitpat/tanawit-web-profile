@@ -18,7 +18,7 @@
         </transition>
       </div>
       <div class="section-aboutme__content__navigator">
-        <AboutMeCard
+        <AboutMeNavigatorCard
           v-for="aboutme in aboutMeData"
           :key="aboutme.id"
           :title="aboutme.title"
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import AboutMeCard from '@/components/AboutMe/AboutMeCard'
+import AboutMeNavigatorCard from '@/components/AboutMe/AboutMeNavigatorCard'
 import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
 import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
 import AboutMeContentHobby from '@/components/AboutMe/AboutMeContentHobby'
@@ -42,7 +42,7 @@ import aboutMeData from '@/assets/data/aboutme.json'
 export default {
   name: 'SectionAboutMe',
   components: {
-    AboutMeCard,
+    AboutMeNavigatorCard,
     AboutMeContentName,
     AboutMeContentLocation,
     AboutMeContentHobby,

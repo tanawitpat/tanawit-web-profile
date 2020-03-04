@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'AboutMeContentDictionary',
+  name: 'AboutMeLayoutMeaning',
   props: {
     word: {
       type: String,

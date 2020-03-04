@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-language center-vertical">
-    <AboutMeContentDictionary
+    <AboutMeLayoutMeaning
       word="English & Thai"
       meaning="Languages that Tanawit can understand. (He also understands JavaScript and Go.)"
     />
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import AboutMeContentDictionary from '@/components/AboutMe/AboutMeContentDictionary'
+import AboutMeLayoutMeaning from '@/components/AboutMe/AboutMeLayoutMeaning'
 
 export default {
   name: 'AboutMeContentLanguage',
   components: {
-    AboutMeContentDictionary
+    AboutMeLayoutMeaning
   }
 }
 </script>

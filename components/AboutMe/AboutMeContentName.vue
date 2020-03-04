@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-name">
-    <div class="aboutme-content-name__image">
+    <div class="aboutme-content-name__image aboutme-image-layout">
       <img
         src="images/aboutme/tanawit1.png"
         alt="Tanawit's Photo"
@@ -12,7 +12,7 @@
         class="aboutme-content-name__image--2"
       />
     </div>
-    <AboutMeContentDictionary
+    <AboutMeLayoutMeaning
       class="aboutme-content-name__dictionary"
       word="Tanawit"
       meaning="A software developer who graduated with statistics major. Passionated in
@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import AboutMeContentDictionary from '@/components/AboutMe/AboutMeContentDictionary'
+import AboutMeLayoutMeaning from '@/components/AboutMe/AboutMeLayoutMeaning'
 
 export default {
   name: 'AboutMeContentName',
   components: {
-    AboutMeContentDictionary
+    AboutMeLayoutMeaning
   }
 }
 </script>
@@ -45,18 +45,7 @@ export default {
   }
 
   &__image {
-    position: absolute;
-    top: 0;
-    height: 100%;
     padding-bottom: 20rem;
-
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-
-    img {
-      width: 100%;
-    }
 
     &--1 {
       grid-column: 2 / 6;

@@ -1,0 +1,13 @@
+.aboutme-image-layout {
+  position: absolute;
+  top: 0;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+
+  img {
+    width: 100%;
+  }
+}
