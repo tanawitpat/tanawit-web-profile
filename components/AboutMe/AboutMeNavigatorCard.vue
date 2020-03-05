@@ -1,6 +1,6 @@
 <template>
   <div
-    @mouseover="setSelectedAboutMeContent(id)"
+    @click="setSelectedAboutMeContent(id)"
     :class="{ active: isActive }"
     class="aboutme-card"
   >
@@ -47,6 +47,8 @@ export default {
 
 <style scoped lang="scss">
 .aboutme-card {
+  cursor: pointer;
+
   &__title {
     text-transform: uppercase;
     font-size: 2rem;
