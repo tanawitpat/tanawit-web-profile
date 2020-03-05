@@ -4,12 +4,12 @@
       <img
         src="images/aboutme/tanawit1.png"
         alt="Tanawit's Photo"
-        class="aboutme-content-name__image--1"
+        class="aboutme-content-name__image--1 zoom-image-on-hover"
       />
       <img
         src="images/aboutme/tanawit2.png"
         alt="Tanawit's Photo"
-        class="aboutme-content-name__image--2"
+        class="aboutme-content-name__image--2 zoom-image-on-hover"
       />
     </div>
     <AboutMeLayoutMeaning
