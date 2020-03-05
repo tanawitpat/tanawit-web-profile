@@ -16,3 +16,11 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.zoom-image-on-hover {
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    z-index: 5;
+  }
+}

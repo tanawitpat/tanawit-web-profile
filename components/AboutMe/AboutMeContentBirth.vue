@@ -4,12 +4,12 @@
       <img
         src="images/aboutme/restaurant-city.png"
         alt="Restaurant City"
-        class="aboutme-content-birth__image--1"
+        class="aboutme-content-birth__image--1 zoom-image-on-hover"
       />
       <img
         src="images/aboutme/tanawit-child.png"
         alt="Tanawit's Photo"
-        class="aboutme-content-birth__image--2"
+        class="aboutme-content-birth__image--2 zoom-image-on-hover"
       />
     </div>
     <AboutMeLayoutMeaning
