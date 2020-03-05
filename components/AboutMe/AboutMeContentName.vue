@@ -45,25 +45,25 @@ export default {
   }
 
   &__image {
-    padding-bottom: 20rem;
-
     &--1 {
-      grid-column: 2 / 6;
-      grid-row: 1 / 5;
+      grid-column: 3 / 11;
+      grid-row: 1 / -1;
     }
 
     &--2 {
-      grid-column: 5 / 9;
-      grid-row: 2 / 6;
+      grid-column: 10 / 18;
+      grid-row: 2 / -1;
     }
 
     @include respond(largest) {
       &--1 {
-        grid-column: 1 / 6;
+        grid-column: 3 / 11;
+        grid-row: 3 / -1;
       }
 
       &--2 {
-        grid-column: 5 / 10;
+        grid-column: 10 / 18;
+        grid-row: 4 / -1;
       }
     }
   }

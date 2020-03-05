@@ -44,32 +44,33 @@ export default {
   }
 
   &__image {
-    padding-bottom: 20rem;
-
     &--1 {
-      grid-column: 1 / 5;
-      grid-row: 3 / 5;
+      grid-column: 2 / 12;
+      grid-row: 3 / -1;
       z-index: 1;
     }
 
     &--2 {
-      grid-column: 4 / 9;
-      grid-row: 2 / 6;
+      grid-column: 9 / 20;
+      grid-row: 4 / -1;
     }
 
     @include respond(largest) {
       &--1 {
-        grid-column: 1 / 6;
+        grid-column: 2 / 11;
+        grid-row: 4 / -1;
       }
 
       &--2 {
-        grid-column: 5 / 10;
+        grid-column: 10 / 20;
+        grid-row: 5 / -1;
       }
     }
   }
 
   &__meaning {
-    margin-top: 20rem;
+    position: absolute;
+    bottom: 0;
   }
 }
 </style>
