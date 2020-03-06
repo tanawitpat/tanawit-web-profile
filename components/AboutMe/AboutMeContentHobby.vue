@@ -1,8 +1,8 @@
 <template>
   <div class="aboutme-content-hobby center-vertical">
     <AboutMeLayoutMeaning
-      word="Swimming & Cycling"
-      meaning="Activities that Tanawit does in his free time."
+      word="Swimming"
+      meaning="An activity that Tanawit does in his free time."
     />
   </div>
 </template>
