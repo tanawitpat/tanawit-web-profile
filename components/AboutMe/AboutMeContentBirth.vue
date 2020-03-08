@@ -38,11 +38,6 @@ export default {
   text-align: left;
   position: relative;
 
-  h1 {
-    font-size: 3.2rem;
-    text-transform: uppercase;
-  }
-
   &__image {
     &--1 {
       grid-column: 2 / 12;

@@ -10,7 +10,9 @@
           <AboutMeContentLocation
             v-else-if="selectedAboutMeContent === 'location'"
           />
-          <AboutMeContentHobby v-else-if="selectedAboutMeContent === 'hobby'" />
+          <AboutMeContentDeveloper
+            v-else-if="selectedAboutMeContent === 'developer'"
+          />
           <AboutMeContentBirth v-else-if="selectedAboutMeContent === 'birth'" />
           <AboutMeContentLanguage
             v-else-if="selectedAboutMeContent === 'language'"
@@ -34,7 +36,7 @@
 import AboutMeNavigatorCard from '@/components/AboutMe/AboutMeNavigatorCard'
 import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
 import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
-import AboutMeContentHobby from '@/components/AboutMe/AboutMeContentHobby'
+import AboutMeContentDeveloper from '@/components/AboutMe/AboutMeContentDeveloper'
 import AboutMeContentLanguage from '@/components/AboutMe/AboutMeContentLanguage'
 import AboutMeContentBirth from '@/components/AboutMe/AboutMeContentBirth'
 import aboutMeData from '@/assets/data/aboutme.json'
@@ -45,7 +47,7 @@ export default {
     AboutMeNavigatorCard,
     AboutMeContentName,
     AboutMeContentLocation,
-    AboutMeContentHobby,
+    AboutMeContentDeveloper,
     AboutMeContentBirth,
     AboutMeContentLanguage
   },

@@ -23,9 +23,5 @@ export default {
   padding: 0 8rem;
   height: 100%;
   text-align: left;
-  h1 {
-    font-size: 3.2rem;
-    text-transform: uppercase;
-  }
 }
 </style>

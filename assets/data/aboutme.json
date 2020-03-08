@@ -9,9 +9,9 @@
     "content": "Bangkok, Thailand",
     "id": "location"
   }, {
-    "title": "Hobbies",
-    "content": "Swimming",
-    "id": "hobby"
+    "title": "Role",
+    "content": "Software Developer",
+    "id": "developer"
   }, {
     "title": "Year of birth",
     "content": "1996",

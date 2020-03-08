@@ -15,8 +15,7 @@
     <AboutMeLayoutMeaning
       class="aboutme-content-name__dictionary"
       word="Tanawit"
-      meaning="A software developer who graduated with statistics major. Passionated in
-      building a software used by tons of users."
+      meaning="Coding enthusiast | Swim lover | Apple Fan | Architectural wonders follower"
     />
   </div>
 </template>
@@ -38,11 +37,6 @@ export default {
   height: 100%;
   position: relative;
   text-align: left;
-
-  h1 {
-    font-size: 3.2rem;
-    text-transform: uppercase;
-  }
 
   &__image {
     &--1 {

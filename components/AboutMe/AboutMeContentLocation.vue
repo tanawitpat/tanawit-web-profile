@@ -61,11 +61,6 @@ export default {
   text-align: left;
   position: relative;
 
-  h1 {
-    font-size: 3.2rem;
-    text-transform: uppercase;
-  }
-
   &__image {
     > * {
       transition: opacity 0.3s;
