@@ -1,24 +1,19 @@
 {
   "section": "aboutme",
   "data": [{
-    "title": "Name",
-    "content": "Tanawit Pattanaveerangkoon",
+    "title": "Tanawit Pattanaveerangkoon",
     "id": "name"
   }, {
-    "title": "Location",
-    "content": "Bangkok, Thailand",
+    "title": "Bangkok",
     "id": "location"
   }, {
-    "title": "Role",
-    "content": "Software Developer",
+    "title": "Software Developer",
     "id": "developer"
   }, {
-    "title": "Year of birth",
-    "content": "1996",
+    "title": "1996",
     "id": "birth"
   }, {
-    "title": "Languages",
-    "content": "Thai & English",
+    "title": "Thai & English",
     "id": "language"
   }]
 }

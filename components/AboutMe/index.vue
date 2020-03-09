@@ -125,14 +125,12 @@ export default {
     &__navigator {
       cursor: default;
       margin: 0 auto;
-
+      padding: 6rem 0;
       display: grid;
       grid-template-columns: max-content;
 
       > * {
-        &:not(:last-child) {
-          padding-bottom: 2rem;
-        }
+        padding: 1.5rem 0;
       }
     }
   }

@@ -4,8 +4,7 @@
     :class="{ active: isActive }"
     class="aboutme-card"
   >
-    <h3 class="aboutme-card__title">{{ title }}</h3>
-    <p class="aboutme-card__content">{{ content }}</p>
+    <p class="aboutme-card__title">{{ title }}</p>
   </div>
 </template>
 
@@ -14,10 +13,6 @@ export default {
   name: 'AboutMeNavigatorCard',
   props: {
     title: {
-      type: String,
-      required: true
-    },
-    content: {
       type: String,
       required: true
     },
@@ -50,15 +45,13 @@ export default {
   cursor: pointer;
 
   &__title {
+    font-size: 2rem;
     text-transform: uppercase;
-    font-size: 2rem;
-  }
-  &__content {
-    font-size: 2rem;
+    font-weight: 700;
   }
 
   &.active {
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: transparent;
     transition: all 0.2s;
     * {
