@@ -40,7 +40,7 @@
           class="section-contact__github--image"
         /> -->
         <div class="section-contact__content--github">
-          <h2>Want my <span>contact</span>?</h2>
+          <h2>Want to send me a <span>message</span>?</h2>
           <p>
             I prefer
             <a href="https://github.com/tanawitpat">Linkedin</a> messages and
@@ -83,6 +83,7 @@
     a {
       font-weight: bold;
       text-decoration: none;
+      color: $color-black;
     }
 
     &--github {
