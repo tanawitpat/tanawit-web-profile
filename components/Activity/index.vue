@@ -43,13 +43,10 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 5rem 25rem;
+  padding: 10rem 5rem;
+  padding-top: 20rem;
   margin-top: -10rem;
   background-color: $color-blue-dark;
-  transform: skewY(-7deg);
-  & > * {
-    transform: skewY(7deg);
-  }
 
   @include respond(tab-small) {
     padding: 10rem 3rem 15rem;

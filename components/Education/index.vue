@@ -42,14 +42,7 @@ export default {
 
 <style scoped lang="scss">
 .section-education {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-white, 0.8),
-      rgba($color-white, 0.8)
-    ),
-    url('/images/education-bg.jpg');
-  background-position: center 35%;
-  background-size: cover;
+  background: $color-grey-light-2;
   padding: 10rem;
   position: relative;
   margin-top: -15rem;

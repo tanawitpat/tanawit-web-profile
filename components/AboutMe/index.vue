@@ -14,8 +14,8 @@
             v-else-if="selectedAboutMeContent === 'developer'"
           />
           <AboutMeContentBirth v-else-if="selectedAboutMeContent === 'birth'" />
-          <AboutMeContentLanguage
-            v-else-if="selectedAboutMeContent === 'language'"
+          <AboutMeContentEducation
+            v-else-if="selectedAboutMeContent === 'education'"
           />
         </transition>
       </div>
@@ -37,7 +37,7 @@ import AboutMeNavigatorCard from '@/components/AboutMe/AboutMeNavigatorCard'
 import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
 import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
 import AboutMeContentDeveloper from '@/components/AboutMe/AboutMeContentDeveloper'
-import AboutMeContentLanguage from '@/components/AboutMe/AboutMeContentLanguage'
+import AboutMeContentEducation from '@/components/AboutMe/AboutMeContentEducation'
 import AboutMeContentBirth from '@/components/AboutMe/AboutMeContentBirth'
 import aboutMeData from '@/assets/data/aboutme.json'
 
@@ -49,7 +49,7 @@ export default {
     AboutMeContentLocation,
     AboutMeContentDeveloper,
     AboutMeContentBirth,
-    AboutMeContentLanguage
+    AboutMeContentEducation
   },
   data() {
     return {

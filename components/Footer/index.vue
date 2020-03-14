@@ -6,11 +6,6 @@
         <div class="section-footer__general--developer">
           Designed and developed by Tanawit Pattanaveerangkoon.
         </div>
-        <div class="section-footer__general--image-disclaimer">
-          The background image in the experience section was posted on
-          <a href="https://unsplash.com/photos/gwH96RaS3KM">Unsplash</a> by
-          <a href="https://unsplash.com/@heysupersimi">@heysupersimi</a>.
-        </div>
       </div>
       <div class="section-footer__contact">
         <h3>
@@ -27,10 +22,7 @@
           This website was developed using
           <a href="https://nuxtjs.org/">Nuxt.js</a> and deployed on
           <a href="https://firebase.google.com/">Firebase</a> by
-          <a href="https://github.com/features/actions">GitHub Action</a>. The
-          code was written on
-          <a href="https://code.visualstudio.com/">VSCode</a> and formatted by
-          <a href="https://prettier.io/">Prettier</a>.
+          <a href="https://github.com/features/actions">GitHub Action</a>.
         </div>
         <div class="section-footer__nerd--source-code">
           You can visit my <a href="https://github.com/tanawitpat">GitHub</a> to
