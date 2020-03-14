@@ -17,12 +17,12 @@
         class="aboutme-content-developer__image--3"
       />
       <img
-        alt="Python icon"
+        alt="React icon"
         src="images/skills/react.png"
         class="aboutme-content-developer__image--4"
       />
       <img
-        alt="Docker icon"
+        alt="GraphQL icon"
         src="images/skills/graphql.png"
         class="aboutme-content-developer__image--5"
       />
@@ -30,7 +30,7 @@
     <AboutMeLayoutMeaning
       class="aboutme-content-developer__meaning"
       word="Software Developer"
-      meaning="Tanawit is a software developer who graduated with statistics major. Passionated in building a software used by tons of users."
+      meaning="Tanawit is a software developer who passionated in building a software used by tons of users."
     />
   </div>
 </template>
@@ -56,6 +56,11 @@ export default {
     img {
       border-radius: 10%;
       background-color: $color-white;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s;
+      }
     }
 
     &--1 {

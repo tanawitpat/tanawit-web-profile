@@ -15,6 +15,13 @@
     "companyLink": "http://kbtg.tech/en",
     "description": "My first journey in software development. I worked with Data Scientists to develop machine learning-based services which improved KBank customer experience, boosted revenue, and reduced manual processes. The projects covered various areas such as credit scoring, OCR, and virtual wallet."
   }, {
+    "companyName": "Chulalongkorn University",
+    "title": "Research Assistant",
+    "duration": "May 2017-October 2017",
+    "companyLogoPath": "images/logo/chula.png",
+    "companyLink": "https://www.chula.ac.th",
+    "description": "Conducted a survey project from building a sampling frame, collecting data from 200+ startup owners, and analyzing data using descriptive and inferential statistics."
+  }, {
     "companyName": "Kasikorn Business-Technology Group",
     "title": "Data Scientist Intern",
     "duration": "June 2017-August 2017",

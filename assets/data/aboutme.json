@@ -4,16 +4,16 @@
     "title": "Tanawit Pattanaveerangkoon",
     "id": "name"
   }, {
-    "title": "Bangkok",
-    "id": "location"
-  }, {
     "title": "Software Developer",
     "id": "developer"
+  }, {
+    "title": "Bangkok",
+    "id": "location"
   }, {
     "title": "1996",
     "id": "birth"
   }, {
-    "title": "Thai & English",
-    "id": "language"
+    "title": "Statistics",
+    "id": "education"
   }]
 }

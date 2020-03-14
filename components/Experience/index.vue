@@ -41,16 +41,9 @@ export default {
 
 <style scoped lang="scss">
 .section-experience {
-  padding: 10rem 10rem 25rem;
+  padding: 10rem 10rem 12rem;
   position: relative;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-grey-light-1, 0.9),
-      rgba($color-white, 0.9)
-    ),
-    url('/images/experience-bg.jpg');
-  background-position: center 35%;
-  background-size: cover;
+  background: $color-grey-light-2;
   transform: skewY(-7deg);
   margin-top: -15rem;
 
