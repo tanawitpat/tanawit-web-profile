@@ -103,7 +103,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @include respond(tab-medium) {
+    @include respond(desktop) {
       grid-template-columns: 1fr;
     }
 
@@ -117,7 +117,7 @@ export default {
     &__image {
       height: 100%;
 
-      @include respond(tab-medium) {
+      @include respond(desktop) {
         display: none;
       }
     }
@@ -131,6 +131,10 @@ export default {
 
       > * {
         padding: 1.5rem 0;
+      }
+
+      @include respond(tab-small) {
+        padding: 0rem 0;
       }
     }
   }

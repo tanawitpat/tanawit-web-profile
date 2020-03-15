@@ -82,6 +82,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10rem;
 
+    @include respond(tab-large) {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem;
+
+      * {
+        text-align: center;
+      }
+    }
+
     h2 {
       span {
         color: $color-secondary;

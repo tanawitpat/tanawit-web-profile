@@ -52,8 +52,7 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
 
-  &:hover,
-  &:active {
+  &:hover {
     background-color: rgba($color-white, 0.05);
     color: $color-white;
     transform: scale(1.05);

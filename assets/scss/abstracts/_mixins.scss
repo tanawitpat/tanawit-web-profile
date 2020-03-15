@@ -28,7 +28,7 @@ $breakpoint argument choices:
     } //900px
   }
 
-  @if $breakpoint == largest {
+  @if $breakpoint == desktop {
     @media only screen and (max-width: 75em) {
       @content;
     }

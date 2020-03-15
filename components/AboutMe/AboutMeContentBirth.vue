@@ -50,7 +50,7 @@ export default {
       grid-row: 4 / -1;
     }
 
-    @include respond(largest) {
+    @include respond(desktop) {
       &--1 {
         grid-column: 2 / 11;
         grid-row: 4 / -1;
