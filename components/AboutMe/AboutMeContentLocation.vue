@@ -3,7 +3,7 @@
     <div
       @mouseover="setIsBangkokImageOnHover(true)"
       @mouseleave="setIsBangkokImageOnHover(false)"
-      class="aboutme-content-location__image aboutme-image-layout"
+      class="aboutme-content-location__image aboutme-image"
     >
       <img
         :class="{ active: isBangkokImageOnHover }"

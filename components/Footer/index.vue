@@ -1,13 +1,36 @@
 <template>
   <section id="section-footer" class="section-footer">
-    <div class="section-footer__content">
-      <p>Designed and developed by <span>Tanawit Pattanaveerangkoon.</span></p>
-      <p>
-        This website was developed using
-        <a href="https://nuxtjs.org/">Nuxt.js</a> and deployed on
-        <a href="https://firebase.google.com/">Firebase</a> by
-        <a href="https://github.com/features/actions">GitHub Action</a>.
-      </p>
+    <div class="section-footer__layout">
+      <div>
+        <h3>About this site</h3>
+        <div class="section-footer__card">
+          <div>
+            Designed and developed by <span>Tanawit Pattanaveerangkoon.</span>
+          </div>
+          <div>
+            The background image in the
+            <a href="https://unsplash.com/photos/gwH96RaS3KM">experience</a>
+            section and
+            <a href="https://unsplash.com/photos/1NTOQHBRegA">keep in touch</a>
+            section were posted by
+            <a href="https://unsplash.com/@heysupersimi">@heysupersimi</a> and
+            <a href="https://unsplash.com/@chenzo">@chenzo</a> respectively on
+            Unsplash.
+          </div>
+        </div>
+      </div>
+      <div class="section-footer__card">
+        <h3>For nerds</h3>
+        <div>
+          This website was developed using
+          <a href="https://nuxtjs.org/">Nuxt.js</a> and deployed on
+          <a href="https://firebase.google.com/">Firebase</a> by
+          <a href="https://github.com/features/actions">GitHub Action</a>. The
+          code was written on
+          <a href="https://code.visualstudio.com/">VSCode</a> and formatted by
+          <a href="https://prettier.io/">Prettier</a>.
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -16,9 +39,8 @@
 .section-footer {
   background-color: $color-grey-dark-2;
   color: $color-white;
-  padding: 3rem 3rem;
+  padding: 5rem 5rem;
   font-size: 1.6rem;
-  text-align: center;
 
   h3 {
     text-transform: uppercase;
@@ -33,17 +55,23 @@
     text-decoration: none;
   }
 
-  span {
-    font-weight: bold;
+  &__layout {
+    max-width: 120rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+
+    @include respond(tab-large) {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem;
+    }
   }
 
-  &__content {
-    margin: auto;
-    max-width: 800px;
-
-    > p {
+  &__card {
+    > * {
       &:not(:last-child) {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
       }
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-developer center-vertical">
-    <div class="aboutme-content-developer__image aboutme-image-layout">
+    <div class="aboutme-content-developer__image aboutme-image">
       <img
         alt="JavaScript icon"
         src="images/skills/javascript.jpg"

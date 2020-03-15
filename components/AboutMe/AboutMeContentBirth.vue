@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-birth center-vertical">
-    <div class="aboutme-content-birth__image aboutme-image-layout">
+    <div class="aboutme-content-birth__image aboutme-image">
       <img
         src="images/aboutme/restaurant-city.png"
         alt="Restaurant City"

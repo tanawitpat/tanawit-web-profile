@@ -77,7 +77,7 @@ export default {
   background-color: $color-blue-dark;
   background-position: right top;
   background-size: cover;
-  padding: 10rem 10rem 25rem;
+  padding: 10rem 10rem 22.5rem;
   color: $color-white;
   font-size: 1.8rem;
 

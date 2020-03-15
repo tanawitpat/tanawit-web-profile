@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-name">
-    <div class="aboutme-content-name__image aboutme-image-layout">
+    <div class="aboutme-content-name__image aboutme-image">
       <img
         src="images/aboutme/tanawit1.png"
         alt="Tanawit's Photo"

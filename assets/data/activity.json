@@ -10,7 +10,7 @@
     "name": "Winner",
     "issuer": "KBTG Machine Learning Bootcamp 2017",
     "previewImagePath": "images/activities/kbtg-maps-bootcamp.png",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Quis ipsum suspendisse ultrices gravida dictum fusce ut.Velit euismod in pellentesque massa.",
+    "description": "Identified characteristics of potentially default credit card customers through a study of 5 million transactions using Spark and proposed solutions to prevent credit approval for credit card applicants that obtain such characteristics.",
     "year": "2017"
   }, {
     "name": "2nd Runner Up",

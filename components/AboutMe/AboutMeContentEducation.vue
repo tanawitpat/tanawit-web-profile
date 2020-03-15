@@ -1,6 +1,6 @@
 <template>
   <div class="aboutme-content-education">
-    <div class="aboutme-content-education__image aboutme-image-layout">
+    <div class="aboutme-content-education__image aboutme-image">
       <img
         src="images/aboutme/tanawit3.png"
         alt="Tanawit's Photo"

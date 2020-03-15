@@ -27,7 +27,7 @@
         <div class="section-contact__content--github">
           <h2>Looking for my formal <span>profile</span>?</h2>
           <p>
-            Here are my
+            Here is my
             <a href="https://github.com/tanawitpat">resume</a> you may be
             looking for.
           </p>
@@ -54,7 +54,15 @@
 
 <style scoped lang="scss">
 .section-contact {
-  background-color: $color-grey-light-2;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-grey-light-1, 0.9),
+      rgba($color-white, 0.9)
+    ),
+    url('/images/contact-bg.jpg');
+  background-position: center top;
+  background-size: cover;
+
   color: $color-black;
   padding: 10rem 5rem;
   font-size: 1.6rem;
