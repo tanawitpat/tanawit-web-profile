@@ -53,10 +53,15 @@ export default {
   overflow: hidden;
 
   &:hover {
-    background-color: rgba($color-white, 0.05);
-    color: $color-white;
     transform: scale(1.05);
   }
+
+  @include respond(mobile) {
+    &:hover {
+      transform: inherit;
+    }
+  }
+
   transition: transform 0.2s;
 
   &__time {
