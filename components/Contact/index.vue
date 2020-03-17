@@ -4,49 +4,28 @@
       Keep in touch
     </h1>
     <div class="section-contact__content">
-      <div class="section-contact__content--github">
-        <!-- <img
-          alt="Github UI"
-          src="images/keep-in-touch/github-screenshot.png"
-          class="section-contact__github--image"
-        /> -->
-        <div class="section-contact__content--github">
-          <h2>Are you a <span>software developer</span>?</h2>
-          <p>
-            Visit my <a href="https://github.com/tanawitpat">GitHub</a> to
-            explore my projects.
-          </p>
-        </div>
+      <div>
+        <h2>Are you a <span>software developer</span>?</h2>
+        <p>
+          Visit my <a href="https://github.com/tanawitpat">GitHub</a> to explore
+          my projects.
+        </p>
       </div>
-      <div class="section-contact__content--github">
-        <!-- <img
-          alt="Github UI"
-          src="images/keep-in-touch/linkedin-screenshot.png"
-          class="section-contact__github--image"
-        /> -->
-        <div class="section-contact__content--github">
-          <h2>Looking for my formal <span>profile</span>?</h2>
-          <p>
-            Here is my
-            <a href="https://github.com/tanawitpat">resume</a> you may be
-            looking for.
-          </p>
-        </div>
+      <div>
+        <h2>Looking for my formal <span>profile</span>?</h2>
+        <p>
+          Here is my
+          <a href="https://github.com/tanawitpat">resume</a> you may be looking
+          for.
+        </p>
       </div>
-      <div class="section-contact__content--github">
-        <!-- <img
-          alt="Github UI"
-          src="images/keep-in-touch/github-screenshot.png"
-          class="section-contact__github--image"
-        /> -->
-        <div class="section-contact__content--github">
-          <h2>Want to send me a <span>message</span>?</h2>
-          <p>
-            I prefer
-            <a href="https://github.com/tanawitpat">Linkedin</a> messages and
-            email (tanawit.pat@gmail.com).
-          </p>
-        </div>
+      <div>
+        <h2>Want to send me a <span>message</span>?</h2>
+        <p>
+          I prefer
+          <a href="https://github.com/tanawitpat">Linkedin</a> messages and
+          email &lt;tanawit.pat@gmail.com&gt;.
+        </p>
       </div>
     </div>
   </section>
@@ -91,22 +70,20 @@
       }
     }
 
-    h2 {
-      span {
-        color: $color-secondary;
+    > div {
+      h2 {
+        span {
+          color: $color-primary;
+        }
       }
-    }
 
-    a {
-      font-weight: bold;
-      text-decoration: none;
-      color: $color-black;
-    }
-
-    &--github {
-      img {
-        width: 100%;
-        margin-bottom: 3rem;
+      p {
+        a,
+        span {
+          font-weight: bold;
+          text-decoration: none;
+          color: $color-black;
+        }
       }
     }
   }

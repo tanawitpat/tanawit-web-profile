@@ -71,6 +71,13 @@ export default {
     border-radius: 15px;
   }
 
+  @include respond(mobile) {
+    &:hover {
+      transform: inherit;
+      box-shadow: inherit;
+    }
+  }
+
   &__position {
     color: $color-primary;
   }
