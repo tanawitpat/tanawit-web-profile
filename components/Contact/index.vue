@@ -33,15 +33,6 @@
 
 <style scoped lang="scss">
 .section-contact {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-grey-light-1, 0.9),
-      rgba($color-white, 0.9)
-    ),
-    url('/images/contact-bg.jpg');
-  background-position: center top;
-  background-size: cover;
-
   color: $color-black;
   padding: 10rem 5rem;
   font-size: 1.6rem;
@@ -53,7 +44,7 @@
 
   &__heading {
     color: $color-primary;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
 
   &__content {
@@ -75,6 +66,8 @@
         span {
           color: $color-primary;
         }
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
       }
 
       p {
