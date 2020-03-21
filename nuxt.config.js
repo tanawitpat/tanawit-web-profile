@@ -48,7 +48,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/dotenv', '@nuxtjs/style-resources'],
+  modules: [
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/component-cache'
+  ],
   styleResources: {
     scss: ['~assets/scss/main.scss']
   },
