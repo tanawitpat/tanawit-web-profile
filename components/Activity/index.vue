@@ -7,8 +7,7 @@
       <div class="section-activity__card">
         <div
           :key="activity.name"
-          v-for="(activity, index) in activityData"
-          :data-aos-delay="50 + index * 50"
+          v-for="activity in activityData"
           data-aos="fade-up"
         >
           <ActivityCard

@@ -43,12 +43,7 @@ export default {
 .section-experience {
   padding: 10rem 10rem 12rem;
   position: relative;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-grey-light-1, 0.9),
-      rgba($color-white, 0.9)
-    ),
-    url('/images/experience-bg.jpg');
+  background-color: $color-grey-light-2;
   transform: skewY(-7deg);
   margin-top: -15rem;
 

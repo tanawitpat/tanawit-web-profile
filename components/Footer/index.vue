@@ -7,21 +7,11 @@
           <div>
             Designed and developed by <span>Tanawit Pattanaveerangkoon.</span>
           </div>
-          <div>
-            The background image in the
-            <a href="https://unsplash.com/photos/gwH96RaS3KM">experience</a>
-            section and
-            <a href="https://unsplash.com/photos/1NTOQHBRegA">keep in touch</a>
-            section were posted by
-            <a href="https://unsplash.com/@heysupersimi">@heysupersimi</a> and
-            <a href="https://unsplash.com/@chenzo">@chenzo</a> respectively on
-            Unsplash.
-          </div>
         </div>
       </div>
-      <div class="section-footer__card">
+      <div>
         <h3>For nerds</h3>
-        <div>
+        <div class="section-footer__card">
           This website was developed using
           <a href="https://nuxtjs.org/">Nuxt.js</a> and deployed on
           <a href="https://firebase.google.com/">Firebase</a> by
@@ -45,7 +35,7 @@
   h3 {
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
   }
 
