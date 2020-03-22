@@ -10,7 +10,7 @@
         </div>
       </div>
       <div>
-        <h3>For nerds</h3>
+        <h3>Contact</h3>
         <div class="section-footer__card">
           This website was developed using
           <a href="https://nuxtjs.org/">Nuxt.js</a> and deployed on

@@ -1,8 +1,11 @@
 <template>
-  <section class="section-experience">
-    <h1 class="heading-primary u-margin-bottom-big section-experience__heading">
-      Experience
-    </h1>
+  <section id="section-experience" class="section-experience">
+    <div class="section-experience__heading u-margin-bottom-big">
+      <h1 class="heading-primary">My Work Experience</h1>
+      <p>
+        From a business intern to a software developer
+      </p>
+    </div>
     <div class="section-experience__card">
       <div
         v-for="item in experienceData"
@@ -41,18 +44,13 @@ export default {
 
 <style scoped lang="scss">
 .section-experience {
-  padding: 10rem 10rem 12rem;
+  padding: 7.5rem 10rem;
   position: relative;
   background-color: $color-grey-light-2;
-  transform: skewY(-7deg);
   margin-top: -15rem;
 
   display: grid;
-  grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
-
-  & > * {
-    transform: skewY(7deg);
-  }
+  grid-template-columns: 1fr minmax(30%, 75rem) 1fr;
 
   @include respond(tab-medium) {
     padding: 10rem 5rem;
@@ -64,10 +62,19 @@ export default {
   }
 
   &__heading {
-    color: $color-primary;
     grid-column: 1 / -1;
-    :hover {
-      transform: skewY(7deg);
+
+    h1 {
+      color: $color-primary;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      color: $color-grey-dark-3;
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
     }
   }
 

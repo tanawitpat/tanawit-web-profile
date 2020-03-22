@@ -1,8 +1,8 @@
 <template>
-  <section class="section-activity">
+  <section id="section-activity" class="section-activity">
     <div class="section-activity__container">
       <h1 class="heading-primary u-margin-bottom-big section-activity__heading">
-        Activities
+        My Activities
       </h1>
       <div class="section-activity__card">
         <div
@@ -42,10 +42,8 @@ export default {
 
 <style scoped lang="scss">
 .section-activity {
-  padding: 10rem 5rem;
-  padding-top: 20rem;
-  margin-top: -10rem;
-  background-color: $color-blue-dark;
+  padding: 7.5rem 5rem;
+  background-color: $color-grey-light-3;
 
   @include respond(tab-small) {
     padding: 15rem 3rem 10rem;
@@ -63,7 +61,9 @@ export default {
   }
 
   &__heading {
-    color: $color-white;
+    color: $color-primary;
+    max-width: 80%;
+    margin: auto;
   }
 
   &__card {

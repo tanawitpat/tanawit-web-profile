@@ -1,72 +1,140 @@
 <template>
   <section id="section-aboutme" class="section-aboutme">
-    <h1 class="heading-primary u-margin-bottom-medium section-aboutme__heading">
-      About Me
+    <h1 class="heading-primary u-margin-bottom-big section-aboutme__heading">
+      Words describe me
     </h1>
-    <div class="section-aboutme__content">
-      <div class="section-aboutme__content__image">
-        <transition name="fade">
-          <AboutMeContentName v-if="selectedAboutMeContent === 'name'" />
-          <AboutMeContentLocation
-            v-else-if="selectedAboutMeContent === 'location'"
+    <div class="section-aboutme__body">
+      <div
+        class="section-aboutme__body__card section-aboutme__body__card--right"
+      >
+        <div class="section-aboutme__body__card__image" data-aos="fade-right">
+          <div class="section-aboutme__body__card__image__developer">
+            <div class="section-aboutme__body__card__image__developer__line-1">
+              <img
+                alt="JavaScript icon"
+                src="images/skills/javascript.jpg"
+                class="section-aboutme__body__card__image__developer--1"
+              />
+              <img
+                alt="Python icon"
+                src="images/skills/go.png"
+                class="section-aboutme__body__card__image__developer--2"
+              />
+              <img
+                alt="Go icon"
+                src="images/skills/react.png"
+                class="section-aboutme__body__card__image__developer--3"
+              />
+            </div>
+            <div class="section-aboutme__body__card__image__developer__line-2">
+              <img
+                alt="React icon"
+                src="images/skills/graphql.png"
+                class="section-aboutme__body__card__image__developer--4"
+              />
+              <img
+                alt="GraphQL icon"
+                src="images/skills/kubernetes.png"
+                class="section-aboutme__body__card__image__developer--5"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
+          <AboutMeLayoutMeaning
+            :link="{ label: 'Explore my technical skills', path: '/nerd' }"
+            title="Software Developer"
+            description="I am passionate about building a software used by tons of users. Experienced in JavaScript, Go, React, GraphQL, and Kubernetes"
           />
-          <AboutMeContentDeveloper
-            v-else-if="selectedAboutMeContent === 'developer'"
-          />
-          <AboutMeContentBirth v-else-if="selectedAboutMeContent === 'birth'" />
-          <AboutMeContentEducation
-            v-else-if="selectedAboutMeContent === 'education'"
-          />
-        </transition>
+        </div>
       </div>
-      <div class="section-aboutme__content__navigator">
-        <AboutMeNavigatorCard
-          v-for="aboutme in aboutMeData"
-          :key="aboutme.id"
-          :title="aboutme.title"
-          :content="aboutme.content"
-          :id="aboutme.id"
-        />
+      <div
+        class="section-aboutme__body__card section-aboutme__body__card--left"
+      >
+        <div class="section-aboutme__body__card__image" data-aos="fade-right">
+          <img
+            src="images/aboutme/bangkok.png"
+            alt="Thailand"
+            class="section-aboutme__body__card__image__location--1"
+          />
+          <img
+            src="images/aboutme/iconsiam.png"
+            alt="Thailand"
+            class="section-aboutme__body__card__image__location--2"
+          />
+        </div>
+        <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
+          <AboutMeLayoutMeaning
+            title="Bangkok"
+            description="A capital city of Thailand and the city where I grew up and has been
+      living."
+          />
+        </div>
+      </div>
+      <div
+        class="section-aboutme__body__card section-aboutme__body__card--right"
+      >
+        <div class="section-aboutme__body__card__image" data-aos="fade-right">
+          <img
+            src="images/aboutme/restaurant-city.png"
+            alt="Restaurant City"
+            class="section-aboutme__body__card__image__birth--1 zoom-image-on-hover"
+          />
+          <img
+            src="images/aboutme/tanawit-child.png"
+            alt="Tanawit's Photo"
+            class="section-aboutme__body__card__image__birth--2 zoom-image-on-hover"
+          />
+        </div>
+        <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
+          <AboutMeLayoutMeaning
+            title="1996"
+            description="A year which I was born. If you had played Restaurant City while you were in a high school, we are friends!."
+          />
+        </div>
+      </div>
+      <div
+        class="section-aboutme__body__card section-aboutme__body__card--left"
+      >
+        <div class="section-aboutme__body__card__image" data-aos="fade-right">
+          <img
+            src="images/aboutme/tanawit3.png"
+            alt="Tanawit's Photo"
+            class="section-aboutme__body__card__image__education--1 zoom-image-on-hover"
+          />
+          <img
+            src="images/aboutme/tanawit1.png"
+            alt="Tanawit's Photo"
+            class="section-aboutme__body__card__image__education--2 zoom-image-on-hover"
+          />
+        </div>
+        <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
+          <AboutMeLayoutMeaning
+            title="Statistics"
+            description="I graduated from Chulalongkorn University with Statistics major."
+          />
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import AboutMeNavigatorCard from '@/components/AboutMe/AboutMeNavigatorCard'
-import AboutMeContentName from '@/components/AboutMe/AboutMeContentName'
-import AboutMeContentLocation from '@/components/AboutMe/AboutMeContentLocation'
-import AboutMeContentDeveloper from '@/components/AboutMe/AboutMeContentDeveloper'
-import AboutMeContentEducation from '@/components/AboutMe/AboutMeContentEducation'
-import AboutMeContentBirth from '@/components/AboutMe/AboutMeContentBirth'
-import aboutMeData from '@/assets/data/aboutme.json'
+import AboutMeLayoutMeaning from '@/components/AboutMe/AboutMeLayoutMeaning'
 
 export default {
   name: 'SectionAboutMe',
   components: {
-    AboutMeNavigatorCard,
-    AboutMeContentName,
-    AboutMeContentLocation,
-    AboutMeContentDeveloper,
-    AboutMeContentBirth,
-    AboutMeContentEducation
+    AboutMeLayoutMeaning
   },
   data() {
     return {
-      aboutMeData: aboutMeData.data
-    }
-  },
-  computed: {
-    selectedAboutMeContent() {
-      return this.$store.state.aboutme.selectedAboutMeContent
+      isBangkokImageOnHover: false
     }
   },
   methods: {
-    setSelectedAboutMeContent(newSelectedAboutMeContent) {
-      this.$store.commit(
-        'aboutme/setSelectedAboutMeContent',
-        newSelectedAboutMeContent
-      )
+    setIsBangkokImageOnHover(newIsBangkokImageOnHover) {
+      this.isBangkokImageOnHover = newIsBangkokImageOnHover
     }
   }
 }
@@ -74,67 +142,154 @@ export default {
 
 <style scoped lang="scss">
 .section-aboutme {
-  background-color: $color-blue-dark;
-  background-position: right top;
-  background-size: cover;
-  padding: 10rem 10rem 22.5rem;
-  color: $color-white;
   font-size: 1.8rem;
-
-  @include respond(tab-large) {
-    font-size: 2rem;
-    padding: 10rem 5rem 25rem;
-  }
-
-  @include respond(tab-small) {
-    font-size: 2rem;
-    padding: 10rem 3rem 15rem;
-  }
+  padding: 7.5rem 10rem 20rem;
+  background-color: $color-grey-light-3;
 
   &__heading {
-    color: $color-white;
+    color: $color-primary;
   }
 
-  &__content {
-    text-align: center;
-    max-width: 120rem;
+  &__body {
+    color: $color-black;
+    max-width: 90rem;
     margin: auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    @include respond(desktop) {
-      grid-template-columns: 1fr;
-    }
-
-    .fade-enter-active {
-      transition: opacity 1.5s;
-    }
-    .fade-enter {
-      opacity: 0;
-    }
-
-    &__image {
-      height: 100%;
-
-      @include respond(desktop) {
-        display: none;
+    img {
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s;
+        z-index: 5;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
       }
     }
 
-    &__navigator {
-      cursor: default;
-      margin: 0 auto;
-      padding: 6rem 0;
+    &__card {
       display: grid;
-      grid-template-columns: max-content;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5rem;
 
-      > * {
-        padding: 1.5rem 0;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
       }
 
-      @include respond(tab-small) {
-        padding: 0rem 0;
+      &__image {
+        position: relative;
+
+        * {
+          transition: opacity 0.3s;
+        }
+
+        &__developer {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          img {
+            background-color: $color-white;
+            border-radius: 10%;
+            width: 100%;
+
+            &:hover {
+              transform: scale(1.1);
+              box-shadow: 0 0.5rem 1rem rgba($color-black, 0.1);
+            }
+          }
+
+          &__line-1 {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 10rem);
+            grid-gap: 2rem;
+            margin-bottom: 2rem;
+          }
+
+          &__line-2 {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 10rem);
+            grid-gap: 2rem;
+          }
+        }
+
+        &__location {
+          &--1 {
+            position: absolute;
+            height: 25rem;
+            top: 1rem;
+            left: 1rem;
+          }
+
+          &--2 {
+            position: absolute;
+            height: 25rem;
+            top: 3rem;
+            right: 1rem;
+          }
+        }
+
+        &__birth {
+          &--1 {
+            position: absolute;
+            height: 18rem;
+            top: 5rem;
+            left: 0rem;
+            z-index: 1;
+          }
+
+          &--2 {
+            position: absolute;
+            height: 18rem;
+            top: 7rem;
+            right: 0rem;
+          }
+        }
+
+        &__education {
+          &--1 {
+            position: absolute;
+            height: 25rem;
+            top: 1rem;
+            left: 3rem;
+          }
+
+          &--2 {
+            position: absolute;
+            height: 25rem;
+            top: 3rem;
+            right: 3rem;
+          }
+        }
+      }
+
+      &__meaning {
+        display: flex;
+        align-items: center;
+        height: 300px;
+      }
+
+      &--left {
+        .section-aboutme__body__card__image {
+          grid-column: 1 / 2;
+          grid-row: 1 / -1;
+        }
+        .section-aboutme__body__card__meaning {
+          padding-left: 1rem;
+          grid-column: 2 / -1;
+          grid-row: 1 / -1;
+        }
+      }
+
+      &--right {
+        .section-aboutme__body__card__image {
+          grid-column: 2 / -1;
+          grid-row: 1 / -1;
+        }
+        .section-aboutme__body__card__meaning {
+          grid-column: 1 / 2;
+          grid-row: 1 / -1;
+        }
       }
     }
   }
