@@ -1,11 +1,18 @@
 <template>
   <div class="aboutme-content-dictionary">
-    <h1>
-      {{ word }}
-    </h1>
-    <p>
-      {{ meaning }}
+    <h3>
+      {{ title }}
+    </h3>
+    <p class="aboutme-content-dictionary__meaning">
+      {{ description }}
     </p>
+    <nuxt-link
+      v-if="link"
+      :to="link.path"
+      class="aboutme-content-dictionary__technical-skill"
+    >
+      {{ link.label }}
+    </nuxt-link>
   </div>
 </template>
 
@@ -13,13 +20,18 @@
 export default {
   name: 'AboutMeLayoutMeaning',
   props: {
-    word: {
+    title: {
       type: String,
       required: true
     },
-    meaning: {
+    description: {
       type: String,
       required: true
+    },
+    link: {
+      type: Object,
+      required: false,
+      default: null
     }
   }
 }
@@ -27,9 +39,25 @@ export default {
 
 <style scoped lang="scss">
 .aboutme-content-dictionary {
-  h1 {
-    font-size: 3.2rem;
+  h3 {
+    font-size: 2.8rem;
     text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__technical-skill {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+    color: $color-secondary;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px dotted;
+    }
   }
 }
 </style>

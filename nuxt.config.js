@@ -51,7 +51,8 @@ export default {
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    '@nuxtjs/component-cache'
+    '@nuxtjs/component-cache',
+    'vue-scrollto/nuxt'
   ],
   styleResources: {
     scss: ['~assets/scss/main.scss']

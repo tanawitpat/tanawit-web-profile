@@ -47,7 +47,7 @@ export default {
   background-color: $color-white;
   border-radius: 20px;
   position: relative;
-
+  box-shadow: 0 1rem 2rem rgba(22, 28, 45, 0.1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;

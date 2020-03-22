@@ -56,10 +56,10 @@ export default {
   padding: 3rem 5rem;
   transition: all 0.2s;
   font-size: 1.6rem;
+  box-shadow: 0.5rem 1rem 1.5rem rgba($color-black, 0.04);
 
   &:hover {
     transform: scale(1.02);
-    box-shadow: 0.5rem 1rem 1.5rem rgba($color-black, 0.1);
   }
 
   &:not(:last-child) {
@@ -90,6 +90,8 @@ export default {
 
   &__duration {
     margin-bottom: 10px;
+    color: $color-grey-dark-2;
+    font-weight: 700;
   }
 
   &__company-logo {

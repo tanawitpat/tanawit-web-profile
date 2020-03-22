@@ -1,7 +1,7 @@
 <template>
   <section id="section-contact" class="section-contact">
     <h1 class="heading-primary section-contact__heading">
-      Keep in touch
+      Next steps...
     </h1>
     <div class="section-contact__content">
       <div>
@@ -34,6 +34,7 @@
 <style scoped lang="scss">
 .section-contact {
   color: $color-black;
+  background-color: $color-grey-light-2;
   padding: 10rem 5rem;
   font-size: 1.6rem;
 
