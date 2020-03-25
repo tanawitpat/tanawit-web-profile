@@ -47,7 +47,7 @@ export default {
   background-color: $color-white;
   border-radius: 20px;
   position: relative;
-  box-shadow: 0 1rem 2rem rgba(22, 28, 45, 0.1);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
@@ -91,7 +91,7 @@ export default {
     z-index: 3;
     padding: 0 1.5rem;
     background-color: $color-white;
-    color: $color-blue-dark;
+    color: $color-grey-dark-1;
     font-weight: bold;
     height: 110px;
     text-align: right;
@@ -152,7 +152,7 @@ export default {
 
     @include respond(mobile) {
       display: block;
-      color: $color-blue-dark;
+      color: $color-grey-dark-1;
       background-color: $color-white;
       grid-row: 4 / 5;
       padding: 2rem;

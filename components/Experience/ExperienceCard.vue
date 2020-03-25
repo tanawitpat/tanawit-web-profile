@@ -96,8 +96,8 @@ export default {
 
   &__company-logo {
     position: absolute;
-    top: 4rem;
-    right: 4rem;
+    top: 3.6rem;
+    right: 4.5rem;
 
     @include respond(tab-medium) {
       display: none;
