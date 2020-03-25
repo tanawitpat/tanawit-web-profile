@@ -2,10 +2,11 @@
   <div class="navbar">
     <div class="navbar__container">
       <div class="navbar__left">
-        <p>TANAWIT</p>
+        <div v-scroll-to="'#section-home'">
+          <nuxt-link to="">TANAWIT</nuxt-link>
+        </div>
       </div>
       <div class="navbar__right">
-        <div v-scroll-to="'#section-home'">Home</div>
         <div v-scroll-to="'#section-aboutme'">About me</div>
         <div v-scroll-to="'#section-experience'">Experience</div>
         <div v-scroll-to="'#section-activity'">Activities</div>
@@ -30,10 +31,10 @@
 
   &__container {
     max-width: 120rem;
-    margin: auto;
     width: auto;
     height: 100%;
-
+    margin: auto;
+    padding: 0 3rem;
     display: flex;
     justify-content: space-between;
   }
@@ -41,10 +42,12 @@
   &__left {
     margin: auto 0;
 
-    p {
+    a {
+      text-decoration: none;
       font-size: 2.4rem;
       font-weight: 700;
       color: $color-grey-dark-1;
+      cursor: pointer;
     }
   }
 
@@ -66,10 +69,6 @@
       &:not(:last-child) {
         margin-right: 40px;
       }
-
-      &:last-child {
-        margin-right: 30px;
-      }
     }
 
     &__nerd-button {
@@ -87,6 +86,10 @@
         border-radius: 2rem;
         padding: 0 2rem;
         cursor: pointer;
+
+        &:hover {
+          background-color: $color-blue-dark-2;
+        }
       }
     }
   }

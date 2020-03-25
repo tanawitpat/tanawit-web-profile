@@ -1,0 +1,104 @@
+<template>
+  <section @click.self="setIsContactModalOpen(false)" class="contact-modal">
+    <div class="contact-modal__card">
+      <h3>Tanawit Pattanaveerangkoon (Oui)</h3>
+      <div class="contact-modal__card__contact">
+        <div class="contact-modal__card__contact__email">
+          <div class="contact-modal__card__contact__image-container">
+            <img src="images/icon/gmail.svg" />
+          </div>
+          <p>tanawit.pat@gmail.com</p>
+        </div>
+        <div class="contact-modal__card__contact__linkedin">
+          <div class="contact-modal__card__contact__image-container">
+            <a href="https://www.linkedin.com/in/tanawitp/">
+              <img src="images/logo/linkedin.jpg" />
+            </a>
+          </div>
+          <a href="https://www.linkedin.com/in/tanawitp/">
+            <p>linkedin.com/in/tanawitp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  methods: {
+    setIsContactModalOpen(newIsContactModalOpen) {
+      this.$store.commit('contact/setIsContactModalOpen', newIsContactModalOpen)
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+.contact-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color-white, 0.8);
+  z-index: 10;
+
+  &__card {
+    width: 100%;
+    max-width: 60rem;
+    padding: 6rem 4rem;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    background-color: $color-white;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h3 {
+      font-size: 2.4rem;
+      color: $color-primary;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    &__contact {
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        color: $color-black;
+        font-size: 1.8rem;
+      }
+
+      &__image-container {
+        height: 12rem;
+      }
+
+      &__email {
+        text-align: center;
+
+        img {
+          height: 10rem;
+        }
+      }
+
+      &__linkedin {
+        text-align: center;
+
+        img {
+          margin-top: 0.5rem;
+          height: 9rem;
+        }
+      }
+    }
+  }
+}
+</style>
