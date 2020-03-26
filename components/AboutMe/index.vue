@@ -364,7 +364,7 @@ export default {
 
             @include respond(tab-large) {
               width: 15rem;
-              top: 9rem;
+              top: 10rem;
             }
 
             @include respond(tab-medium) {
