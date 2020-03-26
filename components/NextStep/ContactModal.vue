@@ -43,6 +43,9 @@ export default {
   width: 100%;
   background-color: rgba($color-white, 0.8);
   z-index: 10;
+  animation-name: moveInBottom;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
 
   &__card {
     width: 100%;
@@ -50,7 +53,6 @@ export default {
     padding: 6rem 4rem;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
     background-color: $color-white;
-
     position: fixed;
     top: 50%;
     left: 50%;
@@ -68,6 +70,12 @@ export default {
       padding: 0 2rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+
+      @include respond(tab-small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4rem;
+      }
 
       a {
         text-decoration: none;

@@ -52,16 +52,18 @@
         class="section-aboutme__body__card section-aboutme__body__card--left"
       >
         <div class="section-aboutme__body__card__image" data-aos="fade-right">
-          <img
-            src="images/aboutme/bangkok.png"
-            alt="Thailand"
-            class="section-aboutme__body__card__image__location--1"
-          />
-          <img
-            src="images/aboutme/iconsiam.png"
-            alt="Thailand"
-            class="section-aboutme__body__card__image__location--2"
-          />
+          <div class="section-aboutme__body__card__image__location">
+            <img
+              src="images/aboutme/bangkok.png"
+              alt="Thailand"
+              class="section-aboutme__body__card__image__location--1"
+            />
+            <img
+              src="images/aboutme/iconsiam.png"
+              alt="Thailand"
+              class="section-aboutme__body__card__image__location--2"
+            />
+          </div>
         </div>
         <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
           <AboutMeLayoutMeaning
@@ -75,16 +77,18 @@
         class="section-aboutme__body__card section-aboutme__body__card--right"
       >
         <div class="section-aboutme__body__card__image" data-aos="fade-right">
-          <img
-            src="images/aboutme/restaurant-city.png"
-            alt="Restaurant City"
-            class="section-aboutme__body__card__image__birth--1 zoom-image-on-hover"
-          />
-          <img
-            src="images/aboutme/tanawit-child.png"
-            alt="Tanawit's Photo"
-            class="section-aboutme__body__card__image__birth--2 zoom-image-on-hover"
-          />
+          <div class=" section-aboutme__body__card__image__birth">
+            <img
+              src="images/aboutme/restaurant-city.png"
+              alt="Restaurant City"
+              class="section-aboutme__body__card__image__birth--1 zoom-image-on-hover"
+            />
+            <img
+              src="images/aboutme/tanawit-child.png"
+              alt="Tanawit's Photo"
+              class="section-aboutme__body__card__image__birth--2 zoom-image-on-hover"
+            />
+          </div>
         </div>
         <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
           <AboutMeLayoutMeaning
@@ -97,16 +101,18 @@
         class="section-aboutme__body__card section-aboutme__body__card--left"
       >
         <div class="section-aboutme__body__card__image" data-aos="fade-right">
-          <img
-            src="images/aboutme/tanawit3.png"
-            alt="Tanawit's Photo"
-            class="section-aboutme__body__card__image__education--1 zoom-image-on-hover"
-          />
-          <img
-            src="images/aboutme/tanawit1.png"
-            alt="Tanawit's Photo"
-            class="section-aboutme__body__card__image__education--2 zoom-image-on-hover"
-          />
+          <div class="section-aboutme__body__card__image__education">
+            <img
+              src="images/aboutme/tanawit3.png"
+              alt="Tanawit's Photo"
+              class="section-aboutme__body__card__image__education--1 zoom-image-on-hover"
+            />
+            <img
+              src="images/aboutme/tanawit1.png"
+              alt="Tanawit's Photo"
+              class="section-aboutme__body__card__image__education--2 zoom-image-on-hover"
+            />
+          </div>
         </div>
         <div class="section-aboutme__body__card__meaning" data-aos="fade-left">
           <AboutMeLayoutMeaning
@@ -143,8 +149,16 @@ export default {
 <style scoped lang="scss">
 .section-aboutme {
   font-size: 1.8rem;
-  padding: 7.5rem 10rem 20rem;
+  padding: 7.5rem 10rem;
   background-color: $color-grey-light-3;
+
+  @include respond(tab-large) {
+    padding: 7.5rem 7.5rem;
+  }
+
+  @include respond(tab-medium) {
+    padding: 7.5rem 5rem;
+  }
 
   &__heading {
     color: $color-primary;
@@ -169,8 +183,16 @@ export default {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 5rem;
 
+      @include respond(tab-medium) {
+        display: block;
+      }
+
       &:not(:last-child) {
         margin-bottom: 1rem;
+
+        @include respond(tab-medium) {
+          margin-bottom: 8rem;
+        }
       }
 
       &__image {
@@ -181,10 +203,20 @@ export default {
         }
 
         &__developer {
+          height: 20rem;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+
+          @include respond(tab-medium) {
+            position: static;
+            top: 0;
+            left: 0;
+            transform: none;
+            height: auto;
+            margin-bottom: 4rem;
+          }
 
           img {
             background-color: $color-white;
@@ -203,6 +235,10 @@ export default {
             grid-template-columns: repeat(3, 10rem);
             grid-gap: 2rem;
             margin-bottom: 2rem;
+
+            @include respond(tab-large) {
+              grid-template-columns: repeat(3, 7.5rem);
+            }
           }
 
           &__line-2 {
@@ -210,55 +246,197 @@ export default {
             display: grid;
             grid-template-columns: repeat(2, 10rem);
             grid-gap: 2rem;
+
+            @include respond(tab-large) {
+              grid-template-columns: repeat(2, 7.5rem);
+            }
           }
         }
 
         &__location {
+          margin: auto;
+          width: 33rem;
+          height: 100%;
+          position: relative;
+
+          @include respond(tab-large) {
+            width: 25rem;
+          }
+
+          @include respond(tab-medium) {
+            height: 23rem;
+            width: 35rem;
+          }
+
+          @include respond(tab-small) {
+            width: 30rem;
+          }
+
           &--1 {
             position: absolute;
-            height: 25rem;
-            top: 1rem;
+            width: 16.5rem;
+            top: 2rem;
             left: 1rem;
+
+            @include respond(tab-large) {
+              width: 13.5rem;
+              top: 6rem;
+              left: 0rem;
+            }
+
+            @include respond(tab-medium) {
+              width: 15rem;
+              top: 0rem;
+              left: 1rem;
+            }
+
+            @include respond(tab-small) {
+              width: 13.5rem;
+            }
           }
 
           &--2 {
             position: absolute;
-            height: 25rem;
-            top: 3rem;
+            width: 16.5rem;
+            top: 4rem;
             right: 1rem;
+
+            @include respond(tab-large) {
+              width: 13.5rem;
+              top: 7rem;
+              right: 0rem;
+            }
+
+            @include respond(tab-medium) {
+              width: 15rem;
+              top: 1rem;
+              right: 1rem;
+            }
+
+            @include respond(tab-small) {
+              width: 13.5rem;
+            }
           }
         }
 
         &__birth {
+          margin: auto;
+          width: 33rem;
+          height: 100%;
+          position: relative;
+
+          @include respond(tab-large) {
+            width: 25rem;
+          }
+
+          @include respond(tab-medium) {
+            height: 18rem;
+            width: 35rem;
+          }
+
+          @include respond(tab-small) {
+            width: 30rem;
+          }
+
           &--1 {
             position: absolute;
-            height: 18rem;
-            top: 5rem;
+            width: 20rem;
+            top: 7rem;
             left: 0rem;
             z-index: 1;
+
+            @include respond(tab-large) {
+              width: 15rem;
+              top: 9rem;
+            }
+
+            @include respond(tab-medium) {
+              width: 16rem;
+              top: 0rem;
+            }
           }
 
           &--2 {
             position: absolute;
-            height: 18rem;
-            top: 7rem;
+            width: 20rem;
+            top: 9rem;
             right: 0rem;
+
+            @include respond(tab-large) {
+              width: 15rem;
+              top: 9rem;
+            }
+
+            @include respond(tab-medium) {
+              width: 16rem;
+              top: 1rem;
+            }
           }
         }
 
         &__education {
+          margin: auto;
+          width: 33rem;
+          height: 100%;
+          position: relative;
+
+          @include respond(tab-large) {
+            width: 25rem;
+          }
+
+          @include respond(tab-medium) {
+            height: 23rem;
+            width: 35rem;
+          }
+
+          @include respond(tab-small) {
+            width: 30rem;
+          }
+
           &--1 {
             position: absolute;
-            height: 25rem;
+            width: 16.5rem;
             top: 1rem;
-            left: 3rem;
+            left: 1rem;
+
+            @include respond(tab-large) {
+              width: 13.5rem;
+              top: 6rem;
+              left: 0rem;
+            }
+
+            @include respond(tab-medium) {
+              width: 15rem;
+              top: 0rem;
+              left: 1rem;
+            }
+
+            @include respond(tab-small) {
+              width: 13.5rem;
+            }
           }
 
           &--2 {
             position: absolute;
-            height: 25rem;
+            width: 16.5rem;
             top: 3rem;
-            right: 3rem;
+            right: 1rem;
+
+            @include respond(tab-large) {
+              width: 13.5rem;
+              top: 7rem;
+              right: 0rem;
+            }
+
+            @include respond(tab-medium) {
+              width: 15rem;
+              top: 1rem;
+              right: 1rem;
+            }
+
+            @include respond(tab-small) {
+              width: 13.5rem;
+            }
           }
         }
       }
@@ -267,17 +445,30 @@ export default {
         display: flex;
         align-items: center;
         height: 300px;
+
+        @include respond(tab-medium) {
+          height: auto;
+        }
       }
 
       &--left {
         .section-aboutme__body__card__image {
           grid-column: 1 / 2;
           grid-row: 1 / -1;
+
+          @include respond(tab-medium) {
+            height: auto;
+          }
         }
+
         .section-aboutme__body__card__meaning {
-          padding-left: 1rem;
+          padding: 1rem 0;
           grid-column: 2 / -1;
           grid-row: 1 / -1;
+
+          @include respond(tab-medium) {
+            height: auto;
+          }
         }
       }
 
@@ -285,10 +476,19 @@ export default {
         .section-aboutme__body__card__image {
           grid-column: 2 / -1;
           grid-row: 1 / -1;
+
+          @include respond(tab-medium) {
+            height: auto;
+          }
         }
+
         .section-aboutme__body__card__meaning {
           grid-column: 1 / 2;
           grid-row: 1 / -1;
+
+          @include respond(tab-medium) {
+            height: auto;
+          }
         }
       }
     }

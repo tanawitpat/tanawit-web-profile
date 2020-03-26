@@ -46,13 +46,7 @@ export default {
   background-color: $color-grey-light-3;
 
   @include respond(tab-small) {
-    padding: 15rem 3rem 10rem;
-    margin-top: -5rem;
-  }
-
-  @include respond(tab-medium) {
-    padding-top: 15rem;
-    margin-top: -5rem;
+    padding: 7.5rem 3rem;
   }
 
   &__container {

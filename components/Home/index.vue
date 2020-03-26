@@ -9,8 +9,7 @@
   background-color: $color-grey-light-1;
   height: 95vh;
   max-height: 800px;
-  padding: 0 10rem;
-  padding-top: 65px;
+  padding: 65px 20rem;
   position: relative;
 
   display: flex;
@@ -26,6 +25,10 @@
     animation-name: moveInBottom;
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
+
+    @include respond(mobile) {
+      font-size: 4rem;
+    }
   }
 }
 </style>

@@ -105,6 +105,7 @@ export default {
       font-size: 2rem;
       text-transform: uppercase;
       color: $color-primary;
+      padding-left: 7rem;
     }
     p {
       font-size: 1.6rem;
