@@ -47,18 +47,16 @@ export default {
   padding: 7.5rem 10rem;
   position: relative;
   background-color: $color-grey-light-2;
-  margin-top: -15rem;
 
   display: grid;
   grid-template-columns: 1fr minmax(30%, 75rem) 1fr;
 
   @include respond(tab-medium) {
-    padding: 10rem 5rem;
+    padding: 7.5rem 5rem;
   }
 
   @include respond(tab-small) {
-    padding: 10rem 3rem;
-    margin-top: -5rem;
+    padding: 7.5rem 3rem;
   }
 
   &__heading {

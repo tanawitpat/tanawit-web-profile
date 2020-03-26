@@ -40,6 +40,10 @@ export default {
   padding: 10rem 5rem;
   font-size: 1.6rem;
 
+  @include respond(tab-small) {
+    padding: 5rem 5rem;
+  }
+
   button {
     font-size: 1.8rem;
     font-weight: 700;
@@ -67,6 +71,10 @@ export default {
   &__heading {
     color: $color-primary;
     margin-bottom: 6rem;
+
+    @include respond(tab-small) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__content {
