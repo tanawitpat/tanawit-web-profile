@@ -10,7 +10,11 @@
         <div v-scroll-to="'#section-aboutme'">About me</div>
         <div v-scroll-to="'#section-experience'">Experience</div>
         <div v-scroll-to="'#section-activity'">Activities</div>
-        <nuxt-link to="nerd" class="navigation__right__nerd-button">
+        <nuxt-link
+          aria-label="Nerd Mode button"
+          to="nerd"
+          class="navigation__nerd-button"
+        >
           <button>
             Nerd Mode
           </button>
@@ -70,26 +74,26 @@
         margin-right: 40px;
       }
     }
+  }
 
-    &__nerd-button {
-      padding: 2rem 0;
-      height: 100%;
-      padding: 0;
+  &__nerd-button {
+    padding: 2rem 0;
+    height: 100%;
+    padding: 0;
 
-      button {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: $color-white;
-        background-color: $color-primary;
-        height: 4.5rem;
-        border: none;
-        border-radius: 2rem;
-        padding: 0 2rem;
-        cursor: pointer;
+    button {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $color-white;
+      background-color: $color-primary;
+      height: 4.5rem;
+      border: none;
+      border-radius: 2rem;
+      padding: 0 2rem;
+      cursor: pointer;
 
-        &:hover {
-          background-color: $color-blue-dark-2;
-        }
+      &:hover {
+        background-color: $color-blue-dark-2;
       }
     }
   }

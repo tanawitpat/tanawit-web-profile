@@ -11,11 +11,14 @@
         </div>
         <div class="contact-modal__card__contact__linkedin">
           <div class="contact-modal__card__contact__image-container">
-            <a href="https://www.linkedin.com/in/tanawitp/">
+            <a
+              href="https://www.linkedin.com/in/tanawitp/"
+              aria-label="Linkedin"
+            >
               <img src="images/logo/linkedin.jpg" />
             </a>
           </div>
-          <a href="https://www.linkedin.com/in/tanawitp/">
+          <a href="https://www.linkedin.com/in/tanawitp/" aria-label="Linkedin">
             <p>linkedin.com/in/tanawitp</p>
           </a>
         </div>
@@ -28,7 +31,10 @@
 export default {
   methods: {
     setIsContactModalOpen(newIsContactModalOpen) {
-      this.$store.commit('contact/setIsContactModalOpen', newIsContactModalOpen)
+      this.$store.commit(
+        'homepage/setIsContactModalOpen',
+        newIsContactModalOpen
+      )
     }
   }
 }
@@ -44,7 +50,7 @@ export default {
   background-color: rgba($color-white, 0.8);
   z-index: 10;
   animation-name: moveInBottom;
-  animation-duration: 0.2s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-out;
 
   &__card {

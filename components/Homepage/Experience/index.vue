@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import ExperienceCard from '@/components/Experience/ExperienceCard'
+import ExperienceCard from '@/components/Homepage/Experience/ExperienceCard'
 import experienceData from '@/assets/data/experience.json'
 
 export default {

@@ -31,7 +31,10 @@
         >
           Activies
         </div>
-        <div @click="setIsNavigationOpen(false)" class="navigation__link">
+        <div
+          @click="setIsNavigationOpen(false)"
+          class="navigation__link navigation__link"
+        >
           Nerd Mode
         </div>
       </div>
@@ -43,12 +46,12 @@
 export default {
   computed: {
     isNavigationOpen() {
-      return this.$store.state.navigation.isNavigationOpen
+      return this.$store.state.homepage.isNavigationOpen
     }
   },
   methods: {
     setIsNavigationOpen(newIsNavigationOpen) {
-      this.$store.commit('navigation/setIsNavigationOpen', newIsNavigationOpen)
+      this.$store.commit('homepage/setIsNavigationOpen', newIsNavigationOpen)
     }
   }
 }

@@ -1,15 +1,15 @@
 <template>
-  <div class="aboutme-content-dictionary">
+  <div class="aboutme-keyword">
     <h3>
       {{ title }}
     </h3>
-    <p class="aboutme-content-dictionary__meaning">
+    <p>
       {{ description }}
     </p>
     <nuxt-link
       v-if="link"
       :to="link.path"
-      class="aboutme-content-dictionary__technical-skill"
+      class="aboutme-keyword__technical-skill"
     >
       {{ link.label }}
     </nuxt-link>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'AboutMeLayoutMeaning',
+  name: 'AboutMeKeyword',
   props: {
     title: {
       type: String,
@@ -38,11 +38,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.aboutme-content-dictionary {
+.aboutme-keyword {
   h3 {
     font-size: 2.8rem;
     text-transform: uppercase;
     color: $color-primary;
+  }
+
+  p {
+    font-size: 1.8rem;
   }
 
   &__technical-skill {

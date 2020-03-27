@@ -14,14 +14,14 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-import SectionHome from '@/components/Home'
-import SectionAboutMe from '@/components/AboutMe'
-import SectionExperience from '@/components/Experience'
-import SectionActivity from '@/components/Activity'
-import SectionNextStep from '@/components/NextStep'
-import SectionFooter from '@/components/Footer'
-import ContactModal from '@/components/NextStep/ContactModal'
+import Navbar from '@/components/Homepage/Navbar'
+import SectionHome from '@/components/Homepage/Home'
+import SectionAboutMe from '@/components/Homepage/AboutMe'
+import SectionExperience from '@/components/Homepage/Experience'
+import SectionActivity from '@/components/Homepage/Activity'
+import SectionNextStep from '@/components/Homepage/NextStep'
+import SectionFooter from '@/components/Homepage/Footer'
+import ContactModal from '@/components/Homepage/NextStep/ContactModal'
 
 export default {
   components: {
@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     isContactModalOpen() {
-      return this.$store.state.contact.isContactModalOpen
+      return this.$store.state.homepage.isContactModalOpen
     }
   }
 }

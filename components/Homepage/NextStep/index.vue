@@ -27,7 +27,10 @@
 export default {
   methods: {
     setIsContactModalOpen(newIsContactModalOpen) {
-      this.$store.commit('contact/setIsContactModalOpen', newIsContactModalOpen)
+      this.$store.commit(
+        'homepage/setIsContactModalOpen',
+        newIsContactModalOpen
+      )
     }
   }
 }

@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import ActivityCard from '@/components/Activity/ActivityCard'
+import ActivityCard from '@/components/Homepage/Activity/ActivityCard'
 import activityData from '@/assets/data/activity.json'
 
 export default {

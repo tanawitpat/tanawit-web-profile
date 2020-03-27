@@ -107,6 +107,7 @@ export default {
       color: $color-primary;
       padding-left: 7rem;
     }
+
     p {
       font-size: 1.6rem;
     }

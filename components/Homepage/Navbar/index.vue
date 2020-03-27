@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import NavbarDesktop from '@/components/Navbar/NavbarDesktop'
-import NavbarMobile from '@/components/Navbar/NavbarMobile'
+import NavbarDesktop from '@/components/Homepage/Navbar/NavbarDesktop'
+import NavbarMobile from '@/components/Homepage/Navbar/NavbarMobile'
 
 export default {
   name: 'Navbar',

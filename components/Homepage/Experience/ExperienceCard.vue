@@ -1,11 +1,14 @@
 <template>
   <div class="experience-card">
     <h3 class="experience-card__position">{{ title }}</h3>
-    <a :href="companyLink" class="experience-card__company-name">{{
-      companyName
-    }}</a>
+    <a
+      :href="companyLink"
+      :aria-label="companyName"
+      class="experience-card__company-name"
+      >{{ companyName }}</a
+    >
     <p class="experience-card__duration">{{ duration }}</p>
-    <a :href="companyLink">
+    <a :href="companyLink" :aria-label="companyName">
       <img
         :src="companyLogoPath"
         :alt="companyName + ' logo'"
