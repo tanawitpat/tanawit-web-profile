@@ -42,7 +42,7 @@
           <AboutMeKeyword
             :link="{ label: 'Explore my technical skills', path: '/nerd' }"
             title="Software Developer"
-            description="I am passionate about building a software used by tons of users. Experienced in JavaScript, Go, React, GraphQL, and Kubernetes"
+            description="I am passionate about building a software used by tons of users. Experienced in both frontend and backend development"
           />
         </div>
       </div>
@@ -141,7 +141,7 @@ export default {
 <style scoped lang="scss">
 .section-aboutme {
   font-size: 1.8rem;
-  padding: 7.5rem 10rem;
+  padding: 7.5rem 10rem 5rem;
   background-color: $color-grey-light-3;
 
   @include respond(tab-large) {
@@ -196,7 +196,7 @@ export default {
       }
 
       &__developer {
-        height: 20rem;
+        height: 22.5rem;
         position: absolute;
         top: 50%;
         left: 50%;
