@@ -23,7 +23,7 @@ export default {
 
 <style scoped lang="scss">
 .section-home {
-  background-color: rgba($color-black, 0.75);
+  background-color: rgba($color-black, 0.7);
   height: 95vh;
   max-height: 800px;
   padding: 65px 20rem;

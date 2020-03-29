@@ -1,5 +1,5 @@
 <template>
-  <p :style="styles" class="skill-card">
+  <p @mouseover="setSelectedSkill(name)" :style="styles" class="skill-card">
     {{ name }}
   </p>
 </template>
@@ -12,7 +12,7 @@ export default {
       required: true
     },
     levelColor: {
-      type: Int8Array,
+      type: String,
       required: false,
       default: 'white'
     }
@@ -22,6 +22,11 @@ export default {
       return {
         'border-bottom': `1.5px solid ${this.levelColor}`
       }
+    }
+  },
+  methods: {
+    setSelectedSkill(newSelectedSkill) {
+      this.$store.commit('nerd/setSelectedSkill', newSelectedSkill)
     }
   }
 }
