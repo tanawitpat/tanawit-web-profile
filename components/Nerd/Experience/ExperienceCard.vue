@@ -56,7 +56,7 @@ export default {
 <style scoped lang="scss">
 .experience-card {
   position: relative;
-  background-color: rgba($color-grey-dark-3, 0.25);
+  background-color: $color-grey-dark-1;
   border-radius: 20px;
   padding: 3rem 5rem;
   transition: all 0.2s;

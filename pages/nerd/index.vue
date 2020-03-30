@@ -5,6 +5,7 @@
       <SectionHome />
       <SectionSkill />
       <SectionExperience />
+      <SectionGithub />
     </div>
   </div>
 </template>
@@ -14,13 +15,15 @@ import Navbar from '@/components/Nerd/Navbar'
 import SectionHome from '@/components/Nerd/Home'
 import SectionSkill from '@/components/Nerd/Skill'
 import SectionExperience from '@/components/Nerd/Experience'
+import SectionGithub from '@/components/Nerd/Github'
 
 export default {
   components: {
     Navbar,
     SectionHome,
     SectionSkill,
-    SectionExperience
+    SectionExperience,
+    SectionGithub
   }
 }
 </script>

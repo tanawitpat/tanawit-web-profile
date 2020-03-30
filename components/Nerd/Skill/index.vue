@@ -194,7 +194,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-grey-dark-2 transparent;
+    border-color: transparent transparent $color-grey-dark-0 transparent;
   }
 }
 </style>

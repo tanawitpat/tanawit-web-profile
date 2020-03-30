@@ -22,16 +22,19 @@
         />
       </div>
     </div>
+    <TriangleFooter class="section-experience__triangle-footer" />
   </section>
 </template>
 
 <script>
+import TriangleFooter from '@/components/TriangleFooter'
 import ExperienceCard from '@/components/Nerd/Experience/ExperienceCard'
 import experienceData from '@/assets/data/dev-experience.json'
 
 export default {
   name: 'SectionExperience',
   components: {
+    TriangleFooter,
     ExperienceCard
   },
   data() {
@@ -44,9 +47,9 @@ export default {
 
 <style scoped lang="scss">
 .section-experience {
-  padding: 7.5rem 10rem;
+  padding: 7.5rem 10rem 15rem;
   position: relative;
-  background-color: $color-grey-dark-2;
+  background-color: $color-grey-dark-0;
 
   display: grid;
   grid-template-columns: 1fr minmax(30%, 75rem) 1fr;
@@ -86,6 +89,10 @@ export default {
         margin-bottom: 3rem;
       }
     }
+  }
+
+  &__triangle-footer {
+    border-color: transparent transparent $color-grey-dark-1 transparent;
   }
 }
 </style>
