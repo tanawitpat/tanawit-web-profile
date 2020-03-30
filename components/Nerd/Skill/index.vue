@@ -7,7 +7,7 @@
           v-for="skill in selectedSkillDetail"
           class="section-skill__detail"
         >
-          <img :src="skill.imagePath" :alt="skill.name" />
+          <img :src="skill.imagePath" :alt="skill.name" rel="preload" />
           <div class="section-skill__detail__name-proficiency">
             <div
               :style="{ 'background-color': skill.levelColor }"
@@ -112,7 +112,7 @@ export default {
 
 <style scoped lang="scss">
 .section-skill {
-  background-color: $color-black;
+  background-color: $color-grey-dark-1;
   padding: 5rem 20rem 15rem;
   position: relative;
 
@@ -194,7 +194,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-grey-dark-1 transparent;
+    border-color: transparent transparent $color-grey-dark-2 transparent;
   }
 }
 </style>

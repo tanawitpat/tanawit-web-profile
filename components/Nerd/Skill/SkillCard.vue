@@ -35,7 +35,7 @@ export default {
 <style scoped lang="scss">
 .skill-card {
   color: $color-white;
-  background-color: $color-grey-dark-1;
+  background-color: $color-grey-dark-2;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: 800;

@@ -28,6 +28,7 @@ export default {
   width: 100%;
   z-index: -1;
   overflow: hidden;
+  background-color: $color-grey-dark-1;
 
   &__content {
     height: 100%;

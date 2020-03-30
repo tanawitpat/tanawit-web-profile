@@ -61,7 +61,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-black transparent;
+    border-color: transparent transparent $color-grey-dark-1 transparent;
   }
 }
 </style>

@@ -1,0 +1,25 @@
+{
+  "section": "dev-experience",
+  "data": [{
+    "companyName": "Central Technology",
+    "title": "Frontend Developer",
+    "duration": "November 2019-Present",
+    "companyLogoPath": "images/logo/central-tech.png",
+    "companyLink": "http://central.tech/",
+    "description": [
+      "Develop frontend of the SuperSport website (https://www.supersports.co.th – Sporting good online store in Thailand).",
+      "Contribute new features to Central Tech core libraries (UI and API)."
+    ]
+  }, {
+    "companyName": "Kasikorn Business-Technology Group",
+    "title": "Machine Learning Engineer",
+    "duration": "July 2018-October 2019",
+    "companyLogoPath": "images/logo/kbtg.png",
+    "companyLink": "http://kbtg.tech/en",
+    "description": [
+      "Developed services which cover various areas such as machine learning model experiment platform, optical character recognition, and virtual wallet.",
+      "Improved software development workflow in ML team projects by setting up CI/CD pipelines with test automation, writing Kubernetes deployment files, coordinating with infrastructure teams, and performing knowledge sharing session to 50+ team members.",
+      "First tier incident solver - investigate root causes, estimate the impact, join conference call with infrastructure and other app teams, and perform workaround operations."
+    ]
+  }]
+}
