@@ -43,12 +43,16 @@
       text-decoration: none;
       font-size: 1.8rem;
       padding: 1.5rem 2rem;
-      background-color: $color-grey-dark-2;
+      background: $color-grey-dark-2;
       border-radius: 2rem;
       cursor: pointer;
 
       &:hover {
         background: $color-gradient-primary;
+
+        @include respond(mobile) {
+          background: $color-grey-dark-2;
+        }
       }
     }
   }

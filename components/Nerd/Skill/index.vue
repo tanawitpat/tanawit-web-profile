@@ -164,6 +164,10 @@ export default {
     grid-gap: 3rem;
     color: $color-white;
 
+    @include respond(tab-large) {
+      display: none;
+    }
+
     img {
       background-color: $color-white;
       border-radius: 2rem;

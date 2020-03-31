@@ -74,6 +74,11 @@
       &:hover {
         background-color: $color-grey-dark-2;
         color: $color-grey-light-1;
+
+        @include respond(mobile) {
+          color: $color-grey-dark-3;
+          background-color: $color-grey-dark-1;
+        }
       }
     }
   }

@@ -49,6 +49,10 @@ export default {
   &:hover {
     background-image: $color-gradient-primary;
     border-bottom: 1.5px solid $color-white !important;
+
+    @include respond(tab-large) {
+      background-image: inherit;
+    }
   }
 }
 </style>
