@@ -19,5 +19,9 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @include respond(tab-small) {
+    border-width: 0 0 7.5rem 100vw;
+  }
 }
 </style>

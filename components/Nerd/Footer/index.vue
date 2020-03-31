@@ -17,8 +17,12 @@
 <style scoped lang="scss">
 .section-footer {
   background-color: $color-black;
-  padding: 3rem 0;
+  padding: 3rem 3rem 1rem;
   position: relative;
+
+  @include respond(tab-small) {
+    padding: 3rem 2rem 1rem;
+  }
 
   &__seperator {
     margin: auto;
@@ -26,6 +30,10 @@
     height: 0.2rem;
     background: $color-grey-dark-3;
     margin-bottom: 2rem;
+
+    @include respond(tab-medium) {
+      width: 90%;
+    }
   }
 
   &__container {
@@ -56,6 +64,7 @@
       font-weight: 800;
       display: inline-block;
       text-decoration: none;
+      margin-bottom: 2rem;
       cursor: pointer;
 
       &:not(:last-child) {

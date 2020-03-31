@@ -14,8 +14,16 @@
 <style scoped lang="scss">
 .section-github {
   background-color: $color-grey-dark-1;
-  padding: 5rem 20rem 7.5rem;
+  padding: 5rem 10rem 7.5rem;
   position: relative;
+
+  @include respond(tab-medium) {
+    padding: 5rem 5rem 7.5rem;
+  }
+
+  @include respond(tab-medium) {
+    padding: 5rem 3rem 7.5rem;
+  }
 
   &__content {
     text-align: center;
@@ -46,11 +54,27 @@
   }
 
   &__image {
-    height: 380px;
+    height: 330px;
     width: 700px;
     margin: auto;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 7rem;
+
+    @include respond(tab-large) {
+      width: 500px;
+      height: 250px;
+    }
+
+    @include respond(tab-medium) {
+      width: 380px;
+      height: 170px;
+    }
+
+    @include respond(tab-small) {
+      width: 75%;
+      min-width: 200px;
+      height: 140px;
+    }
 
     > * {
       border-radius: 2rem;
@@ -58,6 +82,21 @@
       width: 400px;
       height: 300px;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+      @include respond(tab-large) {
+        width: 300px;
+        height: 225px;
+      }
+
+      @include respond(tab-medium) {
+        width: 200px;
+        height: 150px;
+      }
+
+      @include respond(tab-small) {
+        width: 150px;
+        height: 113px;
+      }
     }
 
     &--1 {
@@ -68,7 +107,7 @@
 
     &--2 {
       position: absolute;
-      top: 3rem;
+      bottom: 0;
       right: 0;
     }
   }

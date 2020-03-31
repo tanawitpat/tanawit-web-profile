@@ -116,10 +116,25 @@ export default {
   padding: 5rem 20rem 15rem;
   position: relative;
 
+  @include respond(tab-large) {
+    padding: 5rem 10rem 15rem;
+  }
+
+  @include respond(tab-small) {
+    padding: 5rem 3rem 10rem;
+  }
+
   &__container {
+    margin: auto;
+    max-width: $max-width;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10rem;
+
+    @include respond(tab-large) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__level-label {
@@ -136,6 +151,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-large) {
+      display: none;
+    }
   }
 
   &__detail {
@@ -186,11 +205,19 @@ export default {
       text-transform: uppercase;
       margin-bottom: 2rem;
     }
+
+    @include respond(tab-large) {
+      text-align: center;
+    }
   }
 
   &__skill-card {
     display: flex;
     flex-wrap: wrap;
+
+    @include respond(tab-large) {
+      justify-content: center;
+    }
   }
 
   &__triangle-footer {

@@ -26,29 +26,47 @@ export default {
   background-color: rgba($color-black, 0.7);
   height: 95vh;
   max-height: 800px;
-  padding: 65px 20rem;
+  padding: 5rem 20rem;
   position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  h1 {
-    background-image: $color-gradient-primary;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  @include respond(tab-large) {
+    padding: 5rem 10rem;
+  }
 
+  @include respond(tab-small) {
+    padding: 5rem 2rem;
+  }
+
+  h1 {
+    text-align: center;
     font-size: 12rem;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.3em;
 
+    background-image: $color-gradient-primary;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     animation-name: moveInBottom;
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
 
-    @include respond(mobile) {
-      font-size: 4rem;
+    @include respond(tab-large) {
+      font-size: 7rem;
+    }
+
+    @include respond(tab-medium) {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(tab-small) {
+      font-size: 4.8rem;
     }
   }
 
@@ -58,6 +76,18 @@ export default {
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
+
+    @include respond(tab-large) {
+      font-size: 3rem;
+    }
+
+    @include respond(tab-medium) {
+      font-size: 2.4rem;
+    }
+
+    @include respond(tab-small) {
+      font-size: 2rem;
+    }
   }
 
   &__triangle-footer {
