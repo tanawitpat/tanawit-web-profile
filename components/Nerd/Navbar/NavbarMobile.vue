@@ -1,10 +1,20 @@
 <template>
-  <div :class="{ active: isNavigationOpen }" class="navigation">
+  <div @click="setIsNavigationOpen(false)" class="navigation">
     <nuxt-link to="/" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
+      <span class="navigation__icon" />
     </nuxt-link>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    setIsNavigationOpen(newIsNavigationOpen) {
+      this.$store.commit('homepage/setIsNavigationOpen', newIsNavigationOpen)
+    }
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .navigation {
@@ -21,7 +31,9 @@
     text-align: center;
     cursor: pointer;
 
-    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include respond(tab-small) {
       top: 3rem;
@@ -30,31 +42,27 @@
   }
 
   &__icon {
-    position: relative;
-    margin-top: 3.5rem;
+    width: 33px;
+    height: 33px;
 
-    &,
-    &::before,
-    &::after {
-      width: 3rem;
-      height: 2px;
-      background-color: $color-grey-dark-3;
-      display: inline-block;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &::before,
-    &::after {
-      content: '';
+    &:before,
+    &:after {
       position: absolute;
-      left: 0;
-      transition: all 0.2s;
+      content: '';
+      height: 33px;
+      width: 3px;
+      background-color: $color-grey-dark-3;
     }
 
-    &::before {
-      top: -0.8rem;
+    &:before {
+      transform: rotate(45deg);
     }
-    &::after {
-      top: 0.8rem;
+    &:after {
+      transform: rotate(-45deg);
     }
   }
 }

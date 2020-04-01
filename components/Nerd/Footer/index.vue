@@ -17,7 +17,7 @@
 <style scoped lang="scss">
 .section-footer {
   background-color: $color-black;
-  padding: 3rem 3rem 1rem;
+  padding: 3rem 3rem 2rem;
   position: relative;
 
   @include respond(tab-small) {
@@ -64,7 +64,8 @@
       font-weight: 800;
       display: inline-block;
       text-decoration: none;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
       cursor: pointer;
 
       &:not(:last-child) {

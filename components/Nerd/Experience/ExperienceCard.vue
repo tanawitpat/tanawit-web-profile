@@ -16,7 +16,14 @@
       />
     </a>
     <div class="experience-card__description">
-      <li :key="element" v-for="element in description">{{ element }}</li>
+      <div
+        :key="element"
+        v-for="element in description"
+        class="experience-card__description__item"
+      >
+        <span>&middot;</span>
+        <p>{{ element }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -114,8 +121,13 @@ export default {
     color: $color-white;
     padding: 0 2rem 0 0;
 
-    li {
-      margin-bottom: 0.5rem;
+    &__item {
+      display: grid;
+      grid-template-columns: 1.6rem 1fr;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }

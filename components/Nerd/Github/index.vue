@@ -2,7 +2,7 @@
   <section class="section-github">
     <div class="section-github__content">
       <h3 class="heading-primary">Explore my other projects</h3>
-      <div class="section-github__image">
+      <div class="section-github__image" data-aos="fade-up">
         <div class="section-github__image--1" />
         <div class="section-github__image--2" />
       </div>

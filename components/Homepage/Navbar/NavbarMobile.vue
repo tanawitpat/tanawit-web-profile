@@ -31,12 +31,13 @@
         >
           Activies
         </div>
-        <div
+        <nuxt-link
           @click="setIsNavigationOpen(false)"
+          to="nerd"
           class="navigation__link navigation__link"
         >
           Nerd Mode
-        </div>
+        </nuxt-link>
       </div>
     </nav>
   </div>
@@ -183,12 +184,12 @@ export default {
       content: '';
       position: absolute;
       left: 0;
-      transition: all 0.2s;
     }
 
     &::before {
       top: -0.8rem;
     }
+
     &::after {
       top: 0.8rem;
     }

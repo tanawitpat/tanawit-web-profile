@@ -1,27 +1,29 @@
 <template>
   <section class="section-skill">
     <div class="section-skill__container">
-      <div v-if="selectedSkill" class="section-skill__detail__container">
-        <div
-          :key="skill.name"
-          v-for="skill in selectedSkillDetail"
-          class="section-skill__detail"
-        >
-          <img :src="skill.imagePath" :alt="skill.name" rel="preload" />
-          <div class="section-skill__detail__name-proficiency">
-            <div
-              :style="{ 'background-color': skill.levelColor }"
-              class="section-skill__level-label"
-            />
-            <h3>{{ skill.name }}</h3>
-            <p>{{ skill.proficiency }}</p>
+      <div class="section-skill__container--left">
+        <div v-if="selectedSkill">
+          <div
+            :key="skill.name"
+            v-for="skill in selectedSkillDetail"
+            class="section-skill__detail"
+          >
+            <img :src="skill.imagePath" :alt="skill.name" rel="preload" />
+            <div class="section-skill__detail__name-proficiency">
+              <div
+                :style="{ 'background-color': skill.levelColor }"
+                class="section-skill__level-label"
+              />
+              <h3>{{ skill.name }}</h3>
+              <p>{{ skill.proficiency }}</p>
+            </div>
           </div>
         </div>
+        <div v-else class="section-skill__default-detail">
+          Select a skill on the right to see the skill details
+        </div>
       </div>
-      <div v-else class="section-skill__default-detail">
-        Select a skill on the right to see the skill details
-      </div>
-      <div>
+      <div class="section-skill__container--right">
         <div class="section-skill__navigator section-skill__frontend">
           <h2>Frontend Development</h2>
           <div
@@ -135,6 +137,16 @@ export default {
     @include respond(tab-large) {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    &--left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include respond(tab-large) {
+        display: none;
+      }
+    }
   }
 
   &__level-label {
@@ -151,10 +163,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @include respond(tab-large) {
-      display: none;
-    }
   }
 
   &__detail {
@@ -163,10 +171,6 @@ export default {
     grid-template-columns: 100px minmax(210px, 1fr);
     grid-gap: 3rem;
     color: $color-white;
-
-    @include respond(tab-large) {
-      display: none;
-    }
 
     img {
       background-color: $color-white;
@@ -182,12 +186,6 @@ export default {
     p {
       font-size: 1.8rem;
       margin-bottom: 0;
-    }
-
-    &__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     &__name-proficiency {
@@ -218,6 +216,7 @@ export default {
   &__skill-card {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.6rem;
 
     @include respond(tab-large) {
       justify-content: center;
