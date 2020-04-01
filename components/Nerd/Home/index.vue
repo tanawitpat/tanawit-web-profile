@@ -66,7 +66,8 @@ export default {
     }
 
     @include respond(tab-small) {
-      font-size: 4.8rem;
+      font-size: 5.2rem;
+      letter-spacing: 0.2em;
     }
   }
 

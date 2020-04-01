@@ -50,7 +50,7 @@
       text-decoration: none;
       font-size: 2.4rem;
       font-weight: 700;
-      color: $color-grey-dark-1;
+      color: $color-primary;
       cursor: pointer;
     }
   }
