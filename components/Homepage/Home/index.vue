@@ -1,6 +1,6 @@
 <template>
   <section id="section-home" class="section-home">
-    <div class="section-home__container"><p>Hi! I'm Tanawit</p></div>
+    <div class="section-home__container"><h1>Hi! I'm Tanawit</h1></div>
   </section>
 </template>
 
@@ -33,7 +33,7 @@
     padding: 0 5rem;
   }
 
-  p {
+  h1 {
     color: $color-white;
     font-size: 4.8rem;
     text-transform: uppercase;

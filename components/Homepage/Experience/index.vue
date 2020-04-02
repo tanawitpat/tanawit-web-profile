@@ -1,7 +1,7 @@
 <template>
   <section id="section-experience" class="section-experience">
     <div class="section-experience__heading u-margin-bottom-big">
-      <h1 class="heading-primary">My Work Experience</h1>
+      <h2 class="heading-primary">My Work Experience</h2>
       <p>
         From a business intern to a software developer
       </p>
@@ -62,7 +62,7 @@ export default {
   &__heading {
     grid-column: 1 / -1;
 
-    h1 {
+    h2 {
       color: $color-primary;
       margin-bottom: 1.2rem;
     }
