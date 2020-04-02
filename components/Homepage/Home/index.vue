@@ -1,24 +1,41 @@
 <template>
   <section id="section-home" class="section-home">
-    <p>Under development</p>
+    <div class="section-home__container"><p>Hi! I'm Tanawit</p></div>
   </section>
 </template>
 
 <style scoped lang="scss">
 .section-home {
-  background-color: $color-grey-light-1;
   height: 95vh;
-  max-height: 800px;
-  padding: 65px 20rem;
+  max-height: 900px;
+  padding-top: 65px;
   position: relative;
 
+  background-image: url('~static/images/cover.png');
+  background-position: right 20%;
+  background-size: cover;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  @include respond(tab-large) {
+    justify-content: center;
+  }
+
+  @include respond(tab-medium) {
+    background-position: 80% 20%;
+  }
+
+  &__container {
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+    padding: 0 5rem;
+  }
 
   p {
     color: $color-white;
-    font-size: 8rem;
+    font-size: 4.8rem;
     text-transform: uppercase;
     font-weight: 800;
 
@@ -26,7 +43,11 @@
     animation-duration: 0.8s;
     animation-timing-function: ease-out;
 
-    @include respond(mobile) {
+    @include respond(tab-large) {
+      text-align: center;
+    }
+
+    @include respond(tab-small) {
       font-size: 4rem;
     }
   }
