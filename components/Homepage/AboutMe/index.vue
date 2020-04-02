@@ -1,8 +1,8 @@
 <template>
   <section id="section-aboutme" class="section-aboutme">
-    <h1 class="heading-primary u-margin-bottom-big section-aboutme__heading">
+    <h2 class="heading-primary u-margin-bottom-big section-aboutme__heading">
       Words describe me
-    </h1>
+    </h2>
     <div class="section-aboutme__container">
       <div class="section-aboutme__card section-aboutme__card--right">
         <div class="section-aboutme__card__image" data-aos="fade-right">
@@ -42,7 +42,7 @@
           <AboutMeKeyword
             :link="{ label: 'Explore my technical skills', path: '/nerd' }"
             title="Software Developer"
-            description="I am passionate about building a software used by tons of users. Experienced in both frontend and backend development"
+            description="I am passionate about building a software used by lot of users. Experienced in both frontend and backend development"
           />
         </div>
       </div>

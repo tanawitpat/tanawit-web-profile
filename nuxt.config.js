@@ -23,6 +23,10 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap'
+      },
+      {
+        rel: 'canonical',
+        href: 'https://tanawitp.me'
       }
     ]
   },

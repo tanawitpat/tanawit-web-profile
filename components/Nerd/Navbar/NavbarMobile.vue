@@ -1,6 +1,6 @@
 <template>
   <div @click="setIsNavigationOpen(false)" class="navigation">
-    <nuxt-link to="/" class="navigation__button">
+    <nuxt-link to="/" aria-label="Close" class="navigation__button">
       <span class="navigation__icon" />
     </nuxt-link>
   </div>

@@ -1,22 +1,22 @@
 <template>
   <section id="section-nextstep" class="section-contact">
-    <h1 class="heading-primary section-contact__heading">
+    <h2 class="heading-primary section-contact__heading">
       Next steps
-    </h1>
+    </h2>
     <div class="section-contact__content" data-aos="fade-up">
       <div>
-        <h2>
+        <h3>
           Want to explore my
           <span>software development</span> skills?
-        </h2>
+        </h3>
         <button @click="$router.push('/nerd')">Visit my nerd site</button>
       </div>
       <div>
-        <h2>Looking for my <span>formal</span> profile?</h2>
+        <h3>Looking for my <span>formal</span> profile?</h3>
         <button>Checkout my resume</button>
       </div>
       <div>
-        <h2>Let's <span>keep in touch</span></h2>
+        <h3>Let's <span>keep in touch</span></h3>
         <button @click="setIsContactModalOpen(true)">View my contact</button>
       </div>
     </div>
@@ -95,7 +95,7 @@ export default {
     }
 
     > div {
-      h2 {
+      h3 {
         span {
           color: $color-primary;
         }

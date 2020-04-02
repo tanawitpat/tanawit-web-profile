@@ -1,9 +1,9 @@
 <template>
   <section id="section-activity" class="section-activity">
     <div class="section-activity__container">
-      <h1 class="heading-primary u-margin-bottom-big section-activity__heading">
+      <h2 class="heading-primary u-margin-bottom-big section-activity__heading">
         My Activities
-      </h1>
+      </h2>
       <div class="section-activity__card">
         <div
           :key="activity.name"
