@@ -12,6 +12,26 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      {
+        property: 'og:site_name',
+        content: 'Tanawit Pattanaveerangkoon'
+      },
+      {
+        property: 'og:title',
+        content: 'Tanawit Pattanaveerangkoon'
+      },
+      {
+        property: 'og:description',
+        content: process.env.npm_package_description || ''
+      },
+      {
+        property: 'og:image',
+        content: 'https://tanawitp.me/images/thumbnail.png'
+      },
+      {
+        property: 'og:url',
+        content: 'https://tanawitp.me'
       }
     ],
     htmlAttrs: {
