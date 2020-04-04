@@ -124,7 +124,7 @@ export default {
 <style scoped lang="scss">
 .section-skill {
   background-color: $color-grey-dark-1;
-  padding: 5rem 20rem 15rem;
+  padding: 5rem 7.5rem 15rem;
   position: relative;
 
   @include respond(tab-large) {
@@ -141,7 +141,7 @@ export default {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10rem;
+    grid-gap: 5rem;
 
     @include respond(tab-large) {
       grid-template-columns: repeat(1, 1fr);

@@ -13,7 +13,7 @@
     "duration": "July 2018-October 2019",
     "companyLogoPath": "images/logo/kbtg.png",
     "companyLink": "http://kbtg.tech/en",
-    "description": "My first journey in software development. I worked with Data Scientists to develop machine learning-based services which improved KBank customer experience, boosted revenue, and reduced manual processes. The projects covered various areas such as credit scoring, OCR, and virtual wallet."
+    "description": "My first journey in software development. I worked with Data Scientists to develop machine learning-based services. The projects covered various areas such as credit scoring, optical character recognition, and virtual wallet."
   }, {
     "companyName": "Chulalongkorn University",
     "title": "Research Assistant",
@@ -27,7 +27,7 @@
     "duration": "June 2017-August 2017",
     "companyLogoPath": "images/logo/kbtg.png",
     "companyLink": "http://kbtg.tech/en",
-    "description": "Applied statistics and machine learning knowledge with real-world business problems. Our team identified characteristics of potentially default credit card customers and proposed solutions to prevent credit approval for credit card applicants that obtain such characteristics. We won 1st place in the internship project competition."
+    "description": "Applied statistics and machine learning knowledge with real-world business problems. Our team identified characteristics of potentially default credit card customers and proposed solutions to prevent credit approval for credit card applicants that obtain such characteristics."
   }, {
     "companyName": "Krungsri Securities",
     "title": "Intern",
