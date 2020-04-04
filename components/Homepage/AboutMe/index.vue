@@ -64,7 +64,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="Bangkok"
-            description="A capital city of Thailand and the city where I grew up and has been
+            description="Capital city of Thailand and the city where I grew up and has been
       living."
           />
         </div>
@@ -87,7 +87,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="1996"
-            description="A year which I was born. If you had played Restaurant City while you were in a high school, we are friends!."
+            description="The year which I was born. If you had played Restaurant City while you were in a high school, we are friends!."
           />
         </div>
       </div>

@@ -7,10 +7,10 @@
 <style lang="scss">
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 16px;
+  font-size: 62.5%;
 
   @include respond(tab-small) {
-    font-size: 50%; //1rem = 8px, 8/16 = 50%
+    font-size: 50%;
   }
 }
 
