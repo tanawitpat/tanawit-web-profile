@@ -104,9 +104,18 @@ export default {
       return this.skills.filter((skill) => skill.category === 'DEVOPS')
     }
   },
+  mounted() {
+    this.preloadSkillImages()
+  },
   methods: {
     clearSlectedSkill() {
       this.$store.commit('nerd/setSelectedSkill', '')
+    },
+    preloadSkillImages() {
+      this.skills.forEach((skill) => {
+        const img = new Image()
+        img.src = skill.imagePath
+      })
     }
   }
 }

@@ -30,6 +30,11 @@ export default {
       }
     ]
   },
+  render: {
+    static: {
+      maxAge: 1000 * 60 * 60
+    }
+  },
   /*
    ** Customize the progress-bar color
    */
@@ -52,12 +57,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/dotenv',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/component-cache',
-    'vue-scrollto/nuxt'
-  ],
+  modules: ['@nuxtjs/dotenv', '@nuxtjs/style-resources', 'vue-scrollto/nuxt'],
   styleResources: {
     scss: ['~assets/scss/main.scss']
   },
