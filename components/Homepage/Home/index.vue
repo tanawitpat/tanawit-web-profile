@@ -20,6 +20,7 @@
 
   @include respond(tab-large) {
     justify-content: center;
+    padding-top: 0;
   }
 
   @include respond(tab-medium) {
