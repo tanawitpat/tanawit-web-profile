@@ -25,12 +25,25 @@
 
 <script>
 export default {
+  mounted() {
+    this.preloadContactImages()
+  },
   methods: {
     setIsContactModalOpen(newIsContactModalOpen) {
       this.$store.commit(
         'homepage/setIsContactModalOpen',
         newIsContactModalOpen
       )
+    },
+    preloadContactImages() {
+      const preloadImages = [
+        'images/icon/gmail.svg',
+        'images/logo/linkedin.jpg'
+      ]
+      preloadImages.forEach((imagePath) => {
+        const img = new Image()
+        img.src = imagePath
+      })
     }
   }
 }
