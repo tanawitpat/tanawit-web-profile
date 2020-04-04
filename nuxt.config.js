@@ -1,8 +1,5 @@
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
   head: {
     title: 'Tanawit Pattanaveerangkoon',
     meta: [
@@ -38,7 +35,8 @@ export default {
       lang: 'en'
     },
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'icon.ico' },
+      { rel: 'shoutcut icon', type: 'image/x-icon', href: 'icon.ico' },
       {
         rel: 'stylesheet',
         href:
