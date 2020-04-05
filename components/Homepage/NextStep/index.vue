@@ -6,14 +6,19 @@
     <div class="section-contact__content" data-aos="fade-up">
       <div>
         <h3>
-          Want to explore my
-          <span>software development</span> skills?
+          Explore my
+          <span>software development</span> skills
         </h3>
         <button @click="$router.push('/nerd')">Visit my nerd site</button>
       </div>
       <div>
         <h3>Looking for my <span>formal</span> profile?</h3>
-        <button>Checkout my resume</button>
+        <a
+          aria-label="Tanawit's Resume"
+          href="http://static.tanawitp.me.s3.amazonaws.com/Tanawit-Pattanaveerangkoon_Resume.pdf"
+        >
+          <button>Checkout my resume</button>
+        </a>
       </div>
       <div>
         <h3>Let's <span>keep in touch</span></h3>
@@ -77,6 +82,10 @@ export default {
     &:hover {
       background-color: $color-blue-dark-2;
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 
   > * {

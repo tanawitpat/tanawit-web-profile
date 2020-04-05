@@ -38,6 +38,7 @@ export default {
   }
 
   @include respond(tab-small) {
+    height: 90vh;
     padding: 5rem 2rem;
   }
 
@@ -66,7 +67,7 @@ export default {
     }
 
     @include respond(tab-small) {
-      font-size: 5.2rem;
+      font-size: 5.6rem;
       letter-spacing: 0.2em;
     }
   }
