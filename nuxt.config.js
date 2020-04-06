@@ -24,11 +24,11 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://tanawitp.me/images/thumbnail.png'
+        content: 'https://www.tanawitp.me/images/thumbnail.png'
       },
       {
         property: 'og:url',
-        content: 'https://tanawitp.me'
+        content: 'https://www.tanawitp.me'
       }
     ],
     htmlAttrs: {
@@ -39,7 +39,7 @@ export default {
       { rel: 'shoutcut icon', type: 'image/x-icon', href: 'icon.ico' },
       {
         rel: 'canonical',
-        href: 'https://tanawitp.me'
+        href: 'https://www.tanawitp.me'
       }
     ]
   },
