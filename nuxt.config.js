@@ -38,11 +38,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: 'icon.ico' },
       { rel: 'shoutcut icon', type: 'image/x-icon', href: 'icon.ico' },
       {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap'
-      },
-      {
         rel: 'canonical',
         href: 'https://tanawitp.me'
       }
@@ -50,7 +45,7 @@ export default {
   },
   render: {
     static: {
-      maxAge: 1000 * 60 * 60
+      maxAge: 1000 * 60 * 60 * 24 * 7
     }
   },
   /*
@@ -78,8 +73,8 @@ export default {
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    '@nuxtjs/pwa',
-    'vue-scrollto/nuxt'
+    'vue-scrollto/nuxt',
+    '@nuxtjs/pwa'
   ],
   styleResources: {
     scss: ['~assets/scss/main.scss']
