@@ -1,7 +1,7 @@
 <template>
   <section id="section-home" class="section-home">
     <BackgroundVideo video-path="images/Hello-World" />
-    <div>
+    <div class="section-home__content">
       <h1>Tanawit</h1>
       <p>Software Developer</p>
     </div>
@@ -53,10 +53,6 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation-name: moveInBottom;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-out;
-
     @include respond(tab-large) {
       font-size: 7rem;
     }
@@ -90,6 +86,12 @@ export default {
     @include respond(tab-small) {
       font-size: 2rem;
     }
+  }
+
+  &__content {
+    animation-name: moveInBottom;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
   }
 
   &__triangle-footer {
