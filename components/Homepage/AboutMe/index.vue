@@ -1,7 +1,7 @@
 <template>
   <section id="section-aboutme" class="section-aboutme">
-    <h2 class="heading-primary u-margin-bottom-big section-aboutme__heading">
-      Words describe me
+    <h2 class="heading-primary u-margin-bottom-medium section-aboutme__heading">
+      About Me
     </h2>
     <div class="section-aboutme__container">
       <div class="section-aboutme__card section-aboutme__card--right">
