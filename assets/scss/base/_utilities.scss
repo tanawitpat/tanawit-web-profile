@@ -4,10 +4,6 @@
 
 .u-margin-bottom-big {
   margin-bottom: 6rem !important;
-
-  @include respond(tab-large) {
-    margin-bottom: 4rem !important;
-  }
 }
 
 .u-margin-bottom-medium {

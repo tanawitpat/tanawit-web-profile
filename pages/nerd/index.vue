@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Navbar />
+    <header>
+      <Navbar />
+    </header>
     <div class="container">
       <SectionHome />
       <SectionSkill />
