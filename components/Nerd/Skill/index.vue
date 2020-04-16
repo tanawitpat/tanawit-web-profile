@@ -24,43 +24,19 @@
         </div>
       </div>
       <div class="section-skill__container--right">
-        <div class="section-skill__navigator section-skill__frontend">
-          <h2>Frontend Development</h2>
+        <div
+          :key="skillCategory.name"
+          v-for="skillCategory in skillCategories"
+          class="section-skill__navigator section-skill__frontend"
+        >
+          <h2>{{ skillCategory.category }}</h2>
           <div
             @mouseleave="clearSlectedSkill()"
             class="section-skill__skill-card"
           >
             <SkillCard
               :key="skill.name"
-              v-for="skill in frontendSkills"
-              :name="skill.name"
-              :level-color="skill.levelColor"
-            />
-          </div>
-        </div>
-        <div class="section-skill__navigator section-skill__backend">
-          <h2>Backend Development</h2>
-          <div
-            @mouseleave="clearSlectedSkill()"
-            class="section-skill__skill-card"
-          >
-            <SkillCard
-              :key="skill.name"
-              v-for="skill in backendSkills"
-              :name="skill.name"
-              :level-color="skill.levelColor"
-            />
-          </div>
-        </div>
-        <div class="section-skill__navigator section-skill__devops">
-          <h2>DevOps</h2>
-          <div
-            @mouseleave="clearSlectedSkill()"
-            class="section-skill__skill-card"
-          >
-            <SkillCard
-              :key="skill.name"
-              v-for="skill in devopsSkills"
+              v-for="skill in skillCategory.skills"
               :name="skill.name"
               :level-color="skill.levelColor"
             />
@@ -84,7 +60,11 @@ export default {
   },
   data() {
     return {
-      skills: skillData.data
+      skillCategories: skillData.data,
+      skills: skillData.data.reduce(
+        (accumulator, currentValue) => [...accumulator, ...currentValue.skills],
+        []
+      )
     }
   },
   computed: {
@@ -93,15 +73,6 @@ export default {
     },
     selectedSkillDetail() {
       return this.skills.filter((skill) => skill.name === this.selectedSkill)
-    },
-    frontendSkills() {
-      return this.skills.filter((skill) => skill.category === 'FRONTEND')
-    },
-    backendSkills() {
-      return this.skills.filter((skill) => skill.category === 'BACKEND')
-    },
-    devopsSkills() {
-      return this.skills.filter((skill) => skill.category === 'DEVOPS')
     }
   },
   mounted() {
@@ -112,7 +83,7 @@ export default {
       this.$store.commit('nerd/setSelectedSkill', '')
     },
     preloadSkillImages() {
-      this.skills.forEach((skill) => {
+      this.skillCategories.forEach((skill) => {
         const img = new Image()
         img.src = skill.imagePath
       })

@@ -42,7 +42,7 @@
           <AboutMeKeyword
             :link="{ label: 'Explore my technical skills', path: '/nerd' }"
             title="Software Developer"
-            description="I am passionate about building a software used by lot of users. Experienced in both frontend and backend development"
+            description="I am passionate about building a software. Experienced in both frontend and backend development"
           />
         </div>
       </div>
@@ -64,8 +64,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="Bangkok"
-            description="Capital city of Thailand and the city where I grew up and has been
-      living."
+            description="Capital city of Thailand, my hometown and the city where I am living."
           />
         </div>
       </div>

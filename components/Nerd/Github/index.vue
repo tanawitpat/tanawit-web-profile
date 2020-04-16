@@ -42,7 +42,7 @@
       font-weight: 800;
       text-decoration: none;
       font-size: 1.8rem;
-      padding: 1.5rem 2rem;
+      padding: 1.3rem 2rem;
       background: $color-grey-dark-2;
       border-radius: 2rem;
       cursor: pointer;
