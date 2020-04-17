@@ -1,5 +1,9 @@
 # Tanawit's Web Profile
 
+![](https://github.com/tanawitpat/tanawit-web-profile/workflows/production/deploy/badge.svg)
+
+URL: <https://www.tanawitp.me>
+
 ## Project Maintainer
 
 - Tanawit Pattanaveerangkoon <<tanawit.pat@gmail.com>>
