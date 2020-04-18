@@ -29,7 +29,7 @@
           v-for="skillCategory in skillCategories"
           class="section-skill__navigator section-skill__frontend"
         >
-          <h2>{{ skillCategory.category }}</h2>
+          <h3>{{ skillCategory.category }}</h3>
           <div
             @mouseleave="clearSlectedSkill()"
             class="section-skill__skill-card"
@@ -178,7 +178,7 @@ export default {
       margin-bottom: 4rem;
     }
 
-    h2 {
+    h3 {
       font-size: 2.8rem;
       background-image: $color-gradient-primary;
       background-clip: text;

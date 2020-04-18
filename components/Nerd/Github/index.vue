@@ -1,7 +1,7 @@
 <template>
   <section class="section-github">
     <div class="section-github__content">
-      <h3 class="heading-primary">Explore my other projects</h3>
+      <h2 class="heading-primary">Explore my other projects</h2>
       <div class="section-github__image" data-aos="fade-up">
         <div class="section-github__image--1" />
         <div class="section-github__image--2" />
@@ -28,7 +28,7 @@
   &__content {
     text-align: center;
 
-    h3 {
+    h2 {
       font-size: 3.2rem;
       background-image: $color-gradient-primary;
       background-clip: text;

@@ -1,7 +1,7 @@
 <template>
   <section id="section-experience" class="section-experience">
     <div class="section-experience__heading u-margin-bottom-big">
-      <h1 class="heading-primary">My Software Development Experience</h1>
+      <h2 class="heading-primary">My Software Development Experience</h2>
       <p>
         Frontend Developer | Machine Learning Engineer
       </p>
@@ -65,7 +65,7 @@ export default {
   &__heading {
     grid-column: 1 / -1;
 
-    h1 {
+    h2 {
       background-image: $color-gradient-primary;
       background-clip: text;
       -webkit-text-fill-color: transparent;

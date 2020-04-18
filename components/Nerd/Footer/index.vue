@@ -1,9 +1,13 @@
 <template>
   <section class="section-footer">
     <div class="section-footer__container">
-      <h3>Developed by Tanawit Pattanaveerangkoon</h3>
+      <p class="section-footer__container--developer">
+        Developed by Tanawit Pattanaveerangkoon
+      </p>
       <div class="section-footer__seperator" />
-      <h4>This website was built by these tools</h4>
+      <p class="section-footer__container--tech-stack">
+        This website was built by these tools
+      </p>
       <div class="section-footer__skill">
         <a href="https://vuejs.org/">Vue.js</a>
         <a href="https://nuxtjs.org/">Nuxt.js</a>
@@ -44,14 +48,17 @@
     font-size: 1.8rem;
     color: $color-grey-dark-3;
 
-    h3 {
+    &--developer {
       letter-spacing: 1px;
       margin-bottom: 2rem;
+      font-weight: bold;
+      font-size: 2rem;
     }
 
-    h4 {
+    &--tech-stack {
       display: inline-block;
       margin-bottom: 1.5rem;
+      font-weight: bold;
     }
   }
 
