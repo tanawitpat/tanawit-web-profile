@@ -42,7 +42,7 @@
           <AboutMeKeyword
             :link="{ label: 'Explore my technical skills', path: '/nerd' }"
             title="Software Developer"
-            description="I am passionate about building a software. Experienced in both frontend and backend development"
+            description="I am passionate about building software. Experienced in both frontend and backend development"
           />
         </div>
       </div>
@@ -64,7 +64,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="Bangkok"
-            description="The capital city of Thailand, my hometown and the city where I have been living."
+            description="The capital city of Thailand, my hometown, and the city where I have been living."
           />
         </div>
       </div>
@@ -86,7 +86,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="1996"
-            description="The year which I was born. If you had played Restaurant City while you were in a high school, we are friends!."
+            description="The year I was born. If you had played Restaurant City while you were in high school, we are friends!."
           />
         </div>
       </div>
@@ -108,7 +108,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="Statistics"
-            description="I graduated from Chulalongkorn University with Statistics major."
+            description="I graduated from Chulalongkorn University with a Statistics major."
           />
         </div>
       </div>

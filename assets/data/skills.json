@@ -15,12 +15,12 @@
     }, {
       "name": "Go",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/go.png"
     }, {
       "name": "Python",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/python.png"
     }, {
       "name": "R",
@@ -53,7 +53,7 @@
     }, {
       "name": "Robot Framework",
       "levelColor": "red",
-      "proficiency": "Partially using in previous position",
+      "proficiency": "Partially used in a previous position",
       "imagePath": "images/skills/robotframework.png"
     }]
   }, {
@@ -61,22 +61,22 @@
     "skills": [{
       "name": "MySQL",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/mysql.png"
     }, {
       "name": "MongoDB",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/mongodb.png"
     }, {
       "name": "RabbitMQ",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/rabbitmq.png"
     }, {
       "name": "Redis",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/redis.png"
     }]
   }, {
@@ -84,17 +84,17 @@
     "skills": [{
       "name": "Docker",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/docker.png"
     }, {
       "name": "Kubernetes",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/kubernetes.png"
     }, {
       "name": "Jenkins",
       "levelColor": "orange",
-      "proficiency": "Used in previous position",
+      "proficiency": "Used in a previous position",
       "imagePath": "images/skills/jenkins.png"
     }, {
       "name": "EC2",

@@ -19,6 +19,10 @@ export default {
         content: 'Tanawit Pattanaveerangkoon'
       },
       {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
         property: 'og:description',
         content: process.env.npm_package_description || ''
       },
@@ -73,8 +77,8 @@ export default {
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    'vue-scrollto/nuxt',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'vue-scrollto/nuxt'
   ],
   styleResources: {
     scss: ['~assets/scss/main.scss']
