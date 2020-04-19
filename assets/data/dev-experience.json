@@ -7,7 +7,7 @@
     "companyLogoPath": "images/logo/central-tech.png",
     "companyLink": "http://central.tech/",
     "description": [
-      "Develop critical components of an e-commerce website including product detail, shopping bag, search bar, login, and register page.",
+      "Develop critical components of an e-commerce website, including product detail, shopping bag, search suggestion, login, and register pages.",
       "Contribute new features to Central Tech core libraries (UI and API)."
     ]
   }, {
@@ -17,9 +17,9 @@
     "companyLogoPath": "images/logo/kbtg.png",
     "companyLink": "http://kbtg.tech/en",
     "description": [
-      "Developed services which cover various areas such as machine learning model experiment platform, optical character recognition, and virtual wallet.",
-      "Improved software development workflow in ML team projects by setting up CI/CD pipelines with test automation, writing Kubernetes deployment files, coordinating with infrastructure teams, and performing knowledge sharing session to 50+ team members.",
-      "First tier incident solver - investigate root causes, estimate the impact, join conference call with infrastructure and other app teams, and perform workaround operations."
+      "Developed services which cover various areas such as machine learning model experiment platform, optical character recognition, and a virtual wallet.",
+      "Improved software development workflow in ML team projects by setting up CI/CD pipelines with test automation, writing Kubernetes deployment files, coordinating with infrastructure teams, and performing a knowledge sharing session to 50+ team members.",
+      "First-tier incident solver - investigate root causes, estimate the impact, join a conference call with infrastructure and other app teams, and perform workaround operations."
     ]
   }]
 }
