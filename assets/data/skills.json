@@ -9,8 +9,8 @@
       "imagePath": "images/skills/javascript.jpg"
     }, {
       "name": "TypeScript",
-      "levelColor": "orange",
-      "proficiency": "Partially using in current position",
+      "levelColor": "red",
+      "proficiency": "Used in my personal project",
       "imagePath": "images/skills/typescript.png"
     }, {
       "name": "Go",
@@ -48,12 +48,12 @@
     }, {
       "name": "GraphQL",
       "levelColor": "orange",
-      "proficiency": "Partially using in current position",
+      "proficiency": "Using in current position",
       "imagePath": "images/skills/graphql.png"
     }, {
       "name": "Robot Framework",
       "levelColor": "red",
-      "proficiency": "Partially used in a previous position",
+      "proficiency": "Rarely used in a previous position",
       "imagePath": "images/skills/robotframework.png"
     }]
   }, {
