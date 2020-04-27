@@ -18,6 +18,9 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn generate
+        env:
+          GA_ID: ${{ secrets.GA_ID }}
+
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
