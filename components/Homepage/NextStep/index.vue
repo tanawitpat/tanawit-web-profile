@@ -95,11 +95,7 @@ export default {
 
   &__heading {
     color: $color-primary;
-    margin-bottom: 6rem;
-
-    @include respond(tab-small) {
-      margin-bottom: 4rem;
-    }
+    margin-bottom: 4rem;
   }
 
   &__content {
