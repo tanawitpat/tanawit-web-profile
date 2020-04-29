@@ -42,7 +42,7 @@
           <AboutMeKeyword
             :link="{ label: 'Explore my technical skills', path: '/nerd' }"
             title="Software Developer"
-            description="I am passionate about building software. Experienced in both frontend and backend development"
+            description="I am passionate about coding. Experienced in both frontend and backend development"
           />
         </div>
       </div>
