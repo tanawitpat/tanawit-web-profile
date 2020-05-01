@@ -108,7 +108,7 @@
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="Bangkok"
-            description="The capital city of Thailand, my hometown, and the city where I have been living."
+            description="The capital city of Thailand, my hometown, and the city where I live."
           />
         </div>
       </div>
