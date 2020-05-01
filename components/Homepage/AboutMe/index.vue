@@ -48,23 +48,23 @@
       </div>
       <div class="section-aboutme__card section-aboutme__card--left">
         <div class="section-aboutme__card__image" data-aos="fade-right">
-          <div class="section-aboutme__card__image__location">
+          <div class="section-aboutme__card__image__education">
             <img
-              src="images/aboutme/bangkok.png"
-              alt="Thailand"
-              class="section-aboutme__card__image__location--1"
+              src="images/aboutme/tanawit3.png"
+              alt="Tanawit's Photo"
+              class="section-aboutme__card__image__education--1 zoom-image-on-hover"
             />
             <img
-              src="images/aboutme/iconsiam.png"
-              alt="Thailand"
-              class="section-aboutme__card__image__location--2"
+              src="images/aboutme/tanawit1.png"
+              alt="Tanawit's Photo"
+              class="section-aboutme__card__image__education--2 zoom-image-on-hover"
             />
           </div>
         </div>
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
-            title="Bangkok"
-            description="The capital city of Thailand, my hometown, and the city where I have been living."
+            title="Statistics"
+            description="I graduated from Chulalongkorn University with a Statistics major."
           />
         </div>
       </div>
@@ -92,23 +92,23 @@
       </div>
       <div class="section-aboutme__card section-aboutme__card--left">
         <div class="section-aboutme__card__image" data-aos="fade-right">
-          <div class="section-aboutme__card__image__education">
+          <div class="section-aboutme__card__image__location">
             <img
-              src="images/aboutme/tanawit3.png"
-              alt="Tanawit's Photo"
-              class="section-aboutme__card__image__education--1 zoom-image-on-hover"
+              src="images/aboutme/bangkok.png"
+              alt="Thailand"
+              class="section-aboutme__card__image__location--1"
             />
             <img
-              src="images/aboutme/tanawit1.png"
-              alt="Tanawit's Photo"
-              class="section-aboutme__card__image__education--2 zoom-image-on-hover"
+              src="images/aboutme/iconsiam.png"
+              alt="Thailand"
+              class="section-aboutme__card__image__location--2"
             />
           </div>
         </div>
         <div class="section-aboutme__card__meaning" data-aos="fade-left">
           <AboutMeKeyword
-            title="Statistics"
-            description="I graduated from Chulalongkorn University with a Statistics major."
+            title="Bangkok"
+            description="The capital city of Thailand, my hometown, and the city where I have been living."
           />
         </div>
       </div>
