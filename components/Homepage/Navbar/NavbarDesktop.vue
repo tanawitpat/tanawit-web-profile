@@ -39,6 +39,7 @@
     height: 100%;
     margin: auto;
     padding: 0 3rem;
+
     display: flex;
     justify-content: space-between;
   }
@@ -56,12 +57,13 @@
   }
 
   &__right {
-    display: flex;
-    align-items: center;
     font-size: 1.8rem;
     color: $color-grey-dark-1;
     font-weight: 700;
     margin: auto 0;
+
+    display: flex;
+    align-items: center;
 
     > * {
       cursor: pointer;
