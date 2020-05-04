@@ -1,16 +1,16 @@
 <template>
   <section @click.self="setIsContactModalOpen(false)" class="contact-modal">
-    <div class="contact-modal__card">
+    <div class="contact-modal__container">
       <h3>Tanawit Pattanaveerangkoon (Oui)</h3>
-      <div class="contact-modal__card__contact">
-        <div class="contact-modal__card__contact__email">
-          <div class="contact-modal__card__contact__image-container">
+      <div class="contact-modal__contact">
+        <div class="contact-modal__contact--email">
+          <div class="contact-modal__icon">
             <img src="images/icon/gmail.svg" />
           </div>
           <p>tanawit.pat@gmail.com</p>
         </div>
-        <div class="contact-modal__card__contact__linkedin">
-          <div class="contact-modal__card__contact__image-container">
+        <div class="contact-modal__contact--linkedin">
+          <div class="contact-modal__icon">
             <a
               href="https://www.linkedin.com/in/tanawitp/"
               aria-label="Linkedin"
@@ -53,16 +53,20 @@ export default {
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
 
-  &__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
     width: 100%;
     max-width: 60rem;
     padding: 6rem 4rem;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
     background-color: $color-white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    @include respond(tab-small) {
+      margin: 0 1.5rem;
+    }
 
     h3 {
       font-size: 2.4rem;
@@ -71,46 +75,46 @@ export default {
       margin-bottom: 3rem;
       text-align: center;
     }
+  }
 
-    &__contact {
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+  &__icon {
+    height: 12rem;
+  }
+
+  &__contact {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+
+    @include respond(tab-small) {
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 4rem;
+    }
 
-      @include respond(tab-small) {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 4rem;
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      color: $color-black;
+      font-size: 1.8rem;
+    }
+
+    &--email {
+      text-align: center;
+
+      img {
+        height: 10rem;
       }
+    }
 
-      a {
-        text-decoration: none;
-      }
+    &--linkedin {
+      text-align: center;
 
-      p {
-        color: $color-black;
-        font-size: 1.8rem;
-      }
-
-      &__image-container {
-        height: 12rem;
-      }
-
-      &__email {
-        text-align: center;
-
-        img {
-          height: 10rem;
-        }
-      }
-
-      &__linkedin {
-        text-align: center;
-
-        img {
-          margin-top: 0.5rem;
-          height: 9rem;
-        }
+      img {
+        margin-top: 0.5rem;
+        height: 9rem;
       }
     }
   }

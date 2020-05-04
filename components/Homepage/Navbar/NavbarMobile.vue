@@ -103,12 +103,13 @@ export default {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    position: fixed;
-    top: 4.5rem;
-    right: 4.5rem;
     background-image: radial-gradient($color-blue-dark-1, $color-white);
     z-index: 100;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
 
     @include respond(tab-small) {
       top: 3.5rem;
@@ -118,24 +119,25 @@ export default {
 
   &__nav {
     height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 101;
-
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   &__list {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-    width: 100%;
   }
 
   &__link {
