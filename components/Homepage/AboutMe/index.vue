@@ -24,7 +24,7 @@
                 class="section-aboutme__developer--3"
               />
             </div>
-            <div class="section-aboutme__developer--line2">
+            <div class="section-aboutme__developer--line-2">
               <img
                 alt="React icon"
                 src="images/skills/graphql.png"
@@ -64,7 +64,7 @@
         <div class="section-aboutme__meaning" data-aos="fade-left">
           <AboutMeKeyword
             title="Statistics"
-            description="I graduated from Chulalongkorn University with a Statistics major."
+            description="I graduated from Chulalongkorn University with a statistics major."
           />
         </div>
       </div>
@@ -268,7 +268,7 @@ export default {
       }
     }
 
-    &--line2 {
+    &--line-2 {
       justify-content: center;
       display: grid;
       grid-template-columns: repeat(2, 10rem);
