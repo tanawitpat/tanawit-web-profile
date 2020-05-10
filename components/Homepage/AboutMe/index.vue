@@ -70,28 +70,6 @@
       </div>
       <div class="section-aboutme__card section-aboutme__card--right">
         <div class="section-aboutme__image" data-aos="fade-right">
-          <div class=" section-aboutme__birth">
-            <img
-              src="images/aboutme/restaurant-city.png"
-              alt="Restaurant City"
-              class="section-aboutme__birth--1 zoom-image-on-hover"
-            />
-            <img
-              src="images/aboutme/tanawit-child.png"
-              alt="Tanawit's Photo"
-              class="section-aboutme__birth--2 zoom-image-on-hover"
-            />
-          </div>
-        </div>
-        <div class="section-aboutme__meaning" data-aos="fade-left">
-          <AboutMeKeyword
-            title="1996"
-            description="The year I was born. If you had played Restaurant City while you were in high school, we are friends!."
-          />
-        </div>
-      </div>
-      <div class="section-aboutme__card section-aboutme__card--left">
-        <div class="section-aboutme__image" data-aos="fade-right">
           <div class="section-aboutme__location">
             <img
               src="images/aboutme/bangkok.png"
