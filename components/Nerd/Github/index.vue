@@ -34,6 +34,7 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       text-transform: uppercase;
+      margin: auto;
       margin-bottom: 5rem;
     }
 

@@ -69,6 +69,7 @@ export default {
       background-image: $color-gradient-primary;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      margin: auto;
       margin-bottom: 1.2rem;
     }
 
