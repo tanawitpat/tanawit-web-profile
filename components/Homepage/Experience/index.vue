@@ -68,7 +68,7 @@ export default {
     }
 
     p {
-      color: $color-grey-dark-2;
+      color: $color-grey-dark-3;
       font-size: 1.8rem;
       text-align: center;
       font-weight: 700;

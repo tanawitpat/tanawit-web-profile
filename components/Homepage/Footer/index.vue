@@ -6,7 +6,7 @@
 
 <style scoped lang="scss">
 .section-footer {
-  background-color: $color-grey-dark-2;
+  background-color: $color-grey-dark-3;
 
   p {
     color: $color-white;

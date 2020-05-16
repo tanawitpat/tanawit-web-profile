@@ -91,7 +91,7 @@ export default {
     z-index: 3;
     padding: 0 1.5rem;
     background-color: $color-white;
-    color: $color-grey-dark-1;
+    color: $color-grey-dark-2;
     font-weight: bold;
     height: 110px;
     text-align: right;
@@ -154,7 +154,7 @@ export default {
 
     @include respond(mobile) {
       display: block;
-      color: $color-grey-dark-1;
+      color: $color-grey-dark-2;
       background-color: $color-white;
       grid-row: 4 / 5;
       padding: 2rem;

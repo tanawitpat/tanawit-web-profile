@@ -93,7 +93,7 @@ export default {
 
   &__duration {
     margin-bottom: 10px;
-    color: $color-grey-dark-2;
+    color: $color-grey-dark-3;
     font-weight: 700;
   }
 

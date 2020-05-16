@@ -10,19 +10,22 @@
         <div v-scroll-to="'#section-aboutme'">About me</div>
         <div v-scroll-to="'#section-experience'">Experience</div>
         <div v-scroll-to="'#section-activity'">Activities</div>
-        <nuxt-link
-          aria-label="Nerd Mode button"
-          to="nerd"
-          class="navigation__nerd-button"
-        >
-          <button>
-            Nerd Mode
-          </button>
-        </nuxt-link>
+        <Button path="/nerd" label="Nerd Mode" type="link" />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import Button from '@/components/Homepage/Button'
+
+export default {
+  name: 'NavbarDesktop',
+  components: {
+    Button
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .navigation {
@@ -65,7 +68,7 @@
     display: flex;
     align-items: center;
 
-    > * {
+    > div {
       cursor: pointer;
 
       &:hover {
@@ -74,28 +77,6 @@
 
       &:not(:last-child) {
         margin-right: 40px;
-      }
-    }
-  }
-
-  &__nerd-button {
-    padding: 2rem 0;
-    height: 100%;
-    padding: 0;
-
-    button {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: $color-white;
-      background-color: $color-primary;
-      height: 4.5rem;
-      border: none;
-      border-radius: 2rem;
-      padding: 0 2rem;
-      cursor: pointer;
-
-      &:hover {
-        background-color: $color-blue-dark-2;
       }
     }
   }

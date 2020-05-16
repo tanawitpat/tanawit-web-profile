@@ -8,7 +8,7 @@
         <div
           :key="activity.name"
           v-for="activity in activityData"
-          data-aos="fade-up"
+          data-aos="flip-up"
         >
           <ActivityCard
             :title="activity.name"

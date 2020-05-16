@@ -6,13 +6,14 @@
     <p>
       {{ description }}
     </p>
-    <nuxt-link
-      v-if="link"
-      :to="link.path"
-      class="aboutme-keyword__technical-skill"
-    >
-      {{ link.label }}
-    </nuxt-link>
+    <div v-if="link" class="aboutme-keyword__technical-skill">
+      <nuxt-link :to="link.path" v-if="link.isInternalPath">
+        {{ link.label }}
+      </nuxt-link>
+      <a v-if="!link.isInternalPath" :href="link.path">
+        {{ link.label }}
+      </a>
+    </div>
   </div>
 </template>
 
@@ -50,17 +51,19 @@ export default {
   }
 
   &__technical-skill {
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 2rem;
-    color: $color-secondary;
-    font-weight: 800;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    cursor: pointer;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
+      color: $color-secondary;
+      font-weight: 800;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      cursor: pointer;
 
-    &:hover {
-      border-bottom: 1px dotted;
+      &:hover {
+        border-bottom: 1px dotted;
+      }
     }
   }
 }

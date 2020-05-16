@@ -24,7 +24,7 @@ export default {
 <style scoped lang="scss">
 .section-home {
   background-color: rgba($color-black, 0.7);
-  height: 95vh;
+  height: 100vh;
   max-height: 800px;
   padding: 5rem 20rem;
   position: relative;
@@ -44,7 +44,7 @@ export default {
 
   h1 {
     text-align: center;
-    font-size: 12rem;
+    font-size: 10.8rem;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.3em;
@@ -95,7 +95,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-grey-dark-1 transparent;
+    border-color: transparent transparent $color-grey-dark-2 transparent;
   }
 }
 </style>
