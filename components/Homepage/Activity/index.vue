@@ -9,6 +9,7 @@
           :key="activity.name"
           v-for="activity in activityData"
           data-aos="flip-up"
+          data-aos-duration="600"
         >
           <ActivityCard
             :title="activity.name"

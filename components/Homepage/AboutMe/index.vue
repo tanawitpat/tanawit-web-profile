@@ -145,6 +145,7 @@ export default {
 
   &__heading {
     color: $color-primary;
+    margin: auto;
   }
 
   &__container {

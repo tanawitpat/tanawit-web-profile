@@ -64,6 +64,7 @@ export default {
 
     h2 {
       color: $color-primary;
+      margin: auto;
       margin-bottom: 1.2rem;
     }
 
