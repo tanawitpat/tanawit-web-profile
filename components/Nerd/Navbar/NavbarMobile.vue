@@ -19,7 +19,7 @@ export default {
 <style scoped lang="scss">
 .navigation {
   &__button {
-    background-color: $color-grey-dark-2;
+    background-color: $color-grey-dark-3;
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -55,7 +55,7 @@ export default {
       content: '';
       height: 33px;
       width: 3px;
-      background-color: $color-grey-dark-3;
+      background-color: $color-grey-dark-4;
     }
 
     &:before {

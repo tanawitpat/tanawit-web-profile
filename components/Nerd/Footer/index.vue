@@ -32,7 +32,7 @@
     margin: auto;
     width: 50rem;
     height: 0.2rem;
-    background: $color-grey-dark-3;
+    background: $color-grey-dark-4;
     margin-bottom: 2rem;
 
     @include respond(tab-medium) {
@@ -46,7 +46,7 @@
     text-align: center;
     color: $color-white;
     font-size: 1.8rem;
-    color: $color-grey-dark-3;
+    color: $color-grey-dark-4;
 
     &--developer {
       letter-spacing: 1px;
@@ -64,8 +64,8 @@
 
   &__skill {
     > a {
-      color: $color-grey-dark-3;
-      background-color: $color-grey-dark-1;
+      color: $color-grey-dark-4;
+      background-color: $color-grey-dark-2;
       padding: 0.5rem 1rem;
       border-radius: 10px;
       font-weight: 800;
@@ -80,12 +80,12 @@
       }
 
       &:hover {
-        background-color: $color-grey-dark-2;
+        background-color: $color-grey-dark-3;
         color: $color-grey-light-1;
 
         @include respond(mobile) {
-          color: $color-grey-dark-3;
-          background-color: $color-grey-dark-1;
+          color: $color-grey-dark-4;
+          background-color: $color-grey-dark-2;
         }
       }
     }

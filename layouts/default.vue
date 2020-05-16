@@ -25,4 +25,13 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+button {
+  font-family: $font-primary;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
 </style>

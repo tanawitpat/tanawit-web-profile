@@ -94,7 +94,7 @@ export default {
 
 <style scoped lang="scss">
 .section-skill {
-  background-color: $color-grey-dark-1;
+  background-color: $color-grey-dark-2;
   padding: 5rem 7.5rem 15rem;
   position: relative;
 
@@ -204,7 +204,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-grey-dark-0 transparent;
+    border-color: transparent transparent $color-grey-dark-1 transparent;
   }
 }
 </style>

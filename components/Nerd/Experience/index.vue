@@ -49,7 +49,7 @@ export default {
 .section-experience {
   padding: 7.5rem 10rem 15rem;
   position: relative;
-  background-color: $color-grey-dark-0;
+  background-color: $color-grey-dark-1;
 
   display: grid;
   grid-template-columns: 1fr minmax(30%, 75rem) 1fr;
@@ -73,7 +73,7 @@ export default {
     }
 
     p {
-      color: $color-grey-dark-3;
+      color: $color-grey-dark-4;
       font-size: 1.8rem;
       text-align: center;
       font-weight: 700;
@@ -92,7 +92,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-grey-dark-1 transparent;
+    border-color: transparent transparent $color-grey-dark-2 transparent;
   }
 }
 </style>

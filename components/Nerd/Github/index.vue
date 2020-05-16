@@ -13,7 +13,7 @@
 
 <style scoped lang="scss">
 .section-github {
-  background-color: $color-grey-dark-1;
+  background-color: $color-grey-dark-2;
   padding: 5rem 10rem 7.5rem;
   position: relative;
 
@@ -43,7 +43,7 @@
       text-decoration: none;
       font-size: 1.8rem;
       padding: 1.3rem 2rem;
-      background: $color-grey-dark-2;
+      background: $color-grey-dark-3;
       border-radius: 2rem;
       cursor: pointer;
 
@@ -51,7 +51,7 @@
         background: $color-gradient-primary;
 
         @include respond(mobile) {
-          background: $color-grey-dark-2;
+          background: $color-grey-dark-3;
         }
       }
     }
@@ -82,7 +82,7 @@
 
     > * {
       border-radius: 2rem;
-      background-color: $color-grey-dark-2;
+      background-color: $color-grey-dark-3;
       width: 400px;
       height: 300px;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);

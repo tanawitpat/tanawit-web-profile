@@ -1,35 +1,47 @@
 <template>
-  <section id="section-nextstep" class="section-contact">
-    <h2 class="heading-primary section-contact__heading">
+  <section id="section-nextstep" class="section-nextstep">
+    <h2 class="heading-primary section-nextstep__heading">
       Next steps
     </h2>
-    <div class="section-contact__content" data-aos="fade-up">
+    <div
+      class="section-nextstep__content"
+      data-aos="fade-up"
+      data-aos-offset="50"
+    >
       <div>
         <h3>
           Explore my
           <span>software development</span> skills
         </h3>
-        <button @click="$router.push('/nerd')">Visit my nerd site</button>
+        <Button path="/nerd" label="Visit my nerd site" type="link" />
       </div>
       <div>
         <h3>Looking for my <span>formal</span> profile?</h3>
-        <a
-          aria-label="Tanawit's Resume"
-          href="http://static.tanawitp.me.s3.amazonaws.com/Tanawit-Pattanaveerangkoon_Resume.pdf"
-        >
-          <button>Checkout my resume</button>
-        </a>
+        <Button
+          :isInternalPath="false"
+          path="http://static.tanawitp.me.s3.amazonaws.com/Tanawit-Pattanaveerangkoon_Resume.pdf"
+          label="Checkout my resume"
+          type="link"
+        />
       </div>
       <div>
         <h3>Let's <span>keep in touch</span></h3>
-        <button @click="setIsContactModalOpen(true)">View my contact</button>
+        <Button
+          @click.native="setIsContactModalOpen(true)"
+          label="View my contact"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Button from '@/components/Homepage/Button'
+
 export default {
+  components: {
+    Button
+  },
   mounted() {
     this.preloadContactImages()
   },
@@ -55,7 +67,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.section-contact {
+.section-nextstep {
   color: $color-black;
   background-color: $color-grey-light-2;
   padding: 10rem 5rem;
@@ -63,29 +75,6 @@ export default {
 
   @include respond(tab-small) {
     padding: 5rem 5rem;
-  }
-
-  button {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: $color-white;
-    background-color: $color-primary;
-    height: 4.5rem;
-    border: none;
-    border-radius: 2rem;
-    padding: 0 2rem;
-    margin: auto;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-
-    &:hover {
-      background-color: $color-blue-dark-2;
-    }
-  }
-
-  a {
-    text-decoration: none;
   }
 
   > * {
@@ -114,13 +103,14 @@ export default {
 
     > div {
       h3 {
-        span {
-          color: $color-primary;
-        }
         font-size: 2rem;
         margin-bottom: 2rem;
         text-transform: uppercase;
         text-align: center;
+
+        span {
+          color: $color-primary;
+        }
       }
     }
   }

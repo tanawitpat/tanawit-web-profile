@@ -177,7 +177,7 @@ export default {
     &::after {
       width: 3rem;
       height: 2px;
-      background-color: $color-grey-dark-3;
+      background-color: $color-grey-dark-4;
       display: inline-block;
     }
 

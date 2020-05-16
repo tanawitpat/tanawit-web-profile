@@ -40,7 +40,11 @@
         </div>
         <div class="section-aboutme__meaning" data-aos="fade-left">
           <AboutMeKeyword
-            :link="{ label: 'Explore my technical skills', path: '/nerd' }"
+            :link="{
+              label: 'Explore my technical skills',
+              path: '/nerd',
+              isInternalPath: true
+            }"
             title="Software Developer"
             description="I am passionate about coding. Experienced in both frontend and backend development."
           />
@@ -63,6 +67,11 @@
         </div>
         <div class="section-aboutme__meaning" data-aos="fade-left">
           <AboutMeKeyword
+            :link="{
+              label: 'Visit the school website',
+              path: 'https://www.chula.ac.th/en',
+              isInternalPath: false
+            }"
             title="Statistics"
             description="I graduated from Chulalongkorn University with a statistics major."
           />
@@ -85,6 +94,11 @@
         </div>
         <div class="section-aboutme__meaning" data-aos="fade-left">
           <AboutMeKeyword
+            :link="{
+              label: 'View on Google Maps',
+              path: 'http://maps.google.com/?q=Bangkok',
+              isInternalPath: false
+            }"
             title="Bangkok"
             description="The capital city of Thailand, my hometown, and the city where I live."
           />
@@ -280,7 +294,7 @@ export default {
     &--1 {
       position: absolute;
       width: 16.5rem;
-      top: 2rem;
+      top: 3rem;
       left: 1rem;
 
       @include respond(tab-large) {
@@ -303,7 +317,7 @@ export default {
     &--2 {
       position: absolute;
       width: 16.5rem;
-      top: 4rem;
+      top: 5rem;
       right: 1rem;
 
       @include respond(tab-large) {
@@ -320,61 +334,6 @@ export default {
 
       @include respond(tab-small) {
         width: 13.5rem;
-      }
-    }
-  }
-
-  &__birth {
-    margin: auto;
-    width: 33rem;
-    height: 100%;
-    position: relative;
-
-    @include respond(tab-large) {
-      width: 25rem;
-    }
-
-    @include respond(tab-medium) {
-      height: 18rem;
-      width: 35rem;
-    }
-
-    @include respond(tab-small) {
-      width: 30rem;
-    }
-
-    &--1 {
-      position: absolute;
-      width: 20rem;
-      top: 7rem;
-      left: 0rem;
-      z-index: 1;
-
-      @include respond(tab-large) {
-        width: 15rem;
-        top: 9rem;
-      }
-
-      @include respond(tab-medium) {
-        width: 16rem;
-        top: 0rem;
-      }
-    }
-
-    &--2 {
-      position: absolute;
-      width: 20rem;
-      top: 9rem;
-      right: 0rem;
-
-      @include respond(tab-large) {
-        width: 15rem;
-        top: 10rem;
-      }
-
-      @include respond(tab-medium) {
-        width: 16rem;
-        top: 1rem;
       }
     }
   }
@@ -401,7 +360,7 @@ export default {
     &--1 {
       position: absolute;
       width: 16.5rem;
-      top: 1rem;
+      top: 2rem;
       left: 1rem;
 
       @include respond(tab-large) {
@@ -424,7 +383,7 @@ export default {
     &--2 {
       position: absolute;
       width: 16.5rem;
-      top: 3rem;
+      top: 4rem;
       right: 1rem;
 
       @include respond(tab-large) {
