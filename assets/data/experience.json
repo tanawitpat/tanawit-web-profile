@@ -4,42 +4,42 @@
     "companyName": "Central Technology",
     "title": "Frontend Developer",
     "duration": "November 2019-Present",
-    "companyLogoPath": "images/logo/central-tech.png",
+    "companyLogoPath": "/images/logo/central-tech.png",
     "companyLink": "http://central.tech/",
     "description": "Exploring the frontend development world. I have been developing a new e-commerce website for Central Retail (Thailand's largest retailer)."
   }, {
     "companyName": "Kasikorn Business-Technology Group",
     "title": "Machine Learning Engineer",
     "duration": "July 2018-October 2019",
-    "companyLogoPath": "images/logo/kbtg.png",
+    "companyLogoPath": "/images/logo/kbtg.png",
     "companyLink": "http://kbtg.tech/en",
     "description": "My first journey in software development. I worked with data scientists to develop machine learning-based services. The projects covered various areas such as credit scoring, optical character recognition, and a virtual wallet."
   }, {
     "companyName": "Chulalongkorn University",
     "title": "Research Assistant",
     "duration": "May 2017-October 2017",
-    "companyLogoPath": "images/logo/chula.png",
+    "companyLogoPath": "/images/logo/chula.png",
     "companyLink": "https://www.chula.ac.th",
     "description": "Conducted a survey project from building a sampling frame, collecting data from 200+ startup owners, and analyzing data using descriptive and inferential statistics."
   }, {
     "companyName": "Kasikorn Business-Technology Group",
     "title": "Data Scientist Intern",
     "duration": "June 2017-August 2017",
-    "companyLogoPath": "images/logo/kbtg.png",
+    "companyLogoPath": "/images/logo/kbtg.png",
     "companyLink": "http://kbtg.tech/en",
     "description": "Applied statistics and machine learning knowledge with real-world business problems. Our team identified characteristics of potentially default credit card customers and proposed solutions to prevent credit approval for credit card applicants that obtain such characteristics."
   }, {
     "companyName": "Krungsri Securities",
     "title": "Intern",
     "duration": "June 2016",
-    "companyLogoPath": "images/logo/krungsri.jpg",
+    "companyLogoPath": "/images/logo/krungsri.jpg",
     "companyLink": "https://www.krungsrisecurities.com/",
     "description": "Analyzed business performance and financial reports of a company of interest and identified its target stock price. I gained a concrete understanding of a capital market and investment strategy."
   }, {
     "companyName": "Chulalongkorn Business Administration (CBA)",
     "title": "Sales Professional",
     "duration": "May 2015-July 2015",
-    "companyLogoPath": "images/logo/cba.jpg",
+    "companyLogoPath": "/images/logo/cba.jpg",
     "companyLink": "https://www.facebook.com/CBAChula",
     "description": "Identified consumer needs and set up sales booths in different locations in Bangkok. I achieved the sales target within five weeks out of 11 weeks of the program period."
   }]

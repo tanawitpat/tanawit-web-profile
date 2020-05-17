@@ -10,29 +10,29 @@
             <div class="section-aboutme__developer--line-1">
               <img
                 alt="JavaScript icon"
-                src="images/skills/javascript.jpg"
+                src="/images/skills/javascript.jpg"
                 class="section-aboutme__developer--1"
               />
               <img
                 alt="Python icon"
-                src="images/skills/go.png"
+                src="/images/skills/go.png"
                 class="section-aboutme__developer--2"
               />
               <img
                 alt="Go icon"
-                src="images/skills/react.png"
+                src="/images/skills/react.png"
                 class="section-aboutme__developer--3"
               />
             </div>
             <div class="section-aboutme__developer--line-2">
               <img
                 alt="React icon"
-                src="images/skills/graphql.png"
+                src="/images/skills/graphql.png"
                 class="section-aboutme__developer--4"
               />
               <img
                 alt="GraphQL icon"
-                src="images/skills/kubernetes.png"
+                src="/images/skills/kubernetes.png"
                 class="section-aboutme__developer--5"
               />
             </div>
@@ -54,12 +54,12 @@
         <div class="section-aboutme__image" data-aos="fade-right">
           <div class="section-aboutme__education">
             <img
-              src="images/aboutme/tanawit3.png"
+              src="/images/aboutme/tanawit3.png"
               alt="Tanawit's Photo"
               class="section-aboutme__education--1 zoom-image-on-hover"
             />
             <img
-              src="images/aboutme/tanawit1.png"
+              src="/images/aboutme/tanawit1.png"
               alt="Tanawit's Photo"
               class="section-aboutme__education--2 zoom-image-on-hover"
             />
@@ -81,12 +81,12 @@
         <div class="section-aboutme__image" data-aos="fade-right">
           <div class="section-aboutme__location">
             <img
-              src="images/aboutme/bangkok.png"
+              src="/images/aboutme/bangkok.png"
               alt="Thailand"
               class="section-aboutme__location--1"
             />
             <img
-              src="images/aboutme/iconsiam.png"
+              src="/images/aboutme/iconsiam.png"
               alt="Thailand"
               class="section-aboutme__location--2"
             />

@@ -1,6 +1,6 @@
 <template>
   <section id="section-home" class="section-home">
-    <BackgroundVideo video-path="images/Hello-World" />
+    <BackgroundVideo video-path="/images/Hello-World" />
     <div class="section-home__content">
       <h1>Tanawit</h1>
       <p>Software Developer</p>

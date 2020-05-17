@@ -4,7 +4,7 @@
     "companyName": "Central Technology",
     "title": "Frontend Developer",
     "duration": "November 2019-Present",
-    "companyLogoPath": "images/logo/central-tech.png",
+    "companyLogoPath": "/images/logo/central-tech.png",
     "companyLink": "http://central.tech/",
     "description": [
       "Develop critical web components, including product detail, shopping bag, search suggestion, login, and register pages for the Central Retail e-commerce website.",
@@ -14,7 +14,7 @@
     "companyName": "Kasikorn Business-Technology Group",
     "title": "Machine Learning Engineer",
     "duration": "July 2018-October 2019",
-    "companyLogoPath": "images/logo/kbtg.png",
+    "companyLogoPath": "/images/logo/kbtg.png",
     "companyLink": "http://kbtg.tech/en",
     "description": [
       "Developed services which cover various areas such as machine learning model experiment platform, optical character recognition, and a virtual wallet.",

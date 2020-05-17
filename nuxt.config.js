@@ -39,8 +39,8 @@ export default {
       lang: 'en'
     },
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'icon.ico' },
-      { rel: 'shoutcut icon', type: 'image/x-icon', href: 'icon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' },
+      { rel: 'shoutcut icon', type: 'image/x-icon', href: '/icon.ico' },
       {
         rel: 'canonical',
         href: 'https://www.tanawitp.me'
