@@ -84,8 +84,10 @@ export default {
     },
     preloadSkillImages() {
       this.skillCategories.forEach((skill) => {
-        const img = new Image()
-        img.src = skill.imagePath
+        if (skill.imagePath) {
+          const img = new Image()
+          img.src = skill.imagePath
+        }
       })
     }
   }
