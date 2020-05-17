@@ -83,7 +83,7 @@ export default {
       this.$store.commit('nerd/setSelectedSkill', '')
     },
     preloadSkillImages() {
-      this.skillCategories.forEach((skill) => {
+      this.skills.forEach((skill) => {
         if (skill.imagePath) {
           const img = new Image()
           img.src = skill.imagePath
