@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Build
-        run: yarn generate
+        run: yarn generate --fail-on-error
         env:
           GA_ID: ${{ secrets.GA_ID }}
       - name: Archive Production Artifact
