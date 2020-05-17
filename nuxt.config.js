@@ -79,12 +79,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/dotenv',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/pwa',
-    'vue-scrollto/nuxt'
-  ],
+  modules: ['@nuxtjs/dotenv', '@nuxtjs/style-resources', 'vue-scrollto/nuxt'],
   styleResources: {
     scss: ['~assets/scss/main.scss']
   },
