@@ -54,8 +54,8 @@ export default {
     },
     preloadContactImages() {
       const preloadImages = [
-        'images/icon/gmail.svg',
-        'images/logo/linkedin.jpg'
+        '/images/icon/gmail.svg',
+        '/images/logo/linkedin.jpg'
       ]
       preloadImages.forEach((imagePath) => {
         const img = new Image()

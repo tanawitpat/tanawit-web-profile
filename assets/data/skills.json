@@ -6,27 +6,27 @@
       "name": "JavaScript",
       "levelColor": "green",
       "proficiency": "Using in current position",
-      "imagePath": "images/skills/javascript.jpg"
+      "imagePath": "/images/skills/javascript.jpg"
     }, {
       "name": "TypeScript",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/typescript.png"
+      "imagePath": "/images/skills/typescript.png"
     }, {
       "name": "Go",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/go.png"
+      "imagePath": "/images/skills/go.png"
     }, {
       "name": "Python",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/python.png"
+      "imagePath": "/images/skills/python.png"
     }, {
       "name": "R",
       "levelColor": "red",
       "proficiency": "Used during internship",
-      "imagePath": "images/skills/r.png"
+      "imagePath": "/images/skills/r.png"
     }]
   }, {
     "category": "Technologies & Frameworks",
@@ -34,27 +34,27 @@
       "name": "React",
       "levelColor": "green",
       "proficiency": "Using in current position",
-      "imagePath": "images/skills/react.png"
+      "imagePath": "/images/skills/react.png"
     }, {
       "name": "Vue",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/vue.png"
+      "imagePath": "/images/skills/vue.png"
     }, {
       "name": "Node.js",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/nodejs.png"
+      "imagePath": "/images/skills/nodejs.png"
     }, {
       "name": "GraphQL",
       "levelColor": "orange",
       "proficiency": "Using in current position",
-      "imagePath": "images/skills/graphql.png"
+      "imagePath": "/images/skills/graphql.png"
     }, {
       "name": "Robot Framework",
       "levelColor": "red",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/robotframework.png"
+      "imagePath": "/images/skills/robotframework.png"
     }]
   }, {
     "category": "Databases",
@@ -62,22 +62,22 @@
       "name": "MySQL",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/mysql.png"
+      "imagePath": "/images/skills/mysql.png"
     }, {
       "name": "MongoDB",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/mongodb.png"
+      "imagePath": "/images/skills/mongodb.png"
     }, {
       "name": "RabbitMQ",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/rabbitmq.png"
+      "imagePath": "/images/skills/rabbitmq.png"
     }, {
       "name": "Redis",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/redis.png"
+      "imagePath": "/images/skills/redis.png"
     }]
   }, {
     "category": "DevOps",
@@ -85,42 +85,42 @@
       "name": "Docker",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/docker.png"
+      "imagePath": "/images/skills/docker.png"
     }, {
       "name": "Kubernetes",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/kubernetes.png"
+      "imagePath": "/images/skills/kubernetes.png"
     }, {
       "name": "Jenkins",
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
-      "imagePath": "images/skills/jenkins.png"
+      "imagePath": "/images/skills/jenkins.png"
     }, {
       "name": "EC2",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/ec2.png"
+      "imagePath": "/images/skills/ec2.png"
     }, {
       "name": "S3",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/s3.png"
+      "imagePath": "/images/skills/s3.png"
     }, {
       "name": "Lambda",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/lambda.png"
+      "imagePath": "/images/skills/lambda.png"
     }, {
       "name": "Route 53",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/route53.png"
+      "imagePath": "/images/skills/route53.png"
     }, {
       "name": "Firebase",
       "levelColor": "red",
       "proficiency": "Used in my personal project",
-      "imagePath": "images/skills/firebase.png"
+      "imagePath": "/images/skills/firebase.png"
     }]
   }]
 }

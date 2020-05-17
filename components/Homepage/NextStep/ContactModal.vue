@@ -5,7 +5,7 @@
       <div class="contact-modal__contact">
         <div class="contact-modal__contact--email">
           <div class="contact-modal__icon">
-            <img src="images/icon/gmail.svg" />
+            <img src="/images/icon/gmail.svg" />
           </div>
           <p>tanawit.pat@gmail.com</p>
         </div>
@@ -15,7 +15,7 @@
               href="https://www.linkedin.com/in/tanawitp/"
               aria-label="Linkedin"
             >
-              <img src="images/logo/linkedin.jpg" />
+              <img src="/images/logo/linkedin.jpg" />
             </a>
           </div>
           <a href="https://www.linkedin.com/in/tanawitp/" aria-label="Linkedin">
