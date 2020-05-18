@@ -25,7 +25,7 @@
         />
       </div>
       <div>
-        <h3>Let's <span>keep in touch</span></h3>
+        <h3>Let's <span>get in touch</span></h3>
         <Button
           @click.native="setIsContactModalOpen(true)"
           label="View my contact"
