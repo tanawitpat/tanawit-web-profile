@@ -1,11 +1,8 @@
 <template>
   <section id="section-experience" class="section-experience">
-    <div class="section-experience__heading u-margin-bottom-big">
-      <h2 class="heading-primary">My Software Development Experience</h2>
-      <p>
-        Frontend Developer | Machine Learning Engineer
-      </p>
-    </div>
+    <h2 class="section-experience__heading heading-primary u-margin-bottom-big">
+      My Software Development Experience
+    </h2>
     <div class="section-experience__card">
       <div
         v-for="item in experienceData"
@@ -64,22 +61,11 @@ export default {
 
   &__heading {
     grid-column: 1 / -1;
-
-    h2 {
-      background-image: $color-gradient-primary;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: auto;
-      margin-bottom: 1.2rem;
-    }
-
-    p {
-      color: $color-grey-dark-4;
-      font-size: 1.8rem;
-      text-align: center;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+    background-image: $color-gradient-primary;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    margin-bottom: 1.2rem;
   }
 
   &__card {
