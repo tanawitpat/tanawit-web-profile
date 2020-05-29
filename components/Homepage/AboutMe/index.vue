@@ -46,7 +46,7 @@
               isInternalPath: true
             }"
             title="Software Developer"
-            description="I am passionate about coding. Experienced in both frontend and backend development."
+            description="I am passionate about coding. Experienced in both front-end and back-end development."
           />
         </div>
       </div>
