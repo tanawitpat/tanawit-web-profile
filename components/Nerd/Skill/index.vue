@@ -20,7 +20,7 @@
           </div>
         </div>
         <div v-else class="section-skill__default-detail">
-          Select a skill on the right to view skill details
+          Select options on the right to view skill details
         </div>
       </div>
       <div class="section-skill__container--right">
