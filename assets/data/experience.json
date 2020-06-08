@@ -5,14 +5,14 @@
     "title": "Frontend Developer",
     "duration": "November 2019-Present",
     "companyLogoPath": "/images/logo/central-tech.png",
-    "companyLink": "http://central.tech/",
+    "companyLink": "https://www.central.tech",
     "description": "Exploring the front-end development world. I have been developing a new e-commerce website for Central Retail (Thailand's largest retailer)."
   }, {
     "companyName": "Kasikorn Business-Technology Group",
     "title": "Machine Learning Engineer",
     "duration": "July 2018-October 2019",
     "companyLogoPath": "/images/logo/kbtg.png",
-    "companyLink": "http://kbtg.tech/en",
+    "companyLink": "https://www.kbtg.tech",
     "description": "My first journey in software development. I worked with data scientists to develop machine learning-based services. The projects covered various areas such as credit scoring, optical character recognition, and a virtual wallet."
   }, {
     "companyName": "Chulalongkorn University",
@@ -26,7 +26,7 @@
     "title": "Data Scientist Intern",
     "duration": "June 2017-August 2017",
     "companyLogoPath": "/images/logo/kbtg.png",
-    "companyLink": "http://kbtg.tech/en",
+    "companyLink": "https://www.kbtg.tech",
     "description": "Applied statistics and machine learning knowledge with real-world business problems. Our team identified characteristics of potentially default credit card customers and proposed solutions to prevent credit approval for credit card applicants that obtain such characteristics."
   }, {
     "companyName": "Krungsri Securities",
