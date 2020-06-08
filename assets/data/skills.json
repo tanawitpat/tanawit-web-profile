@@ -97,30 +97,10 @@
       "proficiency": "Used in a previous position",
       "imagePath": "/images/skills/jenkins.png"
     }, {
-      "name": "EC2",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
+      "name": "Amazon Web Services",
+      "levelColor": "orange",
+      "proficiency": "AWS Certified Solutions Architect – Associate",
       "imagePath": "/images/skills/ec2.png"
-    }, {
-      "name": "S3",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
-      "imagePath": "/images/skills/s3.png"
-    }, {
-      "name": "Lambda",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
-      "imagePath": "/images/skills/lambda.png"
-    }, {
-      "name": "Route 53",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
-      "imagePath": "/images/skills/route53.png"
-    }, {
-      "name": "Firebase",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
-      "imagePath": "/images/skills/firebase.png"
     }]
   }]
 }
