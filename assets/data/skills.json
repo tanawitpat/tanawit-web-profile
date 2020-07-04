@@ -101,6 +101,11 @@
       "levelColor": "orange",
       "proficiency": "AWS Certified Solutions Architect – Associate",
       "imagePath": "/images/skills/aws.png"
+    }, {
+      "name": "Google Cloud",
+      "levelColor": "red",
+      "proficiency": "Used in my personal project",
+      "imagePath": "/images/skills/google-cloud.png"
     }]
   }]
 }
