@@ -19,6 +19,7 @@
         <h3>Looking for my <span>formal</span> profile?</h3>
         <Button
           :isInternalPath="false"
+          :disabled="true"
           path="http://static.tanawitp.me.s3.amazonaws.com/Tanawit-Pattanaveerangkoon_Resume.pdf"
           label="Checkout my resume"
           type="link"

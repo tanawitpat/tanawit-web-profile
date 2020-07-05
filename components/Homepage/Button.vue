@@ -1,6 +1,8 @@
 <template>
-  <div class="button">
-    <button v-if="type === 'button'">{{ label }}</button>
+  <div :class="{ disabled: disabled }" class="button">
+    <button v-if="type === 'button'">
+      {{ label }}
+    </button>
     <nuxt-link v-else-if="type === 'link' && isInternalPath" :to="path">
       {{ label }}
     </nuxt-link>
@@ -35,6 +37,11 @@ export default {
       validator(value) {
         return ['button', 'link'].includes(value)
       }
+    },
+    disabled: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
@@ -63,6 +70,19 @@ export default {
     &:hover {
       color: $color-white;
       background-color: $color-blue-dark-2;
+    }
+  }
+}
+
+.button.disabled {
+  > * {
+    background-color: $color-grey-dark-4;
+    pointer-events: none;
+    cursor: not-allowed;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
     }
   }
 }
