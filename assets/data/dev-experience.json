@@ -1,14 +1,21 @@
 {
   "section": "dev-experience",
   "data": [{
+    "companyName": "Accenture",
+    "title": "Frontend Developer",
+    "duration": "August 2020-Present",
+    "companyLogoPath": "/images/logo/accenture.png",
+    "companyLink": "https://www.accenture.com",
+    "description": []
+  }, {
     "companyName": "Central Technology",
     "title": "Frontend Developer",
-    "duration": "November 2019-Present",
+    "duration": "November 2019-July 2020",
     "companyLogoPath": "/images/logo/central-tech.png",
-    "companyLink": "http://central.tech/",
+    "companyLink": "http://central.tech",
     "description": [
-      "Develop e-commerce websites for Central Retail's business units.",
-      "Develop new features in Central Tech's core libraries, which reduce coderedundancy, improve a coding standard, and facilitate website development."
+      "Developed e-commerce websites for Central Retail's business units.",
+      "Developed new features in Central Tech's core libraries, which reduce coderedundancy, improve a coding standard, and facilitate website development."
     ]
   }, {
     "companyName": "Kasikorn Business-Technology Group",

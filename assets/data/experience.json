@@ -1,12 +1,19 @@
 {
   "section": "experience",
   "data": [{
+    "companyName": "Accenture",
+    "title": "Frontend Developer",
+    "duration": "August 2020-Present",
+    "companyLogoPath": "/images/logo/accenture.png",
+    "companyLink": "https://www.accenture.com",
+    "description": "Starting a new career chapter."
+  }, {
     "companyName": "Central Technology",
     "title": "Frontend Developer",
-    "duration": "November 2019-Present",
+    "duration": "November 2019-July 2020",
     "companyLogoPath": "/images/logo/central-tech.png",
     "companyLink": "https://www.central.tech",
-    "description": "Exploring the front-end development world. I have been developing a new e-commerce website for Central Retail (Thailand's largest retailer)."
+    "description": "Explored the front-end development world. I developed e-commerce websites for Central Retail (Thailand's largest retailer)."
   }, {
     "companyName": "Kasikorn Business-Technology Group",
     "title": "Machine Learning Engineer",
