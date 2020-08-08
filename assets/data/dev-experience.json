@@ -1,16 +1,16 @@
 {
   "section": "dev-experience",
   "data": [{
-    "companyName": "Accenture",
-    "title": "Frontend Developer",
-    "duration": "August 2020-Present",
-    "companyLogoPath": "/images/logo/accenture.png",
-    "companyLink": "https://www.accenture.com",
+    "companyName": "Agoda",
+    "title": "Full Stack Software Engineer",
+    "duration": "September 2020-Present",
+    "companyLogoPath": "/images/logo/agoda.png",
+    "companyLink": "https://www.agoda.com",
     "description": []
   }, {
     "companyName": "Central Technology",
     "title": "Frontend Developer",
-    "duration": "November 2019-July 2020",
+    "duration": "November 2019-August 2020",
     "companyLogoPath": "/images/logo/central-tech.png",
     "companyLink": "https://www.central.tech",
     "description": [
