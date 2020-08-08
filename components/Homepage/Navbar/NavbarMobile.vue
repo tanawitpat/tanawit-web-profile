@@ -34,7 +34,7 @@
         <nuxt-link
           @click="setIsNavigationOpen(false)"
           to="nerd"
-          class="navigation__link navigation__link"
+          class="navigation__link navigation__link--nerd"
         >
           Nerd Mode
         </nuxt-link>
@@ -103,7 +103,7 @@ export default {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    background-image: radial-gradient($color-blue-dark-1, $color-white);
+    background-image: radial-gradient($color-blue-dark-1, $color-grey-dark-4);
     z-index: 100;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -141,10 +141,10 @@ export default {
   }
 
   &__link {
+    display: block;
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
-    margin-bottom: 1rem;
     color: $color-white;
     background-size: 220%;
     text-decoration: none;
@@ -153,6 +153,14 @@ export default {
     white-space: nowrap;
     transition: all 0.4s;
     cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &--nerd {
+      font-weight: bold;
+    }
   }
 
   .active > &__title {
