@@ -9,8 +9,8 @@
       "imagePath": "/images/skills/javascript.jpg"
     }, {
       "name": "TypeScript",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
+      "levelColor": "green",
+      "proficiency": "Using in current position",
       "imagePath": "/images/skills/typescript.png"
     }, {
       "name": "Go",

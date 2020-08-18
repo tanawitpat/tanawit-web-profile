@@ -3,19 +3,19 @@
     <div class="section-skill__container">
       <div class="section-skill__container--left">
         <div v-if="selectedSkill">
-          <div
-            :key="skill.name"
-            v-for="skill in selectedSkillDetail"
-            class="section-skill__detail"
-          >
-            <img :src="skill.imagePath" :alt="skill.name" rel="preload" />
+          <div :key="selectedSkill.name" class="section-skill__detail">
+            <img
+              :src="selectedSkill.imagePath"
+              :alt="selectedSkill.name"
+              rel="preload"
+            />
             <div class="section-skill__detail__name-proficiency">
               <div
-                :style="{ 'background-color': skill.levelColor }"
+                :style="{ 'background-color': selectedSkill.levelColor }"
                 class="section-skill__level-label"
               />
-              <h3>{{ skill.name }}</h3>
-              <p>{{ skill.proficiency }}</p>
+              <h3>{{ selectedSkill.name }}</h3>
+              <p>{{ selectedSkill.proficiency }}</p>
             </div>
           </div>
         </div>
@@ -68,11 +68,11 @@ export default {
     }
   },
   computed: {
-    selectedSkill() {
+    selectedSkillName() {
       return this.$store.state.nerd.selectedSkill
     },
-    selectedSkillDetail() {
-      return this.skills.filter((skill) => skill.name === this.selectedSkill)
+    selectedSkill() {
+      return this.skills.find((skill) => skill.name === this.selectedSkillName)
     }
   },
   mounted() {
