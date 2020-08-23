@@ -42,19 +42,14 @@
       "imagePath": "/images/skills/vue.png"
     }, {
       "name": "Node.js",
-      "levelColor": "red",
-      "proficiency": "Used in my personal project",
+      "levelColor": "orange",
+      "proficiency": "Used in a previous position",
       "imagePath": "/images/skills/nodejs.png"
     }, {
       "name": "GraphQL",
       "levelColor": "orange",
-      "proficiency": "Using in current position",
-      "imagePath": "/images/skills/graphql.png"
-    }, {
-      "name": "Robot Framework",
-      "levelColor": "red",
       "proficiency": "Used in a previous position",
-      "imagePath": "/images/skills/robotframework.png"
+      "imagePath": "/images/skills/graphql.png"
     }]
   }, {
     "category": "Databases",
