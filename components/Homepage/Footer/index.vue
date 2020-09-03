@@ -1,6 +1,6 @@
 <template>
   <section id="section-footer" class="section-footer">
-    <p>Developed by Tanawit Pattanaveerangkoon</p>
+    <p>Designed and developed by Tanawit Pattanaveerangkoon</p>
   </section>
 </template>
 
