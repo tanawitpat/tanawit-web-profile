@@ -2,7 +2,7 @@
   <section class="section-footer">
     <div class="section-footer__container">
       <p class="section-footer__container--developer">
-        Developed by Tanawit Pattanaveerangkoon
+        Designed and developed by Tanawit Pattanaveerangkoon
       </p>
       <div class="section-footer__seperator" />
       <p class="section-footer__container--tech-stack">
