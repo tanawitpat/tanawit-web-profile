@@ -4,8 +4,6 @@
 
 ![Website's screenshot](https://user-images.githubusercontent.com/25366268/79641887-7aadb900-81c4-11ea-9088-ba48f39bed6e.png)
 
-The website was developed by Nuxt.js, deployed by GitHub Actions, and hosted on Firebase.
-
 ## Build Setup
 
 ```bash
