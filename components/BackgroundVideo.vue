@@ -1,7 +1,7 @@
 <template>
   <div class="bg-video">
     <video class="bg-video__content" autoplay muted loop>
-      <source :src="videoPath + '.webm'" type="video/webm" />
+      <source :src="webmVideoPath" type="video/webm" />
     </video>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 export default {
   props: {
-    videoPath: {
+    webmVideoPath: {
       type: String,
       required: true
     }

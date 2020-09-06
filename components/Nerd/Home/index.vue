@@ -1,6 +1,6 @@
 <template>
   <section id="section-home" class="section-home">
-    <BackgroundVideo video-path="/images/Hello-World" />
+    <BackgroundVideo webm-video-path="/images/Hello-World.webm" />
     <div class="section-home__content">
       <h1>Tanawit</h1>
       <p>Software Developer</p>
@@ -95,7 +95,7 @@ export default {
   }
 
   &__triangle-footer {
-    border-color: transparent transparent $color-grey-dark-2 transparent;
+    border-color: transparent transparent $color-grey-dark-2 transparent !important;
   }
 }
 </style>
