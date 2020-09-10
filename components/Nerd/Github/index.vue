@@ -39,14 +39,21 @@
     }
 
     a {
-      color: $color-white;
-      font-weight: 800;
-      text-decoration: none;
+      margin: auto;
+      padding: 0 2rem;
+      height: 4.5rem;
+      width: fit-content;
       font-size: 1.8rem;
-      padding: 1.3rem 2rem;
-      background: $color-grey-dark-3;
+      font-weight: 700;
+      color: $color-white;
+      background-color: $color-grey-dark-3;
+      text-decoration: none;
+      border: none;
       border-radius: 2rem;
       cursor: pointer;
+
+      display: flex;
+      align-items: center;
 
       &:hover {
         background: $color-gradient-primary;
