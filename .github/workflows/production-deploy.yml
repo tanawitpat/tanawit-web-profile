@@ -1,9 +1,9 @@
-name: production/deploy
+name: master/deploy
 
 on:
   push:
     branches:
-      - production
+      - master
 
 jobs:
   build:
@@ -13,14 +13,14 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
         with:
-          ref: production
+          ref: master
       - name: Install Dependencies
         run: yarn install
       - name: Build
         run: yarn generate --fail-on-error
         env:
           GA_ID: ${{ secrets.GA_ID }}
-      - name: Archive Production Artifact
+      - name: Archive master Artifact
         uses: actions/upload-artifact@master
         with:
           name: dist
@@ -33,7 +33,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
         with:
-          ref: production
+          ref: master
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
