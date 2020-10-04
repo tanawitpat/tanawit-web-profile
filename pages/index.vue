@@ -3,7 +3,7 @@
     <header>
       <Navbar />
     </header>
-    <div class="container">
+    <main>
       <SectionHome />
       <SectionAboutMe />
       <SectionExperience />
@@ -11,7 +11,7 @@
       <SectionNextStep />
       <SectionFooter />
       <ContactModal v-if="isContactModalOpen" />
-    </div>
+    </main>
   </div>
 </template>
 
