@@ -91,3 +91,7 @@ sw.*
 
 # Firebase
 .firebase
+
+# Cypress outputs
+cypress/videos
+cypress/screenshots
