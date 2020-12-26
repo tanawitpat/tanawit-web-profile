@@ -17,6 +17,9 @@ $ yarn dev
 $ yarn build
 $ yarn start
 
+# run end-to-end test (Cypress)
+$ yarn cy:run
+
 # generate static project
 $ yarn generate
 ```
