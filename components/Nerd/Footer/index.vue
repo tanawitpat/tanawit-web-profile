@@ -1,5 +1,5 @@
 <template>
-  <section class="section-footer">
+  <section id="section-footer" class="section-footer">
     <div class="section-footer__container">
       <p class="section-footer__container--developer">
         Designed and developed by Tanawit Pattanaveerangkoon
