@@ -13,7 +13,12 @@
           Explore my
           <span>software development</span> skills
         </h3>
-        <Button path="/nerd" label="Visit my nerd site" type="link" />
+        <Button
+          path="/nerd"
+          label="Visit my nerd site"
+          type="link"
+          data-id="next-step-visit-nerd-site"
+        />
       </div>
       <div>
         <h3>Looking for my <span>formal</span> profile?</h3>

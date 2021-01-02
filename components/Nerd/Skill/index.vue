@@ -1,5 +1,5 @@
 <template>
-  <section class="section-skill">
+  <section id="section-skill" class="section-skill">
     <div class="section-skill__container">
       <div class="section-skill__container--left">
         <div v-if="selectedSkill">
