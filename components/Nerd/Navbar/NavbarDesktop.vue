@@ -2,7 +2,9 @@
   <div class="navigation">
     <div class="navigation__container">
       <div class="navigation__left">
-        <nuxt-link to="/">Back to homepage</nuxt-link>
+        <nuxt-link to="/">
+          Back to homepage
+        </nuxt-link>
       </div>
     </div>
   </div>

@@ -11,11 +11,11 @@
       >
         <ExperienceCard
           :title="item.title"
-          :companyName="item.companyName"
+          :company-name="item.companyName"
           :duration="item.duration"
-          :companyLink="item.companyLink"
+          :company-link="item.companyLink"
           :description="item.description"
-          :companyLogoPath="item.companyLogoPath"
+          :company-logo-path="item.companyLogoPath"
         />
       </div>
     </div>
@@ -34,7 +34,7 @@ export default {
     TriangleFooter,
     ExperienceCard
   },
-  data() {
+  data () {
     return {
       experienceData: experienceData.data
     }

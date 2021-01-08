@@ -1,6 +1,8 @@
 <template>
   <section id="section-home" class="section-home">
-    <div class="section-home__container"><h1>Hi! I'm Tanawit</h1></div>
+    <div class="section-home__container">
+      <h1>Hi! I'm Tanawit</h1>
+    </div>
   </section>
 </template>
 

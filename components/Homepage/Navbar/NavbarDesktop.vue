@@ -3,13 +3,21 @@
     <div class="navigation__container">
       <div class="navigation__left">
         <div v-scroll-to="'#section-home'">
-          <nuxt-link to="">TANAWIT</nuxt-link>
+          <nuxt-link to="">
+            TANAWIT
+          </nuxt-link>
         </div>
       </div>
       <div class="navigation__right">
-        <div v-scroll-to="'#section-aboutme'">About me</div>
-        <div v-scroll-to="'#section-experience'">Experience</div>
-        <div v-scroll-to="'#section-activity'">Activities</div>
+        <div v-scroll-to="'#section-aboutme'">
+          About me
+        </div>
+        <div v-scroll-to="'#section-experience'">
+          Experience
+        </div>
+        <div v-scroll-to="'#section-activity'">
+          Activities
+        </div>
         <Button path="/nerd" label="Nerd Mode" type="link" />
       </div>
     </div>

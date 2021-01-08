@@ -23,7 +23,7 @@
       <div>
         <h3>Looking for my <span>formal</span> profile?</h3>
         <Button
-          :isInternalPath="false"
+          :is-internal-path="false"
           :disabled="true"
           path="http://static.tanawitp.me.s3.amazonaws.com/Tanawit-Pattanaveerangkoon_Resume.pdf"
           label="Checkout my resume"
@@ -33,8 +33,8 @@
       <div>
         <h3>Let's <span>get in touch</span></h3>
         <Button
-          @click.native="setIsContactModalOpen(true)"
           label="View my contact"
+          @click.native="setIsContactModalOpen(true)"
         />
       </div>
     </div>

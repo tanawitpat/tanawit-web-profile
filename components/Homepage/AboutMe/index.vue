@@ -12,29 +12,29 @@
                 alt="JavaScript icon"
                 src="/images/skills/javascript.jpg"
                 class="section-aboutme__developer--1"
-              />
+              >
               <img
                 alt="Python icon"
                 src="/images/skills/go.png"
                 class="section-aboutme__developer--2"
-              />
+              >
               <img
                 alt="Go icon"
                 src="/images/skills/react.png"
                 class="section-aboutme__developer--3"
-              />
+              >
             </div>
             <div class="section-aboutme__developer--line-2">
               <img
                 alt="React icon"
                 src="/images/skills/graphql.png"
                 class="section-aboutme__developer--4"
-              />
+              >
               <img
                 alt="GraphQL icon"
                 src="/images/skills/kubernetes.png"
                 class="section-aboutme__developer--5"
-              />
+              >
             </div>
           </div>
         </div>
@@ -57,12 +57,12 @@
               src="/images/aboutme/tanawit3.png"
               alt="Tanawit's Photo"
               class="section-aboutme__education--1 zoom-image-on-hover"
-            />
+            >
             <img
               src="/images/aboutme/tanawit1.png"
               alt="Tanawit's Photo"
               class="section-aboutme__education--2 zoom-image-on-hover"
-            />
+            >
           </div>
         </div>
         <div class="section-aboutme__meaning" data-aos="fade-left">
@@ -84,12 +84,12 @@
               src="/images/aboutme/bangkok.png"
               alt="Thailand"
               class="section-aboutme__location--1"
-            />
+            >
             <img
               src="/images/aboutme/iconsiam.png"
               alt="Thailand"
               class="section-aboutme__location--2"
-            />
+            >
           </div>
         </div>
         <div class="section-aboutme__meaning" data-aos="fade-left">

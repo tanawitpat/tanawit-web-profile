@@ -1,7 +1,7 @@
 <template>
   <div class="bg-video">
     <video class="bg-video__content" autoplay muted loop>
-      <source :src="webmVideoPath" type="video/webm" />
+      <source :src="webmVideoPath" type="video/webm">
     </video>
   </div>
 </template>
