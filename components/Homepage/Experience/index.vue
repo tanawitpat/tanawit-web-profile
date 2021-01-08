@@ -1,7 +1,9 @@
 <template>
   <section id="section-experience" class="section-experience">
     <div class="section-experience__heading u-margin-bottom-big">
-      <h2 class="heading-primary">My Work Experience</h2>
+      <h2 class="heading-primary">
+        My Work Experience
+      </h2>
       <p>
         From a business intern to a software developer
       </p>
@@ -14,11 +16,11 @@
       >
         <ExperienceCard
           :title="item.title"
-          :companyName="item.companyName"
+          :company-name="item.companyName"
           :duration="item.duration"
-          :companyLink="item.companyLink"
+          :company-link="item.companyLink"
           :description="item.description"
-          :companyLogoPath="item.companyLogoPath"
+          :company-logo-path="item.companyLogoPath"
         />
       </div>
     </div>

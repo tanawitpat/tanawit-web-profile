@@ -8,7 +8,7 @@
               :src="selectedSkill.imagePath"
               :alt="selectedSkill.name"
               rel="preload"
-            />
+            >
             <div class="section-skill__detail__name-proficiency">
               <div
                 :style="{ 'background-color': selectedSkill.levelColor }"
@@ -25,18 +25,18 @@
       </div>
       <div class="section-skill__container--right">
         <div
-          :key="skillCategory.name"
           v-for="skillCategory in skillCategories"
+          :key="skillCategory.name"
           class="section-skill__navigator section-skill__frontend"
         >
           <h3>{{ skillCategory.category }}</h3>
           <div
-            @mouseleave="clearSlectedSkill()"
             class="section-skill__skill-card"
+            @mouseleave="clearSlectedSkill()"
           >
             <SkillCard
-              :key="skill.name"
               v-for="skill in skillCategory.skills"
+              :key="skill.name"
               :name="skill.name"
               :level-color="skill.levelColor"
             />
@@ -58,7 +58,7 @@ export default {
     TriangleFooter,
     SkillCard
   },
-  data() {
+  data () {
     return {
       skillCategories: skillData.data,
       skills: skillData.data.reduce(
@@ -68,21 +68,21 @@ export default {
     }
   },
   computed: {
-    selectedSkillName() {
+    selectedSkillName () {
       return this.$store.state.nerd.selectedSkill
     },
-    selectedSkill() {
-      return this.skills.find((skill) => skill.name === this.selectedSkillName)
+    selectedSkill () {
+      return this.skills.find(skill => skill.name === this.selectedSkillName)
     }
   },
-  mounted() {
+  mounted () {
     this.preloadSkillImages()
   },
   methods: {
-    clearSlectedSkill() {
+    clearSlectedSkill () {
       this.$store.commit('nerd/setSelectedSkill', '')
     },
-    preloadSkillImages() {
+    preloadSkillImages () {
       this.skills.forEach((skill) => {
         if (skill.imagePath) {
           const img = new Image()

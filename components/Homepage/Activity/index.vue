@@ -6,15 +6,15 @@
       </h2>
       <div class="section-activity__card">
         <div
-          :key="activity.name"
           v-for="activity in activityData"
+          :key="activity.name"
           data-aos="flip-up"
           data-aos-duration="600"
         >
           <ActivityCard
             :title="activity.name"
             :issuer="activity.issuer"
-            :previewImagePath="activity.previewImagePath"
+            :preview-image-path="activity.previewImagePath"
             :description="activity.description"
             :year="activity.year"
           />

@@ -1,40 +1,44 @@
 <template>
   <div :class="{ active: isNavigationOpen }" class="navigation">
-    <p v-scroll-to="'#section-home'" class="navigation__title">Tanawit</p>
+    <p v-scroll-to="'#section-home'" class="navigation__title">
+      Tanawit
+    </p>
     <label
-      @click="setIsNavigationOpen(!isNavigationOpen)"
       class="navigation__button"
+      @click="setIsNavigationOpen(!isNavigationOpen)"
     >
       <span class="navigation__icon">&nbsp;</span>
     </label>
-    <div class="navigation__background">&nbsp;</div>
+    <div class="navigation__background">
+&nbsp;
+    </div>
     <nav class="navigation__nav">
       <div class="navigation__list">
         <div
-          @click="setIsNavigationOpen(false)"
           v-scroll-to="'#section-aboutme'"
           class="navigation__link"
+          @click="setIsNavigationOpen(false)"
         >
           About me
         </div>
         <div
-          @click="setIsNavigationOpen(false)"
           v-scroll-to="'#section-experience'"
           class="navigation__link"
+          @click="setIsNavigationOpen(false)"
         >
           Experience
         </div>
         <div
-          @click="setIsNavigationOpen(false)"
           v-scroll-to="'#section-activity'"
           class="navigation__link"
+          @click="setIsNavigationOpen(false)"
         >
           Activies
         </div>
         <nuxt-link
-          @click="setIsNavigationOpen(false)"
           to="nerd"
           class="navigation__link navigation__link--nerd"
+          @click="setIsNavigationOpen(false)"
         >
           Nerd Mode
         </nuxt-link>

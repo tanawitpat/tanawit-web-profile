@@ -68,6 +68,7 @@ export default {
    */
   buildModules: [
     '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
     [
       '@nuxtjs/google-analytics',
       {
@@ -85,10 +86,5 @@ export default {
   /*
    ** Build configuration
    */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
-  }
+  build: {}
 }

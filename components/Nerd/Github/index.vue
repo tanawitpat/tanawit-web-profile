@@ -1,7 +1,9 @@
 <template>
   <section id="section-github" class="section-github">
     <div class="section-github__content">
-      <h2 class="heading-primary">Explore my other projects</h2>
+      <h2 class="heading-primary">
+        Explore my other projects
+      </h2>
       <div class="section-github__image" data-aos="fade-up">
         <div class="section-github__image--1" />
         <div class="section-github__image--2" />

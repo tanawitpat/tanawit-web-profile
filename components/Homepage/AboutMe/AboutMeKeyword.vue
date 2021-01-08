@@ -7,7 +7,7 @@
       {{ description }}
     </p>
     <div v-if="link" class="aboutme-keyword__technical-skill">
-      <nuxt-link :to="link.path" v-if="link.isInternalPath">
+      <nuxt-link v-if="link.isInternalPath" :to="link.path">
         {{ link.label }}
       </nuxt-link>
       <a v-if="!link.isInternalPath" :href="link.path">

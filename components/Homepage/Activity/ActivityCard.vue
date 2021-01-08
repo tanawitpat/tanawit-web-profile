@@ -1,11 +1,13 @@
 <template>
   <div class="activity-card">
-    <img :src="previewImagePath" :alt="title" class="activity-card__img" />
+    <img :src="previewImagePath" :alt="title" class="activity-card__img">
     <p class="activity-card__description">
       {{ description }}
     </p>
     <div class="activity-card__footer">
-      <div class="activity-card__time">{{ year }}</div>
+      <div class="activity-card__time">
+        {{ year }}
+      </div>
       <h3>{{ title }}</h3>
       <p>{{ issuer }}</p>
     </div>
