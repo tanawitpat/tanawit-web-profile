@@ -6,18 +6,6 @@ on:
       - master
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-        with:
-          ref: master
-      - name: Install Dependencies
-        run: yarn install
-      - name: Build
-        run: yarn generate --fail-on-error
   cypress-run:
     name: Cypress run
     runs-on: ubuntu-16.04
@@ -29,5 +17,5 @@ jobs:
         with:
           browser: chrome
           spec: cypress/integration/spec.js
-          build: yarn build
+          build: yarn generate --fail-on-error
           start: yarn start
