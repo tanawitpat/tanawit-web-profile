@@ -3,7 +3,7 @@ name: master/deploy
 on:
   push:
     branches:
-      - fix-incorrect-artifact-path
+      - master
 
 defaults:
   run:
