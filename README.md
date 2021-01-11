@@ -4,7 +4,7 @@
 
 ![Website's screenshot](https://user-images.githubusercontent.com/25366268/79641887-7aadb900-81c4-11ea-9088-ba48f39bed6e.png)
 
-## Quick start
+## Quick Start
 
 ```bash
 # Go to ./client
@@ -17,7 +17,7 @@ $ yarn install
 $ yarn dev
 ```
 
-## Project structure
+## Project Structure
 
 ```AsciiDoc
 .
@@ -25,7 +25,7 @@ $ yarn dev
 |   +-- ...
 |   +-- package.json
 |   +-- README.md
-+-- uitest (Cypress test)
++-- uitest
 |   +-- ...
 |   +-- package.json
 |   +-- README.md
@@ -33,6 +33,6 @@ $ yarn dev
 +-- README.md
 ```
 
-## Project maintainer
+## Project Maintainer
 
 - Tanawit Pattanaveerangkoon <<tanawit.pat@gmail.com>>
