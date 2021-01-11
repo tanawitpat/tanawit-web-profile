@@ -16,7 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Build
-        run: yarn generate --fail-on-error
+        run: |
+          yarn install
+          yarn generate --fail-on-error
         working-directory: client
       - name: Start server
         run: yarn start
