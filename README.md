@@ -4,26 +4,35 @@
 
 ![Website's screenshot](https://user-images.githubusercontent.com/25366268/79641887-7aadb900-81c4-11ea-9088-ba48f39bed6e.png)
 
-## Build Setup
+## Quick start
 
 ```bash
-# install dependencies
+# Go to ./client
+$ cd client
+
+# Install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# Serve with hot reload at localhost:3000
 $ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# run end-to-end test (Cypress)
-$ yarn cy:run
-
-# generate static project
-$ yarn generate
 ```
 
-## Project Maintainer
+## Project structure
+
+```AsciiDoc
+.
++-- client
+|   +-- ...
+|   +-- package.json
+|   +-- README.md
++-- uitest (Cypress test)
+|   +-- ...
+|   +-- package.json
+|   +-- README.md
++-- .gitignore
++-- README.md
+```
+
+## Project maintainer
 
 - Tanawit Pattanaveerangkoon <<tanawit.pat@gmail.com>>
