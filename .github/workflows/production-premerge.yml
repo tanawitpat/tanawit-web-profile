@@ -15,10 +15,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: Build
+        run: yarn generate --fail-on-error
+        with:
+          working-directory: client
+      - name: Start server
+        run: yarn start
+        with:
+          working-directory: client
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
           spec: cypress/integration/spec.js
           build: yarn generate --fail-on-error
-          start: yarn start
+          working-directory: uitest
