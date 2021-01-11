@@ -1,0 +1,10 @@
+{
+  "fixturesFolder": false,
+  "supportFile": false,
+  "pluginsFile": false,
+  "baseUrl": "http://localhost:3000",
+  "retries": {
+    "runMode": 1,
+    "openMode": 1
+  }
+}
