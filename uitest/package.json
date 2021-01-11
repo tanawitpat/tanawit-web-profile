@@ -1,0 +1,12 @@
+{
+  "name": "tanawit-web-profile-uitest",
+  "version": "1.0.0",
+  "author": "Tanawit Pattanaveerangkoon",
+  "private": true,
+  "scripts": {
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^6.2.0"
+  }
+}
