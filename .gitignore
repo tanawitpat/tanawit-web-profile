@@ -93,8 +93,8 @@ sw.*
 .firebase
 
 # Cypress outputs
-uitest/videos
-uitest/screenshots
+uitest/cypress/videos
+uitest/cypress/screenshots
 
 # VSCode
 .vscode
