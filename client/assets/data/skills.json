@@ -22,11 +22,6 @@
       "levelColor": "orange",
       "proficiency": "Used in a previous position",
       "imagePath": "/images/skills/python.png"
-    }, {
-      "name": "R",
-      "levelColor": "red",
-      "proficiency": "Used during internship",
-      "imagePath": "/images/skills/r.png"
     }]
   }, {
     "category": "Technologies & Frameworks",
