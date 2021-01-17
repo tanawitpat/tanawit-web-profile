@@ -33,6 +33,10 @@ $ yarn dev
 +-- README.md
 ```
 
+## Deployment
+
+This project uses GitHub Action as a CI/CD tool. To deploy changes, just create a pull request to merge your branch into master branch. A pull request will be mergable once it passes all mandatory tests. The latest code will be deployed to Firebase automatically after it is merged to master branch.
+
 ## Project Maintainer
 
 - Tanawit Pattanaveerangkoon <<tanawit.pat@gmail.com>>
